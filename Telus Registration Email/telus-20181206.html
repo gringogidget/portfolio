@@ -1,337 +1,478 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>%%Name%%, you’re almost ready to start enjoying online billing</title>
+  <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+	<meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+  <title></title> <!-- the <title> tag shows on email notifications on Android 4.4. -->
+  <style type="text/css">
+
+  	/* ensure that clients don't add any padding or spaces around the email design and allow us to style emails for the entire width of the preview pane */
+		body,
+		#bodyTable {
+			height:100% !important;
+			width:100% !important;
+			margin:0;
+			padding:0;
+		}
+		
+		/* Ensures Webkit- and Windows-based clients don't automatically resize the email text. */
+		body,
+		table,
+		td,
+		p,
+		a,
+		li,
+		blockquote {
+			-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%;
+		}
+
+		/* Forces Yahoo! to display emails at full width */
+		.thread-item.expanded .thread-body .body,
+		.msg-body {
+			width: 100% !important;
+			display: block !important;
+		}
+
+    /* Forces Hotmail to display emails at full width */
+    .ReadMsgBody,
+    .ExternalClass {
+			width: 100%;
+			background-color: #f6f6f6;
+    }
+
+    /* Forces Hotmail to display normal line spacing. */
+		.ExternalClass, 
+		.ExternalClass p,
+		.ExternalClass span,
+		.ExternalClass font,
+		.ExternalClass td,
+		.ExternalClass div {
+			line-height:100%;
+    }
+
+    /* Resolves webkit padding issue. */
+    table {
+			border-spacing:0;
+    }
+
+    /* Resolves the Outlook 2007, 2010, and Gmail td padding issue, and removes spacing around tables that Outlook adds. */
+    table,
+    td {
+			border-collapse:collapse;
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+    }
+    
+    /* Corrects the way Internet Explorer renders resized images in emails. */
+    img {
+    	-ms-interpolation-mode: bicubic;
+    }
+    
+    /* Ensures images don't have borders or text-decorations applied to them by default. */
+    img,
+    a img {
+    	border:0;
+    	outline:none;
+    	text-decoration:none;	    
+    }
+
+    /* Styles Yahoo's auto-sensing link color and border */
+    .yshortcuts a {
+			border-bottom: none !important;
+    }
+    
+    /* Styles the tel URL scheme */
+    a[href^=tel],
+		.mobile_link,
+		.mobile_link a {
+	    color:#222222 !important;
+			text-decoration: underline !Important;
+    }
+  
+  
+		/* Apple Mail doesn't support max-width, so we use media queries to constrain the email container width. */
+		@media only screen and (min-width: 601px) {
+			.email-container {
+				width: 600px !important;
+			}
+		}
+
+
+/* Kristina Code */
+      
+      
+    * {
+      font-family: TELUS-Web, Helvetica Neue, Arial, sans-serif !important;
+    }
+
+    @media screen {
+      @font-face {
+        font-family: TELUS-Web;
+        src: url(https://cdn.telus.digital/thorium/core/fonts/aff68211-86bb-476d-882e-f7a3face144c.woff2);
+      }
+    }      
+
+    h1 {
+      font-size: 30pt;
+      text-align: center;
+      color: #4b286d;
+      font-weight: 400;
+      font-family: TELUS-Web, Helvetica Neue, Arial, sans-serif;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 16pt;
+      text-align: left;
+      color: #4b286d;
+      font-family: TELUS-Web, Helvetica Neue, Arial, sans-serif;
+    }
+
+    h3 {
+      font-size: 16pt;
+      text-align: left;
+      color: #54595f;
+      font-weight: 200;
+      font-family: TELUS-Web, Helvetica Neue, Arial, sans-serif;
+    }
+
+    h4 {
+      padding-top: 50px;
+      font-size: 24pt;
+      text-align: center;
+      color: #4b286d;
+      font-weight: 200;
+    }
+
+    .hr {
+      height: 1px;
+      border: none;
+      background-color: #c1c1c1;
+
+    }
+
+    td {
+      font-family: TELUS-Web, Helvetica Neue, Arial, sans-serif !important;
+    }
+
+    .need-assistance {
+      background-color: #f6f6f6;
+    }
+
+    .footer-copy {
+      text-align: left;
+      color: darkgrey;
+      font-size: 10px;
+      line-height: 12px;
+      background-color: #f6f6f6;
+    }
+
+    .green-bullets {
+      margin: 20px auto;
+    }
+          
+  </style>
 </head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#f4f4f4" style="margin:0; padding:0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none;">
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#f4f4f4" id="bodyTable" style="border-collapse: collapse;table-layout: fixed;margin:0 auto;"><tr><td>
 
-<body>
-  <div class="black-bar">
-    <p id="white-text"><span class="left">We're here to help</span><span class="right">View this email in your browser | EN</span></p>
-  </div>
+<!-- Outlook and Lotus Notes don't support max-width but are always on desktop, so we can enforce a wide, fixed width view. -->
+<!-- Beginning of Outlook-specific wrapper : BEGIN -->
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+<![endif]-->
+<!-- Beginning of Outlook-specific wrapper : END -->
 
-
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!-- Email wrapper : BEGIN -->
+  <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width: 600px;margin: auto;" class="email-container">
     <tr>
-      <td align="left">
+    	<td>
 
-    <div class="telus-business"><img src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/990ee8b1044bfd644cb2ba8a60b03423/TELUS_2018_Bus_EN_Hor_RGB.png"></div>
-      </td>
-    </tr>
-  </table>
+        <!-- Logo Left, Nav Right : BEGIN -->
+        <!-- Logo Left, Nav Right : END -->
+  
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+      
+          <!-- Logo Centered + Vertical Padding : BEGIN -->
+            
+            
+<tr><td style="background: black;">         
+<p style="margin: 0px;"><span style="float: left; color: #fff; padding: 10px;">We're here to help</span><span style="float: right; color: #fff; padding: 10px;">View this email in your browser | EN</span></p> 
+</td></tr>       
 
-
-
-
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td align="center">
-        <img class="greenery" src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/8b22a62f917e6255ab251bc75f771f84/Plant_3_BUS_BH_d.png">
-      </td>
-    </tr>
-  </table>
-  <h1 style="text-align: center; color: #4b286d; font-weight: 200; font-family: TELUS-Web, helvetica !important; font-size: 30pt;">Start enjoying the benefits<br>of online billing with My TELUS.</h1>
-  <h3 style="text-align: center; font-size: 16pt; color: #54595f; font-weight: 200; margin-top: 50px;">Signing up for My TELUS is easier than you think. You’re just a click away from being able to manage your TELUS account online. If you’re having trouble completing your registration, simply follow our step-by-step
-    guide.</h3>
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td align="center">
-        <img class="wave" src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/f28f0ded0474dd546a874530441b3cb5/wave.png">
-      </td>
-    </tr>
-  </table>
-  <h2 style="margin-top: 120px;">Step One</h2>
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td align="center">
-        <div class="hr"></div>
-      </td>
-    </tr>
-  </table>
-
-
-
-  <h3>Find the first nine digits of your account number, located on the top right-hand corner of your bill.</h3>
-
-
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td align="center">
-        <img class="statement" src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/83fbaf3ea13224fb8d82e323186767c0/telus-statement.png">
-      </td>
-    </tr>
-  </table>
-
-
-  <h2 style="margin-top: 40px;">Step Two</h2>
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td align="center">
-        <div class="hr"></div>
-      </td>
-    </tr>
-  </table>
-  <h3>Fill out a callback request form with your account number and other details.</h3>
-
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td align="center">
-        <a href="https://www.telus.com/en/bc/business/registration-callback"><img class="callback" src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/d104ac74ba271fa5506267071cf73990/Request_a_callback.png"></a>
-      </td>
-    </tr>
-  </table>
-<div class="need-assistance">
-<h4>Need immediate assistance?</h4>
-      <h3 style="text-align: center;">One of our TELUS team members will be happy to help.</h3>
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td align="center">
-        <a href="https://www.telus.com/en/bc/business/contact-telus?linktype=ge-meganav "><img class="start-chat" src=" https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/652856f769419b0fc73d89daa28a1714/Start-chat.png"></a>
-      </td>
-    </tr>
-  </table>
-    </div>
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td align="center">
-         <h1 style="text-align: left; padding: 50px 0 10px 0;">Why use My TELUS?</h1>
-    <h3>My TELUS allows you to easily manage your account online. From one convenient portal, you can:</h3>
-      </td>
-    </tr>
-  </table>
+            
+<tr>
+<td valign="middle" align="center" style="padding: 40px 0 0 20px; text-align: left;">  
+<!--[if mso]>
+<center>
+<table><tr><td width="600">
+<![endif]-->
+<img src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/990ee8b1044bfd644cb2ba8a60b03423/TELUS_2018_Bus_EN_Hor_RGB.png">
+<!--[if mso]>
+</td></tr></table>
+</center>
+<![endif]--> 
+</td>
+</tr>
+ 
+            
+<tr>
+<td valign="middle" align="center" style="padding: 100px 0 0 0;">
+<img src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/8b22a62f917e6255ab251bc75f771f84/Plant_3_BUS_BH_d.png">
+</td>
+</tr>            
+            
+            
+<tr>
+<td align="center" style="padding: 25px 0 0 10px;">
+<!--[if mso]>
+<center>
+<table><tr><td width="600">
+<![endif]-->
+<h1 style="text-align: center; color: #4b286d !important; font-weight: 200; font-family: TELUS-Web, helvetica !important; font-size: 30pt;">
+<strong>Start enjoying the benefits<br>of online billing with My TELUS.</strong></h1>
+<h3 style="text-align: center; font-size: 16pt; color: #54595f; font-weight: 200; margin-top: 50px;">Signing up for My TELUS is easier than you think. You’re just a click away from being able to
+manage your TELUS account online. If you’re having trouble completing your registration, simply follow our step-by-step
+guide.</h3>
+<!--[if mso]>
+</td></tr></table>
+</center>
+<![endif]--> 
+</td>
+</tr>            
 
 
+<tr>
+<td align="center" style="padding: 25px 0;">
+<img class="wave" src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/f28f0ded0474dd546a874530441b3cb5/wave.png">
+</td>
+</tr>            
 
+
+<tr>
+<td align="center" style="padding: 0 0 0 10px;">
+<!--[if mso]>
+<center>
+<table><tr><td width="600">
+<![endif]-->
+<h2 style="padding: 100px 0 20px 0; color: #4b286d;">Step One</h2> 
+<div class="hr"></div>
+<h3 style="text-align: center; font-size: 16pt; color: #54595f; font-weight: 200; margin-top: 50px;">Find the first nine digits of your account number, located on the top right-hand corner of your bill.</h3>
+<!--[if mso]>
+</td></tr></table>
+</center>
+<![endif]--> 
+</td>
+</tr>
+
+      
+<tr>
+<td align="center" style="width: 600px; padding-top: 50px;">
+<!--[if mso]>
+<center>
+<table><tr><td width="600">
+<![endif]-->
+<img src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/7e472931091d046fe9ae724d0e75b501/telus-statement.png" alt="alt text" height="auto" width="600px" align="center" border="0" style="height: auto;margin: auto;display: block;">
+<!--[if mso]>
+</td></tr></table>
+</center>
+<![endif]--> 
+</td>
+</tr>     
+            
+            
+<tr>
+<td align="center" style="padding: 25px 10px;">
+<!--[if mso]>
+<center>
+<table><tr><td width="600">
+<![endif]-->
+<h2 style="color: #4b286d;">Step Two</h2> 
+<div class="hr"></div>
+<h3 style="text-align: center; font-size: 16pt; color: #54595f; font-weight: 200; margin-top: 50px;">Fill out a callback request form with your account number and other details.</h3> 
+<!--[if mso]>
+</td></tr></table>
+</center>
+<![endif]-->    
+</td>
+</tr>
+<td align="center" style="padding: 0 0 50px 0;">
+
+<div><!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.telus.com/en/bc/business/registration-callback" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" stroke="f" fillcolor="#248700">
+    <w:anchorlock/>
+    <center>
+  <![endif]-->
+      <a href="https://www.telus.com/en/bc/business/registration-callback"
+style="background-color:#248700;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">Request a callback</a>
+  <!--[if mso]>
+    </center>
+  </v:roundrect>
+<![endif]--></div>
+
+</td>            
+
+
+<tr><td style="background: #f6f6f6; padding: 25px 0;">
+<!--[if mso]>
+<center>
+<table><tr><td width="600">
+<![endif]-->
+<h4 style="padding-top: 50px; font-size: 24pt; text-align: center; color: #4b286d; font-weight: 200;">Need immediate assistance?</h4>
+<h3 style="text-align: center; font-size: 16pt; color: #54595f; font-weight: 200; margin-top: 50px;">One of our TELUS team members will be happy to help.</h3>
+<!--[if mso]>
+</td></tr></table>
+</center>
+<![endif]-->    
+</td>
+</tr>
+
+
+<td align="center" style="background: #f6f6f6; padding: 0 0 50px 0;">
+<div><!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.telus.com/en/bc/business/contact-telus?linktype=ge-meganav" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" stroke="f" fillcolor="#248700">
+    <w:anchorlock/>
+    <center>
+  <![endif]-->
+      <a href="https://www.telus.com/en/bc/business/contact-telus?linktype=ge-meganav"
+style="background-color:#248700;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">Start chat</a>
+  <!--[if mso]>
+    </center>
+  </v:roundrect>
+<![endif]--></div>
+</td>  
+
+
+<tr>
+<td style="padding: 25px 10px;">
+<!--[if mso]>
+<center>
+<table><tr><td width="600">
+<![endif]-->
+<h1 style="text-align: left; color: #4b286d !important; font-weight: 200; font-family: TELUS-Web, helvetica !important; font-size: 30pt;"><strong>Why use My TELUS?</strong></h1>
+<h3 style="text-align: left; font-size: 16pt; color: #54595f; font-weight: 200; margin-top: 50px;">My TELUS allows you to easily manage your account online. From one convenient portal, you can:</h3>
 <table class="green-bullets" width="100%" style="width: 300px;">
-  <tr>
-    <td class="td-width" style="text-align: right; padding-bottom: 5px;"><img src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/e8fa957370f722f4a3303798f0a79711/green-rectangle.png"></td>
-      <td class="td-width">View and pay your bills</td>
-      <td class="td-width"></td>
-  </tr>
+<tr>
+<td class="td-width" style="text-align: right; padding: 8px;"><img src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/e8fa957370f722f4a3303798f0a79711/green-rectangle.png"></td>
+<td class="td-width" style="text-align: left; font-size: 13pt; color: #54595f; font-weight: 200; margin-top: 50px;">View and pay your bills</td>
+<td class="td-width"></td>
+</tr>
 
-  <tr>
-    <td class="td-width" style="text-align: right; padding-bottom: 5px;"><img src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/e8fa957370f722f4a3303798f0a79711/green-rectangle.png"></td>
-      <td class="td-width">Track your data useage</td>
-      <td class="td-width"></td>
-  </tr>
+<tr>
+<td class="td-width" style="text-align: right; padding: 8px;"><img src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/e8fa957370f722f4a3303798f0a79711/green-rectangle.png"></td>
+<td class="td-width" style="text-align: left; font-size: 13pt; color: #54595f; font-weight: 200; margin-top: 50px;">Track your data useage</td>
+<td class="td-width"></td>
+</tr>
 
-  <tr>
-    <td class="td-width" style="text-align: right; padding-bottom: 5px;"><img src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/e8fa957370f722f4a3303798f0a79711/green-rectangle.png"></td>
-      <td class="td-width">Make changes to your services</td>
-      <td class="td-width"></td>
-  </tr>
+<tr>
+<td class="td-width" style="text-align: right; padding: 8px;"><img src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/e8fa957370f722f4a3303798f0a79711/green-rectangle.png"></td>
+<td class="td-width" style="text-align: left; font-size: 13pt; color: #54595f; font-weight: 200; margin-top: 50px;">Make changes to your services</td>
+<td class="td-width"></td>
+</tr>
 
-  <tr>
-    <td class="td-width" style="text-align: right; padding-bottom: 5px;"><img src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/e8fa957370f722f4a3303798f0a79711/green-rectangle.png"></td>
-      <td class="td-width">Discover even more TELUS services</td>
-      <td class="td-width"></td>
-  </tr>
-</table>
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td align="center">
-        <a href="https://identity.telus.com/clientIdentity/selfRegistration.do?serviceType=telus&goto=https://www.telus.com/my-account/registration/link&parameter=init "><img class="sign-up-today" src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/8571b1418d21b132e2a84a6a51556da2/Sign-up-today.png"></a>
-      </td>
-    </tr>
-  </table>
+<tr>
+<td class="td-width" style="text-align: right; padding: 8px;"><img src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/e8fa957370f722f4a3303798f0a79711/green-rectangle.png"></td>
+<td class="td-width" style="text-align: left; font-size: 13pt; color: #54595f; font-weight: 200; margin-top: 50px;">Discover even more TELUS services</td>
+<td class="td-width"></td>
+</tr>
+</table>   
+<!--[if mso]>
+</td></tr></table>
+</center>
+<![endif]-->                     
+</td></tr>            
 
 
+<td align="center" style="padding: 0 0 50px 0;">
+<div><!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.telus.com/en/bc/business/contact-telus?linktype=ge-meganav" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" stroke="f" fillcolor="#248700">
+<w:anchorlock/>
+<center>
+<![endif]-->
+<a href="https://www.telus.com/en/bc/business/contact-telus?linktype=ge-meganav"
+style="background-color:#248700;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none; text-decoration:none !important;">Sign up today</a>
+<!--[if mso]>
+</center>
+</v:roundrect>
+<![endif]--></div>
+</td>        
 
 
-    <p style="text-align: center; color: darkgrey;">Stay Connected</p>
-     <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td align="center">
-          <a href="http://www.facebook.com/telusbusiness"><img style="padding: 10px;"src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/01cdf8348f656c10ca5c7452bd487336/facebook.png"></a>
-          <a href="https://twitter.com/telusbusiness"><img style="padding: 10px;"src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/b81c1cf17bed2e04f8cb253811d9d929/twitter.png"></a>
-          <a href="http://www.youtube.com/telusvideos"><img style="padding: 10px;"src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/b4030bc177c2acd84eb6e486d80029ca/youtube.png"></a>
-          <a href=""><img style="padding: 10px;"src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/86e99303a353f2cea180384f60fe3b39/google.png"></a>
-          <a href="https://www.linkedin.com/company/telus-business"><img style="padding: 10px;"src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/476175bcbc7f19deecfe02744a4217ef/linkedin.png"></a>
-      </td>
-    </tr>
-  </table>
+<tr><td style="background: #f6f6f6; padding: 25px 0;">
+<!--[if mso]>
+<center>
+<table><tr><td width="600">
+<![endif]-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center">
+<a href="http://www.facebook.com/telusbusiness"><img style="padding: 10px; display: inline-block;" src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/88c06e5fa588d8a8da021bae9de06d7d/facebook.png"></a>
+<a href="https://twitter.com/telusbusiness"><img style="padding: 10px; display: inline-block;" src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/1ca73f8d137d67422ad991d2c770a76e/twitter.png"></a>
+<a href="http://www.youtube.com/telusvideos"><img style="padding: 10px; display: inline-block;" src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/b59aab5f097b5e560a955a36747fd58b/youtube.png"></a>
+<a href="https://www.linkedin.com/company/telus-business"><img style="padding: 10px; display: inline-block;" src="https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/62a818dfd9c90b406c4f730493276a1a/linkedin.png"></a>
+<!--[if mso]>
+</td></tr></table>
+</center>
+<![endif]-->  
+</td>
+</tr>
 
-         <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td align="center">
-          <a style="padding: 0 10px;" href="https://www.telus.com/en/on/business">TELUS.com</a>
-          <a style="padding: 0 10px;" href="https://www.telus.com/en/about/">Privacy</a>
-          <a style="padding: 0 10px;" href="https://business.telus.com/en/business/support/global/legal/office-internet-service-terms">Legal</a>
-          <a style="padding: 0 10px;" href="https://www.telus.com/en/on/business/contact-telus">Contact Us</a>
 
-      </td>
-    </tr>
-  </table>
-
- <p class="footer-copy">TELUS, the TELUS Business logo and telus.com/business are trademarks of TELUS Communications Inc., used under licence. All copyrights for images, artwork and trademarks are the property of their respective owners.
+<tr>
+<td align="left" style="padding: 10px;">
+<!--[if mso]>
+<center>
+<table><tr><td width="600">
+<![endif]-->
+<p class="footer-copy">TELUS, the TELUS Business logo and telus.com/business are trademarks of TELUS Communications Inc., used under licence. All copyrights for images, artwork and trademarks are the
+property of their respective owners.
 <br><br>
 You are subscribed as %%emailaddr%%.
 <br><br>
 We would like to hear from you. If you would like to contact us, please click the "Contact Us" link above.
 <br><br>
-     We respect your privacy and will not provide your personal information to other parties without your consent. If you would like to update your TELUS Business communications preferences, please click <a href="https://pages.connect.telus.com/subscription?key=%25%25_subscriberkey%25%25&email=%25%25emailaddr%25%25&src=A1811%20Proactive%20Paperless%20Bill&first=%25%25firstname%25%25&last=%25%25lastname%25%25">manage my email preferences</a>.
+We respect your privacy and will not provide your personal information to other parties without your consent. If you would like to update your TELUS Business communications preferences, please
+click <a href="https://pages.connect.telus.com/subscription?key=%25%25_subscriberkey%25%25&email=%25%25emailaddr%25%25&src=A1811%20Proactive%20Paperless%20Bill&first=%25%25firstname%25%25&last=%25%25lastname%25%25">manage
+my email preferences</a>.
 <br><br>
-     If you no longer wish to receive any TELUS communications, please <a href="https://pages.connect.telus.com/unsubconfirm?email=%25%25emailaddr%25%25&msg=0&lang=en&result=OK_/_Existing_Subscriber_updated%20//%20DE_entryOK_//_No_Contact_found._//_No_Lead_found.">unsubscribe here</a>.
+If you no longer wish to receive any TELUS communications, please <a href="https://pages.connect.telus.com/unsubconfirm?email=%25%25emailaddr%25%25&msg=0&lang=en&result=OK_/_Existing_Subscriber_updated%20//%20DE_entryOK_//_No_Contact_found._//_No_Lead_found.">unsubscribe
+here</a>.
 <br><br>
 TELUS Marketing Preferences, 30th Floor, 25 York St. Toronto, ON, M5J 2V5 CANADA
 <br><br>
 &copy; 2018 TELUS
 </p>
+<!--[if mso]>
+</td></tr></table>
+</center>
+<![endif]-->
+</td>
+</tr>
 
 
+</table>
+</td>
+</tr>
+    
+    <!-- Footer : BEGIN -->
+
+    <!-- Footer : END -->
+        
+  </table>
+  <!-- Email wrapper : END -->
+
+  <!-- End of Outlook-specific wrapper : BEGIN -->
+	<!--[if (gte mso 9)|(IE)]>
+      </td>
+    </tr>
+  </table>
+  <![endif]-->
+  <!-- End of Outlook-specific wrapper : END -->
+
+</td></tr></table>
 </body>
-
 </html>
-<style>
-  @font-face {
-    font-family: TELUS-Web;
-    src: url(https://cdn.telus.digital/thorium/core/fonts/aff68211-86bb-476d-882e-f7a3face144c.woff2);
-}
-
-  body {
-    margin: 0px;
-    font-family: TELUS-Web, Helvetica Neue, Arial, sans-serif;
-  }
-
-a {
-	text-decoration: none;
-    color: #4b286d;
-}
-
-
-  h1 {
-    margin: 0 170px;
-    font-size: 30pt;
-    text-align: center;
-    color: #4b286d;
-    font-weight: 200;
-    font-family: TELUS-Web, Helvetica Neue, Arial, sans-serif;
-  }
-
-  h2 {
-    margin: 0 170px 20px;
-    font-size: 16pt;
-    text-align: left;
-    color: #4b286d;
-    font-weight: 500;
-    font-family: TELUS-Web, Helvetica Neue, Arial, sans-serif;
-  }
-
-  h3 {
-    margin: 20px 170px;
-    font-size: 16pt;
-    text-align: left;
-    color: #54595f;
-    font-weight: 200;
-      font-family: TELUS-Web, Helvetica Neue, Arial, sans-serif;
-  }
-
-  h4 {
-    margin: 20px 170px;
-    padding-top: 50px;
-    font-size: 24pt;
-    text-align: center;
-    color: #4b286d;
-    font-weight: 200;
-  }
-
-  .right {
-    float: right;
-  }
-
-  .left {
-    float: left;
-  }
-
-  .black-bar {
-    background-color: black;
-    height: 30px;
-    margin: 0px;
-    color: white;
-  }
-
-  #white-text {
-    margin: 0px;
-    font-size: 12px;
-    padding: 8px 50px;
-  }
-
-  .greenery {
-    width: 30%;
-  }
-
-  .telus-business {
-    margin: 50px;
-  }
-
-  .hr {
-    height: 1px;
-    border: none;
-    background-color: #c1c1c1;
-    margin: 0 170px;
-  }
-
-  .wave {
-    width: 100%;
-  }
-
-  .statement {
-    margin: 20px auto;
-  }
-
-  .callback {
-    width: 25%;
-    margin-top: 15px;
-  }
-
-  .need-assistance {
-  	margin: 50px 0 0 0;
-  	background-color: #f6f6f6;
-  }
-
-.start-chat {
-	width: 20%;
-    margin: 30px 0 50px 0;
-}
-
-.sign-up-today {
-		width: 20%;
-    margin: 30px 0 50px 0;
-}
-
-.green-box {
-   content:url(https://trello-attachments.s3.amazonaws.com/5c06cf389e363980bd990fbb/5c06cfc372fe84087baa4c3c/e8fa957370f722f4a3303798f0a79711/green-rectangle.png);
-}
-
-.green-bullets {
-  margin: 20px auto;
-}
-.footer-copy {
-text-align: left;
-color: darkgrey;
-font-size: 10px;
-margin: 20px 170px;
-}
-
-    @media screen and (max-device-width: 414px) and (max-device-height: 776px) {
-
-    h1, h2, h3, h4, p {
-        margin: 0px;
-    }
-    }
-   @media screen and (max-device-width: 375px) and (max-device-height: 812px) {
-h1, h2, h3, h4, p {
-        margin: 0px;
-}}
-
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
-h1, h2, h3, h4, p {
-        margin: 0px;
-}
-
-
-
-</style>
