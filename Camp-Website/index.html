@@ -2,70 +2,190 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>MWS Camps</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="css/mws.css">
-<link rel="stylesheet" href="css/mws-media.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Discover a whole new world with our language camps!</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/mws.css">
+  <link rel="stylesheet" href="css/mws-media.css">
+  <link rel="stylesheet" href="css/toronto-en.css">
 
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-<script src="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link href="http://localhost:8888/camp-website/fonts/King-Basil-Lite.woff" rel="stylesheet" />
+
+
+  <script src="js/scripts.js"></script>
 </head>
 
 <body>
-<div id="mws-main-nav">
-<div id="mws-logo"><a href="/"></a></div>
-<div class="close-mob-menu">
-<div></div>
-<div></div>
-</div>
-<div class="hamburger">
-<div></div>
-<div></div>
-<div></div>
-</div>
-<div id="lang-toggle">
-<a href="">FR</a>
+  <div id="mws-main-nav">
+    <div id="mws-logo"><a href="/"></a></div>
+    <div class="close-mob-menu">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="lang-toggle">
+      <a href="">FR</a>
+    </div>
+
+    <div class="nav-items">
+      <ul>
+        <li>
+          <div>Our Camps<span></span></div>
+          <ul class="mws-dropdown">
+            <li><a href="">Toronto - English</a></li>
+            <li><a href="">Montreal - English</a></li>
+            <li><a href="">Montreal - French</a></li>
+          </ul>
+        </li>
+        <li><a href="<?php echo $prepend . $links[3]; ?>/">About Us</a></li>
+        <li><a href="<?php echo $prepend . $links[4]; ?>/">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="mob-nav-items">
+      <ul>
+        <li>
+          <div>Our Camps<span></span></div>
+          <ul class="mob-submenu">
+            <li><a href="">Toronto - English</a></li>
+            <li><a href="">Montreal - English</a></li>
+            <li><a href="">Montreal - French</a></li>
+          </ul>
+        </li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+
+      <div id="mob-lang-toggle">
+        <a href="">FR</a>
+      </div>
+    </div>
+
+    <div class="jumbotron" style="background-image: url(http://localhost:8888/camp-website/images/toronto.jpg); background-size: 1600px 1010px;">
+      <div class="container toronto-copy">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col-10">
+            <h1 class="display-4">toronto</h1>
+            <p class="lead"><strong>English Camps</strong></p>
+            <p class="lead-text">The MWS Toronto English Camps are vibrant and exciting!
+              They are designed for young people who are interested in learning English
+              by being immersed in and English-speaking environment. A variety of excursions,
+              daily classes, sporting activities and a fully organized on-camp programme
+              keep the students occupied and learning at all times.</p>
+            <p class="lead"><strong>Choose an age group:</strong></p>
+            <p class="age-group">Your child’s age is his or her age as of Dec. 31, 2019</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<div class="container tabs">
+<div class="row">
+
+
+<div class="col">
+<div class="overview-button hero-button">
+<!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" strokecolor="#1e3650" fillcolor="#ffffff">
+<w:anchorlock/>
+<center style="color:#000000;font-family:sans-serif;font-size:13px;font-weight:bold;">Overview Toronto English Camps</center>
+</v:roundrect>
+<![endif]-->
+<a href="http://">
+<h4 class="tab-1"><strong>Overview</strong></h4>
+<p>Toronto English Camps<p>
+</a></div>
 </div>
 
-<div class="nav-items">
-<ul>
-<li>
-<div>Our Camps<span></span></div>
-<ul class="mws-dropdown">
-<li><a href="">Toronto - English</a></li>
-<li><a href="">Montreal - English</a></li>
-<li><a href="">Montreal - French</a></li>
-</ul>
-</li>
-<li><a href="<?php echo $prepend . $links[3]; ?>/">About Us</a></li>
-<li><a href="<?php echo $prepend . $links[4]; ?>/">Contact Us</a></li>
+
+<div class="col">
+<div class="junior-camp-button hero-button">
+<!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" strokecolor="#1e3650" fillcolor="#ffffff">
+<w:anchorlock/>
+<center style="color:#000000;font-family:sans-serif;font-size:13px;font-weight:bold;">Overview Toronto English Camps</center>
+</v:roundrect>
+<![endif]-->
+<a href="http://">
+<h4 class="tab-2"><strong>Junior Camp</strong></h4>
+<p>Ages 7 - 10 years<p>
+</a></div>
+</div>
+
+
+<div class="col">
+<div class="intermediate-camp-button hero-button">
+<!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" strokecolor="#1e3650" fillcolor="#ffffff">
+<w:anchorlock/>
+<center style="color:#000000;font-family:sans-serif;font-size:13px;font-weight:bold;">Overview Toronto English Camps</center>
+</v:roundrect>
+<![endif]-->
+<a href="http://">
+<h4 class="tab-3"><strong>Intermediate Camp</strong></h4>
+<p>Ages 11 - 13 years<p>
+</a></div>
+</div>
+
+<div class="col">
+<div class="senior-camp-button hero-button">
+<!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" strokecolor="#1e3650" fillcolor="#ffffff">
+<w:anchorlock/>
+<center style="color:#000000;font-family:sans-serif;font-size:13px;font-weight:bold;">Overview Toronto English Camps</center>
+</v:roundrect>
+<![endif]-->
+<a href="http://">
+<h4 class="tab-4"><strong>Senior Camp</strong></h4>
+<p>Ages 14 - 17 years<p>
+</a></div>
+</div>
+</div>
+</div>
+
+
+<div class="container sub-nav">
+  <p>Overview</p>
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="#"><strong>Location</strong></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#"><strong>Dates</strong></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#"><strong>Meals</strong></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#"><strong>Accomodation</strong></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#"><strong>Transportation</strong></a>
+  </li>
 </ul>
 </div>
 
-<div class="mob-nav-items">
-<ul>
-<li>
-<div>Our Camps<span></span></div>
-<ul class="mob-submenu">
-<li><a href="">Toronto - English</a></li>
-<li><a href="">Montreal - English</a></li>
-<li><a href="">Montreal - French</a></li>
-</ul>
-</li>
-<li><a href="">About Us</a></li>
-<li><a href="">Contact Us</a></li>
-</ul>
 
-<div id="mob-lang-toggle">
-<a href="">FR</a>
-</div>
-</div>
-</div>
+
+
+
+
+
+  </div>
 </body>
+
 </html>
