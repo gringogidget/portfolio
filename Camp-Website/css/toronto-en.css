@@ -7,6 +7,10 @@ a {
   color: black !important;
 }
 
+h4.panel-title {
+  margin: 20px 0;
+}
+
 .jumbotron {
   background-size: cover !important;
   text-align: center;
@@ -35,6 +39,14 @@ a {
 
 .blue {
   color: #009de0;
+}
+
+.lightblue {
+  background-color: #85c1da;
+}
+
+.tablelightgrey {
+  background: #f1f1f1;
 }
 
 p.white {
@@ -239,4 +251,13 @@ td.tg-0lax {
 font-family: "Open Sans";
 font-size: 15px;
 font-weight: 400;
+}
+
+td.food-menu {
+/*border: 1px solid black; */
+    padding: 10px;
+}
+
+tr.lightblue {
+    font-weight: 700;
 }
