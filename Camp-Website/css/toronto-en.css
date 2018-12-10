@@ -30,7 +30,15 @@ a {
 
 .lead {
   color: white;
-  font-size: 30pt;
+  font-size: 25pt;
+}
+
+.blue {
+  color: #009de0;
+}
+
+p.white {
+  color: white;
 }
 
 .lead-text {
@@ -116,4 +124,119 @@ a {
 
 .tab-2, .tab-3, .tab-4 {
   color: #fff;
+}
+
+.container.sub-nav {
+  margin-top: 30px;
+}
+
+.container.overview, .container.meals, .container.menu {
+  margin-top: 90px;
+}
+
+.container-fw-two-col {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container.no-margin {
+  margin: 0px;
+  padding: 0px;
+}
+
+img.down-arrow {
+  position: absolute !important;
+  display: inline-block !important;
+  top: 28px !important;
+  left: 190px !important;
+  width: 15% !important;
+}
+
+p.location-overview {
+  z-index: 10;
+  display: inline-block;
+  position: absolute;
+  width: 476px;
+  margin: 243px 150px;
+  color: white;
+  line-height: 22px;
+  font-size: 15px;
+}
+
+.some-page-wrapper {
+  margin: 15px;
+  background-color: red;
+}
+
+#wrapper {
+  margin-top: 60px;
+}
+
+#outer {
+  width: 100%;
+  /* demo*/
+  margin: auto;
+  /* demo*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#outer>div {
+  flex: 1;
+}
+
+#outer>div>img {
+  width: 100%;
+  min-width: 200px;
+  /* demo*/
+}
+
+table.tg {
+  display: inline-block;
+  position: absolute;
+  color: white;
+  margin: 243px 150px;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tg td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 0 25px;
+  border-style: unset;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+
+.tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 0px 60px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+
+td.tg-0lax-space {
+  padding: 5px 0;
+}
+
+.tg .tg-0lax {
+  text-align: left;
+  vertical-align: top
+}
+
+td.tg-0lax {
+font-family: "Open Sans";
+font-size: 15px;
+font-weight: 400;
 }
