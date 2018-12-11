@@ -45,12 +45,16 @@ h4.panel-title {
 .lead {
   color: white;
   font-size: 25pt;
-font-family: 'gotham';
-font-weight: 500;
+  font-family: 'gotham';
+  font-weight: 500;
 }
 
 .blue {
   color: #009de0;
+}
+
+p.white, a.white, strong.white {
+  color: #ffffff !important;
 }
 
 .lightblue {
@@ -59,10 +63,6 @@ font-weight: 500;
 
 .tablelightgrey {
   background: #f1f1f1;
-}
-
-p.white {
-  color: white;
 }
 
 .lead-text {
@@ -146,7 +146,7 @@ p.white {
   font-size: 20px;
 }
 
-.tab-2, .tab-3, .tab-4 {
+.tab-2, .tab-3, .tab-4, .col.footer {
   color: #fff;
 }
 
@@ -154,7 +154,12 @@ p.white {
   margin-top: 30px;
 }
 
-.container.overview, .container.meals, .container.menu, .container.transportation {
+.container.overview,
+.container.meals,
+.container.menu,
+.container.transportation,
+.row.cta-preheader,
+p.lead.cta-preheader {
   margin-top: 90px;
 }
 
@@ -302,17 +307,62 @@ ul.accomodations, p.accomodations, ul.location {
 }
 
 p.accomodations {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 .accomodations-video {
-      margin-top: 70px;
+  margin-top: 70px;
 }
 
 #accomodation {
-      padding-top: 60px;
+  padding-top: 60px;
 }
 
 img.transportation {
   width: 100%;
+}
+
+.row.cta-preheader {
+  background-color: #009de0;
+}
+
+p.lead.cta-preheader {
+  text-align: center;
+}
+
+.cta-preheader-button {
+  text-align: center;
+  margin: 45px 0 90px 0;
+}
+
+button.btn.btn-outline-light {
+  padding: 0.675rem 3.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 15px;
+  border: 3px solid white;
+}
+
+.row.footer {
+      padding: 50px;
+      color: white;
+      /* IE10+ */
+      /* IE10+ */
+      background-image: -ms-linear-gradient(top, #878787 0%, #292929 100%);
+
+      /* Mozilla Firefox */
+      background-image: -moz-linear-gradient(top, #878787 0%, #292929 100%);
+
+      /* Opera */
+      background-image: -o-linear-gradient(top, #878787 0%, #292929 100%);
+
+      /* Webkit (Safari/Chrome 10) */
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #878787), color-stop(100, #292929));
+
+      /* Webkit (Chrome 11+) */
+      background-image: -webkit-linear-gradient(top, #878787 0%, #292929 100%);
+
+      /* W3C Markup */
+      background-image: linear-gradient(to bottom, #878787 0%, #292929 100%);
+      Show Comments
 }
