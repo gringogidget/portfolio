@@ -21,6 +21,16 @@ h4.panel-title {
   padding: 0px;
 }
 
+.jumbotron-two-col {
+    background-size: cover !important;
+    text-align: center;
+    margin-top: 70px;
+    height: 600px;
+    border-radius: 0px;
+    background-position: center;
+    padding: 0px;
+}
+
 @font-face {
   font-family: King-Basil-Lite;
   src: url(http://localhost:8888/camp-website/fonts/King-Basil-Lite.woff);
@@ -260,4 +270,31 @@ td.food-menu {
 
 tr.lightblue {
     font-weight: 700;
+}
+
+.full-width-table {
+  width: 100%;
+}
+
+.blue-ribbon {
+  height: 60px;
+  width: 1500px;
+  background-color: #009de0;
+  margin: 0 0 0 -990px;
+  padding: 0 0 0 0;
+  border-radius: 7px;
+}
+
+.ribbon-label {
+  color: white;
+  font-family: 'Gotham';
+font-size: 30pt;
+  text-decoration: bold;
+  padding: 6px 0 0 50%;
+  font-weight: 500;
+}
+
+p.accomodations {
+  text-align: left;
+color: white;
 }
