@@ -16,8 +16,6 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
   <link href="http://localhost:8888/camp-website/fonts/King-Basil-Lite.woff" rel="stylesheet" />
   <script src="js/scripts.js"></script>
-
-
 </head>
 
 <body>
@@ -440,232 +438,245 @@
     </div>
   </div>
 
-<div class="container menu">
-<!-- notes from w3
-  <h2>Accordion Example</h2>
-  <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+  <div class="container menu">
+    <!-- notes from w3
+<h2>Accordion Example</h2>
+<p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
 -->
 
-<p>Breakfast (Includes cereal, yogurt, fruit salad)</p>
-<p>Lunch (Includes soup, salad, desserts)</p>
-<p>Dinner (Includes soup, salad, desserts)</p>
+    <p>Breakfast (Includes cereal, yogurt, fruit salad)</p>
+    <p>Lunch (Includes soup, salad, desserts)</p>
+    <p>Dinner (Includes soup, salad, desserts)</p>
 
-<!-- Monday -->
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Monday</a>
-        </h4>
+    <!-- Monday -->
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Monday</a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <table class="full-width-table">
+              <tr class="lightblue">
+                <td class="food-menu">Breakfast:</td>
+                <td class="food-menu">Lunch:</td>
+                <td class="food-menu">Dinner:</td>
+              </tr>
+              <tr class="tablelightgrey">
+                <td class="food-menu">Bacon, eggs, toast, pancakes, blueberry muffins</td>
+                <td class="food-menu">Chicken burgers, fries, mushroom quiche</td>
+                <td class="food-menu">Roast beef, potatoes, peas, baked fish</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
-      <div id="collapse1" class="panel-collapse collapse in">
-        <div class="panel-body">
-          <table class="full-width-table">
-            <tr class="lightblue">
-              <td class="food-menu">Breakfast:</td>
-              <td class="food-menu">Lunch:</td>
-              <td class="food-menu">Dinner:</td>
-            </tr>
-            <tr class="tablelightgrey">
-              <td class="food-menu">Bacon, eggs, toast, pancakes, blueberry muffins</td>
-              <td class="food-menu">Chicken burgers, fries, mushroom quiche</td>
-              <td class="food-menu">Roast beef, potatoes, peas, baked fish</td>
-            </tr>
-          </table>
+
+      <!-- Tuesday -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Tuesday</a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">
+            <table class="full-width-table">
+              <tr class="lightblue">
+                <td class="food-menu">Breakfast:</td>
+                <td class="food-menu">Lunch:</td>
+                <td class="food-menu">Dinner:</td>
+              </tr>
+              <tr class="tablelightgrey">
+                <td class="food-menu">Omelette, sausage, pancakes, apple muffins</td>
+                <td class="food-menu">Macaroni and cheese, beef tacos, sandwiches</td>
+                <td class="food-menu">Pork chops, rice, vegetables, chicken fingers</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wednesday -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Wednesday</a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">
+            <table class="full-width-table">
+              <tr class="lightblue">
+                <td class="food-menu">Breakfast:</td>
+                <td class="food-menu">Lunch:</td>
+                <td class="food-menu">Dinner:</td>
+              </tr>
+              <tr class="tablelightgrey">
+                <td class="food-menu">Bacon, eggs, toast, pancakes, bran muffins</td>
+                <td class="food-menu">Lasagna (meat and vegetable), Caesar salad, garlic bread</td>
+                <td class="food-menu">Pork chops, rice, vegetables, chicken fingers</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thursday -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Thursday</a>
+          </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse">
+          <div class="panel-body">
+            <table class="full-width-table">
+              <tr class="lightblue">
+                <td class="food-menu">Breakfast:</td>
+                <td class="food-menu">Lunch:</td>
+                <td class="food-menu">Dinner:</td>
+              </tr>
+              <tr class="tablelightgrey">
+                <td class="food-menu">Eggs, ham, French toast, cheese scones</td>
+                <td class="food-menu">Fried rice, egg rolls, chicken balls</td>
+                <td class="food-menu">Pizza, fries, penne casserole, peas, sandwiches</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Friday -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Friday</a>
+          </h4>
+        </div>
+        <div id="collapse5" class="panel-collapse collapse">
+          <div class="panel-body">
+            <table class="full-width-table">
+              <tr class="lightblue">
+                <td class="food-menu">Breakfast:</td>
+                <td class="food-menu">Lunch:</td>
+                <td class="food-menu">Dinner:</td>
+              </tr>
+              <tr class="tablelightgrey">
+                <td class="food-menu">Eggs, toast, waffles, sausage, bran muffins</td>
+                <td class="food-menu">Jumbo hot dogs, dollar chips, chili (vegetable)</td>
+                <td class="food-menu">Deli sandwich bar, potato salad</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Saturday -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Saturday</a>
+          </h4>
+        </div>
+        <div id="collapse6" class="panel-collapse collapse">
+          <div class="panel-body">
+            <table class="full-width-table">
+              <tr class="lightblue">
+                <td class="food-menu">Breakfast:</td>
+                <td class="food-menu">Lunch:</td>
+                <td class="food-menu">Dinner:</td>
+              </tr>
+              <tr class="tablelightgrey">
+                <td class="food-menu">Eggs, toast, bacon, waffles, banana muffins</td>
+                <td class="food-menu">Roast chicken, mashed potatoes, tofu stir fry</td>
+                <td class="food-menu">Veal, beans, beef stew, vegetarian stew, rice</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sunday-->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Sunday</a>
+          </h4>
+        </div>
+        <div id="collapse7" class="panel-collapse collapse">
+          <div class="panel-body">
+            <table class="full-width-table">
+              <tr class="lightblue">
+                <td class="food-menu">Breakfast:</td>
+                <td class="food-menu">Lunch:</td>
+                <td class="food-menu">Dinner:</td>
+              </tr>
+              <tr class="tablelightgrey">
+                <td class="food-menu">Eggs, ham, French toast, sausage, muffins</td>
+                <td class="food-menu">Roast pork, potatoes, peas, cheese dumplings</td>
+                <td class="food-menu">Lasagna (meat and veg), garlic bread, Casear salad</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
-
-<!-- Tuesday -->
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Tuesday</a>
-        </h4>
-      </div>
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">
-          <table class="full-width-table">
-            <tr class="lightblue">
-              <td class="food-menu">Breakfast:</td>
-              <td class="food-menu">Lunch:</td>
-              <td class="food-menu">Dinner:</td>
-            </tr>
-            <tr class="tablelightgrey">
-              <td class="food-menu">Omelette, sausage, pancakes, apple muffins</td>
-              <td class="food-menu">Macaroni and cheese, beef tacos, sandwiches</td>
-              <td class="food-menu">Pork chops, rice, vegetables, chicken fingers</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-
-<!-- Wednesday -->
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Wednesday</a>
-        </h4>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">
-          <table class="full-width-table">
-            <tr class="lightblue">
-              <td class="food-menu">Breakfast:</td>
-              <td class="food-menu">Lunch:</td>
-              <td class="food-menu">Dinner:</td>
-            </tr>
-            <tr class="tablelightgrey">
-              <td class="food-menu">Bacon, eggs, toast, pancakes, bran muffins</td>
-              <td class="food-menu">Lasagna (meat and vegetable), Caesar salad, garlic bread</td>
-              <td class="food-menu">Pork chops, rice, vegetables, chicken fingers</td>
-            </tr>
-          </table>
-      </div>
-      </div>
-    </div>
-
-<!-- Thursday -->
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Thursday</a>
-        </h4>
-      </div>
-      <div id="collapse4" class="panel-collapse collapse">
-        <div class="panel-body">
-          <table class="full-width-table">
-            <tr class="lightblue">
-              <td class="food-menu">Breakfast:</td>
-              <td class="food-menu">Lunch:</td>
-              <td class="food-menu">Dinner:</td>
-            </tr>
-            <tr class="tablelightgrey">
-              <td class="food-menu">Eggs, ham, French toast, cheese scones</td>
-              <td class="food-menu">Fried rice, egg rolls, chicken balls</td>
-              <td class="food-menu">Pizza, fries, penne casserole, peas, sandwiches</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-
-<!-- Friday -->
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Friday</a>
-        </h4>
-      </div>
-      <div id="collapse5" class="panel-collapse collapse">
-        <div class="panel-body">
-          <table class="full-width-table">
-            <tr class="lightblue">
-              <td class="food-menu">Breakfast:</td>
-              <td class="food-menu">Lunch:</td>
-              <td class="food-menu">Dinner:</td>
-            </tr>
-            <tr class="tablelightgrey">
-              <td class="food-menu">Eggs, toast, waffles, sausage, bran muffins</td>
-              <td class="food-menu">Jumbo hot dogs, dollar chips, chili (vegetable)</td>
-              <td class="food-menu">Deli sandwich bar, potato salad</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-
-<!-- Saturday -->
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Saturday</a>
-        </h4>
-      </div>
-      <div id="collapse6" class="panel-collapse collapse">
-        <div class="panel-body">
-          <table class="full-width-table">
-            <tr class="lightblue">
-              <td class="food-menu">Breakfast:</td>
-              <td class="food-menu">Lunch:</td>
-              <td class="food-menu">Dinner:</td>
-            </tr>
-            <tr class="tablelightgrey">
-              <td class="food-menu">Eggs, toast, bacon, waffles, banana muffins</td>
-              <td class="food-menu">Roast chicken, mashed potatoes, tofu stir fry</td>
-              <td class="food-menu">Veal, beans, beef stew, vegetarian stew, rice</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-
-<!-- Sunday-->
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Sunday</a>
-        </h4>
-      </div>
-      <div id="collapse7" class="panel-collapse collapse">
-        <div class="panel-body">
-          <table class="full-width-table">
-            <tr class="lightblue">
-              <td class="food-menu">Breakfast:</td>
-              <td class="food-menu">Lunch:</td>
-              <td class="food-menu">Dinner:</td>
-            </tr>
-            <tr class="tablelightgrey">
-              <td class="food-menu">Eggs, ham, French toast, sausage, muffins</td>
-              <td class="food-menu">Roast pork, potatoes, peas, cheese dumplings</td>
-              <td class="food-menu">Lasagna (meat and veg), garlic bread, Casear salad</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
   </div>
-</div>
 
 
-<div class="jumbotron-two-col" style="background-image: url(http://localhost:8888/camp-website/images/bed.jpg); background-size: 1600px 2010px;">
+  <div class="jumbotron-two-col" style="background-image: url(http://localhost:8888/camp-website/images/bed.jpg); background-size: 1600px 2010px;">
     <div class="container accomodations">
-      <div class="blue-ribbon">
-  <p class="ribbon-label">Accomodation</p>
-</div>
-  <div class="row">
-    <div class="col">
-<p class="accomodations">
-      Residential students and staff at MWS Toronto English Camps live in the dormitories of Victoria University. The rooms are clean, comfortable and simple.
-    <br><br>
-    - Residence building with 4 to 8 rooms to a section/floor
-    <br>
-    - Residences divided according to sex and age of the students
-    <br>
-    - Rooms have single beds (double and single room accommodation)
-    <br>
-    - Bedding is supplied but not towels (bed linen changed weekly)
-    <br>
-    - Semi-private and shared washrooms
-    <br>
-    - Spacious common/activity rooms
-    <br>
-    - 24-hour security
-  </p>
-    </div>
-    <div class="col">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/SB-qEYVdvXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div id="accomodation">
+        <div class="blue-ribbon">
+          <p class="ribbon-label">Accomodation</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="accomodations">
+            Residential students and staff at MWS Toronto English Camps live in the dormitories of Victoria University. The rooms are clean, comfortable and simple.
+            <br><br>
+            <ul class="accomodations">
+              <li>Residence building with 4 to 8 rooms to a section/floor</li>
+              <li>Residences divided according to sex and age of the students</li>
+              <li>Rooms have single beds (double and single room accommodation)</li>
+              <li>Bedding is supplied but not towels (bed linen changed weekly)</li>
+              <li>Semi-private and shared washrooms</li>
+              <li>Spacious common/activity rooms</li>
+              <li>24-hour security</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col accomodations-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/SB-qEYVdvXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img class="transportation" src="http://localhost:8888/Camp-Website/images/ttc.jpg">
+      </div>
+      <div class="col">
+        <p class="lead blue">
+          Transportation</p>
+          <p>
+          Residential students are responsible for making their own travel arrangements to Toronto. Upon arrival at the airport, bus or train station, the MWS Toronto English Camps staff is there to meet and welcome the students.
+          <br><br>
+          Transfers to the camps are by private bus service (if arriving as part of a group), by UP Express train link and taxi or by limousine cars if arriving as individuals or in small groups. Pearson International Airport in approximately 30
+          minutes away from the city centre and the MWS Toronto English Camps.
+          <br><br>
+        </p>
+      </div>
+    </div>
   </div>
+
 
 
 </body>

@@ -22,13 +22,13 @@ h4.panel-title {
 }
 
 .jumbotron-two-col {
-    background-size: cover !important;
-    text-align: center;
-    margin-top: 70px;
-    height: 600px;
-    border-radius: 0px;
-    background-position: center;
-    padding: 0px;
+  background-size: cover !important;
+  text-align: center;
+  margin-top: 70px;
+  height: 600px;
+  border-radius: 0px;
+  background-position: center;
+  padding: 0px;
 }
 
 @font-face {
@@ -45,6 +45,8 @@ h4.panel-title {
 .lead {
   color: white;
   font-size: 25pt;
+font-family: 'gotham';
+font-weight: 500;
 }
 
 .blue {
@@ -152,7 +154,7 @@ p.white {
   margin-top: 30px;
 }
 
-.container.overview, .container.meals, .container.menu {
+.container.overview, .container.meals, .container.menu, .container.transportation {
   margin-top: 90px;
 }
 
@@ -258,18 +260,18 @@ td.tg-0lax-space {
 }
 
 td.tg-0lax {
-font-family: "Open Sans";
-font-size: 15px;
-font-weight: 400;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
 }
 
 td.food-menu {
-/*border: 1px solid black; */
-    padding: 10px;
+  /*border: 1px solid black; */
+  padding: 10px;
 }
 
 tr.lightblue {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .full-width-table {
@@ -288,13 +290,29 @@ tr.lightblue {
 .ribbon-label {
   color: white;
   font-family: 'Gotham';
-font-size: 30pt;
+  font-size: 30pt;
   text-decoration: bold;
   padding: 6px 0 0 50%;
   font-weight: 500;
 }
 
-p.accomodations {
+ul.accomodations, p.accomodations, ul.location {
   text-align: left;
-color: white;
+  color: white;
+}
+
+p.accomodations {
+    padding-top: 60px;
+}
+
+.accomodations-video {
+      margin-top: 70px;
+}
+
+#accomodation {
+      padding-top: 60px;
+}
+
+img.transportation {
+  width: 100%;
 }
