@@ -366,3 +366,12 @@ button.btn.btn-outline-light {
       background-image: linear-gradient(to bottom, #878787 0%, #292929 100%);
       Show Comments
 }
+
+.col.footer {
+      padding: 75px 20px 50px 75px;
+}
+
+img.facebook, img.youtube {
+  width: 28px;
+      margin: 25px 20px 0 0;
+}
