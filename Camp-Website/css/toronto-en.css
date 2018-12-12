@@ -11,6 +11,10 @@ h4.panel-title {
   margin: 20px 0;
 }
 
+iframe {
+  margin-left: 70px;
+}
+
 .jumbotron {
   background-size: cover !important;
   text-align: center;
@@ -41,20 +45,21 @@ h4.panel-title {
   padding: 0px;
 }
 
-.col.location-type {
+.col.location-type, .col.dates-list {
   margin-top: 110px;
-    padding-left: 0px;
-}
+  padding-left: 0px;
 }
 
 @font-face {
-  font-family: King-Basil-Lite;
-  src: url(http://localhost:8888/camp-website/fonts/King-Basil-Lite.woff);
+  font-family: "King-Basil-Lite";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/King-Basil-Lite.woff");
 }
 
 .display-4 {
   color: white;
-  font-family: 'King-Basil-Lite';
+  font-family: King-Basil-Lite;
   font-size: 100px;
 }
 
@@ -236,11 +241,15 @@ p.location-overview {
   /* demo*/
 }
 
+.table-wrapper {
+  text-align: left;
+}
+
 table.tg {
   display: inline-block;
   position: absolute;
   color: white;
-  margin: 243px 150px;
+  width: 100%;
 }
 
 .tg {
@@ -251,7 +260,7 @@ table.tg {
 .tg td {
   font-family: Arial, sans-serif;
   font-size: 14px;
-  padding: 0 25px;
+  padding: 0 25px 0 10px;
   border-style: unset;
   border-width: 1px;
   overflow: hidden;
@@ -273,6 +282,7 @@ table.tg {
 
 td.tg-0lax-space {
   padding: 5px 0;
+  width: 25%;
 }
 
 .tg .tg-0lax {
@@ -309,6 +319,16 @@ tr.lightblue {
   position: absolute;
 }
 
+.blue-ribbon-accomodations {
+  height: 60px;
+  width: 1500px;
+  background-color: #009de0;
+  margin: 0 0 0 -1175px;
+  padding: 0 0 0 0;
+  border-radius: 7px;
+  position: absolute;
+}
+
 .blue-ribbon-2-col {
   height: 60px;
   width: 500px;
@@ -323,7 +343,7 @@ tr.lightblue {
   position: absolute;
 }
 
-.ribbon-label {
+.ribbon-label, .ribbon-label-dates {
   color: white;
   font-family: 'Gotham';
   font-size: 30pt;
@@ -331,6 +351,24 @@ tr.lightblue {
   padding: 1px 0 0 0;
   font-weight: 500;
   position: absolute;
+}
+
+.ribbon-label-accomodations {
+  color: white;
+  font-family: 'Gotham';
+  font-size: 30pt;
+  text-decoration: bold;
+  padding: 1px 0 0 0;
+  font-weight: 500;
+  text-align: unset;
+}
+
+p.ribbon-label-accomodations {
+  text-align: left;
+}
+
+.col.dates, .ribbon-label-dates, .col.dates-list {
+  margin-left: 12%;
 }
 
 ul.accomodations, p.accomodations, ul.location, p.location {
@@ -376,34 +414,29 @@ button.btn.btn-outline-light {
 }
 
 .row.footer {
-      padding: 50px;
-      color: white;
-      /* IE10+ */
-      /* IE10+ */
-      background-image: -ms-linear-gradient(top, #878787 0%, #292929 100%);
-
-      /* Mozilla Firefox */
-      background-image: -moz-linear-gradient(top, #878787 0%, #292929 100%);
-
-      /* Opera */
-      background-image: -o-linear-gradient(top, #878787 0%, #292929 100%);
-
-      /* Webkit (Safari/Chrome 10) */
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #878787), color-stop(100, #292929));
-
-      /* Webkit (Chrome 11+) */
-      background-image: -webkit-linear-gradient(top, #878787 0%, #292929 100%);
-
-      /* W3C Markup */
-      background-image: linear-gradient(to bottom, #878787 0%, #292929 100%);
-      Show Comments
+  padding: 50px;
+  color: white;
+  /* IE10+ */
+  /* IE10+ */
+  background-image: -ms-linear-gradient(top, #878787 0%, #292929 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #878787 0%, #292929 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #878787 0%, #292929 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #878787), color-stop(100, #292929));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #878787 0%, #292929 100%);
+  /* W3C Markup */
+  background-image: linear-gradient(to bottom, #878787 0%, #292929 100%);
+  Show Comments
 }
 
 .col.footer {
-      padding: 75px 20px 50px 75px;
+  padding: 75px 20px 50px 75px;
 }
 
 img.facebook, img.youtube {
   width: 28px;
-      margin: 25px 20px 0 0;
+  margin: 25px 20px 0 0;
 }
