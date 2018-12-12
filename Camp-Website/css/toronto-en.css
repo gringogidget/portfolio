@@ -31,6 +31,22 @@ h4.panel-title {
   padding: 0px;
 }
 
+.jumbotron-two-col-location-dates {
+  background-size: cover !important;
+  text-align: center;
+  margin-top: 70px;
+  height: 890px;
+  border-radius: 0px;
+  background-position: center;
+  padding: 0px;
+}
+
+.col.location-type {
+  margin-top: 110px;
+    padding-left: 0px;
+}
+}
+
 @font-face {
   font-family: King-Basil-Lite;
   src: url(http://localhost:8888/camp-website/fonts/King-Basil-Lite.woff);
@@ -287,9 +303,24 @@ tr.lightblue {
   height: 60px;
   width: 1500px;
   background-color: #009de0;
-  margin: 0 0 0 -990px;
+  margin: 0 0 0 -1274px;
   padding: 0 0 0 0;
   border-radius: 7px;
+  position: absolute;
+}
+
+.blue-ribbon-2-col {
+  height: 60px;
+  width: 500px;
+  background-color: #009de0;
+  margin: 0 0 0 556px;
+  padding: 0 0 0 0;
+  border-radius: 7px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 0;
+  position: absolute;
 }
 
 .ribbon-label {
@@ -297,11 +328,12 @@ tr.lightblue {
   font-family: 'Gotham';
   font-size: 30pt;
   text-decoration: bold;
-  padding: 6px 0 0 50%;
+  padding: 1px 0 0 0;
   font-weight: 500;
+  position: absolute;
 }
 
-ul.accomodations, p.accomodations, ul.location {
+ul.accomodations, p.accomodations, ul.location, p.location {
   text-align: left;
   color: white;
 }
@@ -314,7 +346,7 @@ p.accomodations {
   margin-top: 70px;
 }
 
-#accomodation {
+#accomodation, #location {
   padding-top: 60px;
 }
 
