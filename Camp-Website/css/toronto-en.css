@@ -413,30 +413,125 @@ button.btn.btn-outline-light {
   border: 3px solid white;
 }
 
-.row.footer {
-  padding: 50px;
-  color: white;
-  /* IE10+ */
-  /* IE10+ */
-  background-image: -ms-linear-gradient(top, #878787 0%, #292929 100%);
-  /* Mozilla Firefox */
-  background-image: -moz-linear-gradient(top, #878787 0%, #292929 100%);
-  /* Opera */
-  background-image: -o-linear-gradient(top, #878787 0%, #292929 100%);
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #878787), color-stop(100, #292929));
-  /* Webkit (Chrome 11+) */
-  background-image: -webkit-linear-gradient(top, #878787 0%, #292929 100%);
-  /* W3C Markup */
-  background-image: linear-gradient(to bottom, #878787 0%, #292929 100%);
-  Show Comments
-}
-
-.col.footer {
-  padding: 75px 20px 50px 75px;
-}
-
 img.facebook, img.youtube {
   width: 28px;
   margin: 25px 20px 0 0;
+}
+
+.pills-hi {
+  margin-top: 500px;
+}
+
+ul#pills-tab.nav.nav-pills.mb-3 {
+  margin: 18%;
+}
+
+p.white.MWS {
+  padding-top: 105px;
+}
+
+/*************** Footer ***************/
+.footer-bg-img {
+  background-image: url("../images/our-programs-bg-v1.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main_page_footer {
+  background: linear-gradient(#3a3a3a, #000000);
+  /*height: 38%;*/
+  bottom: 0;
+  transition: bottom 0.2s ease-in-out;
+  width: 100%;
+  position: absolute;
+  color: #ffffff;
+}
+
+#main_page_footer .foot-right-bottom {
+  padding-left: 7.3%;
+}
+
+footer {
+  /*background: #3a3a3a;*/
+  background: linear-gradient(#3a3a3a, #000000);
+  /*height: 38%;*/
+  bottom: 0;
+  transition: bottom 0.2s ease-in-out;
+  width: 100%;
+  position: relative;
+  color: #ffffff;
+}
+
+.foot-left {
+  float: left;
+  padding: 75px 75px 50px 75px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.foot-left p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.foot-right {
+  float: right;
+  padding: 75px 60px 50px 60px;
+  text-align: left;
+}
+
+.foot-right p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.foot-right .col-md-4 {
+  padding-left: 10%;
+}
+
+.foot-right .row {
+  margin-right: 10%;
+  padding-bottom: 0
+}
+
+.foot-left-bottom {
+  float: left;
+  padding: 0 75px 75px 75px;
+  text-align: left;
+  color: #ffffff;
+  font-size: 12px
+}
+
+.foot-left-bottom img {
+  margin: 0px 50px 0 0;
+}
+
+.foot-right-bottom {
+  float: right;
+  padding: 0px 60px 0 56px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.foot-right-bottom .row {
+  margin-right: 2%;
+}
+
+.foot-right-mobile {
+  display: none;
+}
+
+.foot-left-bottom-mobile {
+  display: none;
+}
+
+.foot-right-bottom-mobile {
+  display: none;
+}
+
+footer .row {
+  margin-left: 0;
+  margin-right: 0;
 }
