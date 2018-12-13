@@ -158,17 +158,37 @@ p.white, a.white, strong.white {
   /* IE6-9 */
 }
 
+.black-arrow {
+  position: absolute !important;
+  display: inline-block !important;
+  top: 28px !important;
+  left: 200px !important;
+  width: 10% !important;
+}
+
+.white-arrow {
+  position: absolute !important;
+  display: inline-block !important;
+  top: 26px !important;
+  left: 200px !important;
+  width: 7% !important;
+}
+
 .tabs {
   margin-top: -80px;
 }
 
 .tab-1, .tab-2, .tab-3, .tab-4 {
   margin-top: 14px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .tab-2, .tab-3, .tab-4, .col.footer {
   color: #fff;
+}
+
+p.tab-1, p.tab-2, p.tab-3, p.tab-4 {
+  margin-bottom: 10px;
 }
 
 .container.sub-nav {

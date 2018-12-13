@@ -1,0 +1,57 @@
+@media (max-width:4000px) and (min-width:1080px) {
+  body {
+    background: lightblue;
+  }
+
+  .container.tabs.tablet {
+    display: none;
+  }
+}
+
+@media (max-width:1079px) and (min-width:800px) {
+  body {
+    background: pink;
+  }
+
+  .black-arrow {
+    position: absolute !important;
+    display: inline-block !important;
+    top: 40px !important;
+    left: 388px !important;
+    width: 7% !important;
+    text-align: right !important;
+  }
+
+  .white-arrow {
+    position: absolute !important;
+    display: inline-block !important;
+    top: 28px !important;
+    left: 396px !important;
+    width: 5% !important;
+    text-align: right !important;
+  }
+
+  .container.tabs.desktop {
+    display: none;
+  }
+
+  .overview-button.hero-button,
+  .junior-camp-button.hero-button,
+  .intermediate-camp-button.hero-button,
+  .senior-camp-button.hero-button {
+    width: 100%;
+  }
+}
+
+/*
+    left: 288px !important;
+    */
+@media (max-width:799px) and (min-width:500px) {
+  body {
+    background: lightyellow;
+  }
+
+  .container.tabs.desktop, .container.tabs.tablet {
+    display: none;
+  }
+}
