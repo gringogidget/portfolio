@@ -1,16 +1,22 @@
+/* ----------------------------------Full width------------------------------------- */
 @media (max-width:4000px) and (min-width:1080px) {
   body {
     background: lightblue;
   }
 
-  .container.tabs.tablet {
+  .container.tabs.tablet, .container.tabs.mobile, .container.sub-nav.mobile {
     display: none;
   }
 }
 
+/* ----------------------------------Mid width------------------------------------- */
 @media (max-width:1079px) and (min-width:800px) {
   body {
     background: pink;
+  }
+
+  .container.tabs.desktop, .container.tabs.mobile, .container.sub-nav.mobile {
+    display: none;
   }
 
   .black-arrow {
@@ -31,9 +37,6 @@
     text-align: right !important;
   }
 
-  .container.tabs.desktop {
-    display: none;
-  }
 
   .overview-button.hero-button,
   .junior-camp-button.hero-button,
@@ -43,10 +46,15 @@
   }
 }
 
-/*
+/* arrow fix */
+@media (max-width:991px) and (min-width:768px) {
+  .black-arrow, .white-arrow {
     left: 288px !important;
-    */
-@media (max-width:799px) and (min-width:500px) {
+  }
+}
+
+/* ----------------------------------Mobile width------------------------------------- */
+@media (max-width:799px) and (min-width:100px) {
   body {
     background: lightyellow;
   }
@@ -54,4 +62,41 @@
   .container.tabs.desktop, .container.tabs.tablet {
     display: none;
   }
+
+  .overview-button.hero-button,
+  .junior-camp-button.hero-button,
+  .intermediate-camp-button.hero-button,
+  .senior-camp-button.hero-button {
+    width: 100%;
+  }
+
+  .container.toronto-copy {
+    padding-top: 130px;
+  }
+
+  .jumbotron {
+        height: 750px;
+  }
+
+  h1.display-4 {
+        font-size: 75px;
+  }
+
+  .lead {
+    font-size: 16pt;
+  }
+
+  .lead-text {
+    font-size: 16px;
+        line-height: 24px;
+  }
+
+img.white-arrow {
+    top: 113px !important;
+}
+
+.container.sub-nav.desktop{
+  display: none;
+}
+
 }

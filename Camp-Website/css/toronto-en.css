@@ -70,6 +70,47 @@ iframe {
   font-weight: 500;
 }
 
+p.lead.age-group {
+      padding-top: 15%;
+}
+
+/* horizontal line */
+
+article {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto 0;
+      padding-top: 22%;
+}
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+ /* border-top: 1px solid black; */
+  top: 0;
+  width: 600px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+
 .blue {
   color: #009de0;
 }
