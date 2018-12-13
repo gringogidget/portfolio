@@ -315,55 +315,53 @@
     </div>
   </div>
 
+<div class="container sub-nav">
+  <div class="row">
+  <div class="headerSticky" id="myHeader">
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Overview</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Location</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Dates</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Meals</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">Accomodation</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">Transportation</a>
+    </li>
 
-
-  <div class="container sub-nav desktop">
-    <p style="position: absolute; padding-top: 8px;"><strong>Overview</strong></p>
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link active" href="#"><strong>Location</strong></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><strong>Dates</strong></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><strong>Meals</strong></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#"><strong>Accomodation</strong></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#"><strong>Transportation</strong></a>
-      </li>
-    </ul>
+  </ul>
   </div>
+</div>
+</div>
 
 
 
+<script>
+window.onscroll = function() {myFunction()};
+
+var headerSticky = document.getElementById("myHeader");
+var sticky = headerSticky.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    headerSticky.classList.add("sticky");
+  } else {
+    headerSticky.classList.remove("sticky");
+  }
+}
+</script>
 
 
-  <div class="container sub-nav mobile">
-    <p style="position: absolute; margin-bottom: 0 !important;"><strong>Overview</strong></p>
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link active" href="#"><strong>Location</strong></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><strong>Dates</strong></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><strong>Meals</strong></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#"><strong>Accomodation</strong></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#"><strong>Transportation</strong></a>
-      </li>
-    </ul>
-  </div>
-
-
+<div class="content">
   <div class="container overview">
     <div class="row">
       <div class="col">
@@ -1072,7 +1070,7 @@
     </div>
   </footer>
 
-
+</div>
 </body>
 
 </html>

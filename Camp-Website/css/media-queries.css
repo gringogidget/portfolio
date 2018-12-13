@@ -1,9 +1,10 @@
 /* ----------------------------------Full width------------------------------------- */
 @media (max-width:4000px) and (min-width:1080px) {
+/*
   body {
     background: lightblue;
   }
-
+*/
   .container.tabs.tablet, .container.tabs.mobile, .container.sub-nav.mobile {
     display: none;
   }

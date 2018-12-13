@@ -233,7 +233,35 @@ p.tab-1, p.tab-2, p.tab-3, p.tab-4 {
 }
 
 .container.sub-nav {
-  margin-top: 30px;
+    max-width: 1140px;
+}
+
+#myHeader.headerSticky.sticky {
+  z-index: 100;
+}
+
+#myHeader.headerSticky {
+    padding-top: 80px;
+    left: calc(50% - 570px);
+}
+
+#myHeader.headerSticky {
+  width: 1140px;
+}
+
+.headerSticky {
+  background: #fff;
+  color: #f1f1f1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 .container.overview,
