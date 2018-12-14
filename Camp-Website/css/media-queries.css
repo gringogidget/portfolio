@@ -1,22 +1,23 @@
-/* ----------------------------------Full width------------------------------------- */
-@media (max-width:4000px) and (min-width:1080px) {
-/*
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width:4000px) and (min-width:1200px) {
+
   body {
     background: lightblue;
   }
-*/
-  .container.tabs.tablet, .container.tabs.mobile, .container.sub-nav.mobile {
+
+.container.tabs.mobile, .container.sub-nav.mobile {
     display: none;
   }
+
 }
 
-/* ----------------------------------Mid width------------------------------------- */
-@media (max-width:1079px) and (min-width:800px) {
+/* Large devices (desktops, 992px and up) */
+@media (max-width:1199px) and (min-width:992px) {
   body {
     background: pink;
   }
 
-  .container.tabs.desktop, .container.tabs.mobile, .container.sub-nav.mobile {
+.container.tabs.mobile, .container.sub-nav.mobile {
     display: none;
   }
 
@@ -47,22 +48,21 @@
   }
 }
 
-/* arrow fix */
-@media (max-width:991px) and (min-width:768px) {
-  .black-arrow, .white-arrow {
-    left: 288px !important;
-  }
-}
 
-/* ----------------------------------Mobile width------------------------------------- */
-@media (max-width:799px) and (min-width:100px) {
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width:991px) and (min-width:768px) {
   body {
     background: lightyellow;
   }
 
-  .container.tabs.desktop, .container.tabs.tablet {
-    display: none;
-  }
+.container.tabs.mobile {
+  display: none;
+}
+
+p.tab-1, p.tab-2, p.tab-3, p.tab-4 {
+margin-bottom: 0px;
+}
 
   .overview-button.hero-button,
   .junior-camp-button.hero-button,
@@ -101,3 +101,37 @@ img.white-arrow {
 }
 
 }
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width:767px) and (min-width:576px){
+
+  body {
+    background: orange;
+  }
+
+.container.tabs.desktop {
+    display: none;
+  }
+
+  }
+
+  /* Teeny Tiny devices (landscape phones, 576px and up) */
+  @media (max-width:575px) and (min-width:3px){
+
+    body {
+      background: green;
+    }
+
+      .container.tabs.desktop, .container.tabs.tablet {
+        display: none;
+      }
+
+    .overview-button.hero-button {
+    height: 90px;
+    -webkit-text-size-adjust: none;
+    mso-hide: all;
+    padding-left: 20px;
+  }
+
+    }

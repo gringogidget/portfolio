@@ -141,6 +141,7 @@ p.white, a.white, strong.white {
   padding-top: 320px;
 }
 
+
 .hero-button {
   display: inline-block;
   text-align: left;
@@ -313,9 +314,7 @@ p.location-overview {
 
 #outer {
   width: 100%;
-  /* demo*/
   margin: auto;
-  /* demo*/
   display: flex;
   flex-wrap: wrap;
 }
