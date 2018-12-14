@@ -4,8 +4,12 @@
     background: lightblue;
   }
 
-  .container.tabs.mobile, .container.sub-nav.mobile {
+  .container.tabs.mobile, .container.sub-nav.mobile, .bgimage {
     display: none;
+  }
+
+  #myHeader.headerSticky {
+    margin: 0 auto;
   }
 }
 
@@ -15,7 +19,7 @@
     background: pink;
   }
 
-  .container.tabs.mobile, .container.sub-nav.mobile {
+  .container.tabs.mobile, .container.sub-nav.mobile, .bgimage {
     display: none;
   }
 
@@ -43,6 +47,15 @@
   .senior-camp-button.hero-button {
     width: 100%;
   }
+
+  .blue-ribbon-2-col {
+    margin: 0 0 0 465px;
+  }
+
+  #myHeader.headerSticky {
+    width: 930px;
+    margin: 0 auto;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -51,7 +64,7 @@
     background: lightyellow;
   }
 
-  .container.tabs.mobile {
+  .container.tabs.mobile, .jumbotron-two-col-location-dates {
     display: none;
   }
 
@@ -94,6 +107,15 @@
   .container.sub-nav.desktop {
     display: none;
   }
+
+  .blue-ribbon-2-col {
+    margin: 0 0 0 345px;
+  }
+
+  #myHeader.headerSticky {
+    width: 690px;
+    margin: 0 auto;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -102,7 +124,7 @@
     background: orange;
   }
 
-  .container.tabs.desktop, img.black-arrow, img.white-arrow, #myHeader.headerSticky {
+  .container.tabs.desktop, img.black-arrow, img.white-arrow, #myHeader.headerSticky, .jumbotron-two-col-location-dates {
     display: none !important;
   }
 
@@ -115,6 +137,10 @@
     font-size: 16px;
     padding: 10px;
   }
+
+  .container.toronto-school-mobile {
+    max-width: 0px;
+  }
 }
 
 /* Teeny Tiny devices (landscape phones, 576px and up) */
@@ -123,7 +149,7 @@
     background: green;
   }
 
-  .container.tabs.desktop, .container.tabs.tablet, img.black-arrow, img.white-arrow, #myHeader.headerSticky {
+  .container.tabs.desktop, .container.tabs.tablet, img.black-arrow, img.white-arrow, #myHeader.headerSticky, .jumbotron-two-col-location-dates {
     display: none !important;
   }
 
@@ -142,5 +168,10 @@
     margin-top: 0px;
     font-size: 16px;
     padding: 10px;
+  }
+
+
+  .container.tabs.mobile, .container.overview, .embed-responsive.embed-responsive-16by9, .bgimage {
+    margin-top: 30px !important;
   }
 }
