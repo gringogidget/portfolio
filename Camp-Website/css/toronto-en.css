@@ -10,17 +10,20 @@ a {
 h4.panel-title {
   margin: 20px 0;
 }
-/*
-iframe {
-  margin-left: 70px;
-}
-*/
+
+h2 {
+  font-family: 'gotham', 'helvetica', 'arial';
+    color: white;
+    font-size: 25pt;
+
+    font-weight: 500;
+  }
+
 p.overview {
   color: black;
   position: absolute;
   text-align: left !important;
   padding: 10px 0 75% 0;
-
 }
 
 .jumbotron {
@@ -71,13 +74,6 @@ p.overview {
   color: white;
   font-family: King-Basil-Lite;
   font-size: 100px;
-}
-
-.lead {
-  color: white;
-  font-size: 25pt;
-  font-family: 'gotham';
-  font-weight: 500;
 }
 
 p.lead.age-group {
@@ -143,10 +139,6 @@ p.white, a.white, strong.white {
   color: white;
   font-size: 17pt;
   line-height: 28px;
-}
-
-.age-group {
-  color: white;
 }
 
 .container.toronto-copy {
@@ -478,9 +470,14 @@ tr.lightblue {
   background-size:cover;
 }
 
-p.ribbon-label-accomodations,
+h2.ribbon-label-accomodations,
 .ribbon-label-location {
   text-align: left;
+}
+
+h2.ribbon-label,
+h2.ribbon-label-dates {
+    margin-top: 8px;
 }
 
 .col.dates, .ribbon-label-dates, .col.dates-list {

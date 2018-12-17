@@ -1,11 +1,9 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width:4000px) and (min-width:1200px) {
-
-/*
   body {
     background: lightblue;
   }
-*/
+
   .container.tabs.mobile,
   .container.sub-nav.mobile,
   .jumbotron-two-col-location,
@@ -20,12 +18,9 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width:1199px) and (min-width:992px) {
-
-/*
   body {
     background: pink;
   }
-  */
 
   .container.tabs.mobile,
   .container.sub-nav.mobile,
@@ -71,11 +66,10 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width:991px) and (min-width:768px) {
-/*
   body {
     background: lightyellow;
   }
-*/
+
   .container.tabs.mobile,
   .jumbotron-two-col-location-dates {
     display: none;
@@ -156,12 +150,10 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width:767px) and (min-width:576px) {
-
-/*
   body {
     background: orange;
   }
-*/
+
   .container.tabs.desktop,
   img.black-arrow,
   img.white-arrow,
@@ -208,10 +200,10 @@
 
 /* Teeny Tiny devices (landscape phones, 576px and up) */
 @media (max-width:575px) and (min-width:3px) {
-/*  body {
+  body {
     background: green;
   }
-*/
+
   .container.tabs.desktop,
   .container.tabs.tablet,
   img.black-arrow,
@@ -263,10 +255,10 @@
   }
 
   .jumbotron-two-col-accomodation {
-        height: 900px;
+    height: 900px;
   }
 
-.col-sm-8.foot-right {
-        padding: 0 60px 50px 60px;
+  .col-sm-8.foot-right {
+    padding: 0 60px 50px 60px;
   }
 }
