@@ -4,7 +4,7 @@
     background: lightblue;
   }
 
-  .container.tabs.mobile, .container.sub-nav.mobile, .bgimage {
+  .container.tabs.mobile, .container.sub-nav.mobile, .bgimagecampus {
     display: none;
   }
 
@@ -19,7 +19,7 @@
     background: pink;
   }
 
-  .container.tabs.mobile, .container.sub-nav.mobile, .bgimage {
+  .container.tabs.mobile, .container.sub-nav.mobile, .bgimagecampus {
     display: none;
   }
 
@@ -116,6 +116,20 @@
     width: 690px;
     margin: 0 auto;
   }
+
+  .embed-responsive.embed-responsive-16by9,
+  .container.overview,
+  .bgimagecampus {
+    margin-top: 90px;
+  }
+
+  .jumbotron-two-col-accomodation {
+    height: 100%;
+  }
+
+  .col.accomodations-video {
+    margin-bottom: 60px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -169,7 +183,6 @@
     font-size: 16px;
     padding: 10px;
   }
-
 
   .container.tabs.mobile, .container.overview, .embed-responsive.embed-responsive-16by9, .bgimage {
     margin-top: 30px !important;
