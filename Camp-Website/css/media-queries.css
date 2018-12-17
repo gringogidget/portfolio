@@ -1,9 +1,11 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width:4000px) and (min-width:1200px) {
+
+/*
   body {
     background: lightblue;
   }
-
+*/
   .container.tabs.mobile,
   .container.sub-nav.mobile,
   .jumbotron-two-col-location,
@@ -18,9 +20,12 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width:1199px) and (min-width:992px) {
+
+/*
   body {
     background: pink;
   }
+  */
 
   .container.tabs.mobile,
   .container.sub-nav.mobile,
@@ -66,10 +71,11 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width:991px) and (min-width:768px) {
+/*
   body {
     background: lightyellow;
   }
-
+*/
   .container.tabs.mobile,
   .jumbotron-two-col-location-dates {
     display: none;
@@ -150,10 +156,12 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width:767px) and (min-width:576px) {
+
+/*
   body {
     background: orange;
   }
-
+*/
   .container.tabs.desktop,
   img.black-arrow,
   img.white-arrow,
@@ -166,7 +174,28 @@
     margin-top: -10px;
   }
 
-  p.tab-1, p.tab-2, p.tab-3, p.tab-4 {
+  .container.overview,
+  .embed-responsive.embed-responsive-16by9 {
+    margin-top: 30px !important;
+  }
+
+  .jumbotron-two-col-dates {
+    margin-top: 1px;
+    height: 730px;
+  }
+
+  .jumbotron-two-col-location {
+    height: 810px;
+  }
+
+  .jumbotron-two-col-accomodation {
+    height: 890px;
+  }
+
+  p.tab-1,
+  p.tab-2,
+  p.tab-3,
+  p.tab-4 {
     margin-top: 0px;
     font-size: 16px;
     padding: 10px;
@@ -179,14 +208,16 @@
 
 /* Teeny Tiny devices (landscape phones, 576px and up) */
 @media (max-width:575px) and (min-width:3px) {
-  body {
+/*  body {
     background: green;
   }
-
+*/
   .container.tabs.desktop,
   .container.tabs.tablet,
   img.black-arrow,
-  img.white-arrow, #myHeader.headerSticky, .jumbotron-two-col-location-dates {
+  img.white-arrow,
+  #myHeader.headerSticky,
+  .jumbotron-two-col-location-dates {
     display: none !important;
   }
 
@@ -207,7 +238,35 @@
     padding: 10px;
   }
 
-  .container.tabs.mobile, .container.overview, .embed-responsive.embed-responsive-16by9, .bgimage {
+  .container.tabs.mobile,
+  .container.overview,
+  .embed-responsive.embed-responsive-16by9,
+  .bgimage {
     margin-top: 30px !important;
+  }
+
+  .container.toronto-copy {
+    padding-top: 185px;
+  }
+
+  .jumbotron {
+    height: 900px;
+  }
+
+  .jumbotron-two-col-location {
+    height: 970px;
+  }
+
+  .jumbotron-two-col-dates {
+    margin-top: 1px;
+    height: 850px;
+  }
+
+  .jumbotron-two-col-accomodation {
+        height: 900px;
+  }
+
+.col-sm-8.foot-right {
+        padding: 0 60px 50px 60px;
   }
 }
