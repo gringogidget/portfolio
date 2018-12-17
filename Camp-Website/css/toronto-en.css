@@ -33,7 +33,9 @@ p.overview {
   padding: 0px;
 }
 
-.jumbotron-two-col-accomodation {
+.jumbotron-two-col-accomodation,
+.jumbotron-two-col-location,
+.jumbotron-two-col-dates {
   background-size: cover !important;
   text-align: center;
   margin-top: 70px;
@@ -279,7 +281,8 @@ p.tab-1, p.tab-2, p.tab-3, p.tab-4 {
 .container.menu,
 .container.transportation,
 .row.cta-preheader,
-p.lead.cta-preheader {
+p.lead.cta-preheader,
+.lead.blue.transportation {
   margin-top: 90px !important;
 }
 
@@ -420,7 +423,8 @@ tr.lightblue {
   position: absolute;
 }
 
-.blue-ribbon-accomodations {
+.blue-ribbon-accomodations,
+.blue-ribbon-location {
   height: 60px;
   width: 1500px;
   background-color: #009de0;
@@ -454,7 +458,8 @@ tr.lightblue {
   position: absolute;
 }
 
-.ribbon-label-accomodations {
+.ribbon-label-accomodations,
+.ribbon-label-location {
   color: white;
   font-family: 'Gotham';
   font-size: 30pt;
@@ -473,7 +478,8 @@ tr.lightblue {
   background-size:cover;
 }
 
-p.ribbon-label-accomodations {
+p.ribbon-label-accomodations,
+.ribbon-label-location {
   text-align: left;
 }
 
@@ -490,11 +496,9 @@ p.accomodations {
   padding-top: 60px;
 }
 
-.accomodations-video {
-  margin-top: 70px;
-}
-
-#accomodation, #location {
+#accomodation,
+#location,
+#dates {
   padding-top: 60px;
 }
 
@@ -547,20 +551,6 @@ p.white.MWS {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#main_page_footer {
-  background: linear-gradient(#3a3a3a, #000000);
-  /*height: 38%;*/
-  bottom: 0;
-  transition: bottom 0.2s ease-in-out;
-  width: 100%;
-  position: absolute;
-  color: #ffffff;
-}
-
-#main_page_footer .foot-right-bottom {
-  padding-left: 7.3%;
 }
 
 footer {
