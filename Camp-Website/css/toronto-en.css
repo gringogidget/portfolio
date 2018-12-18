@@ -12,7 +12,7 @@ h4.panel-title {
 }
 
 h2 {
-  font-family: 'gotham', 'helvetica', 'arial';
+  font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 25pt;
   font-weight: 500;
@@ -55,7 +55,7 @@ p.white {
   background-size: cover !important;
   text-align: center;
   margin-top: 70px;
-  height: 890px;
+  height: 1000px;
   border-radius: 0px;
   background-position: center;
   padding: 0px;
@@ -456,7 +456,6 @@ tr.lightblue {
 .ribbon-label,
 .ribbon-label-dates {
   color: white;
-  font-family: 'Gotham';
   font-size: 30pt;
   text-decoration: bold;
   padding: 1px 0 0 0;
@@ -467,7 +466,6 @@ tr.lightblue {
 .ribbon-label-accomodations,
 .ribbon-label-location {
   color: white;
-  font-family: 'Gotham';
   font-size: 30pt;
   text-decoration: bold;
   padding: 1px 0 0 0;
@@ -486,7 +484,7 @@ h2.ribbon-label-accomodations {
 
 h2.ribbon-label,
 h2.ribbon-label-dates {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .col.dates,
@@ -521,8 +519,11 @@ img.transportation {
   background-color: #009de0;
 }
 
-p.lead.cta-preheader {
+p.lead.cta-preheader,
+.cta-preheader {
   text-align: center;
+  color: white;
+  margin-top: 60px;
 }
 
 .cta-preheader-button {

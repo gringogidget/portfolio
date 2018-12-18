@@ -29,6 +29,10 @@
     display: none;
   }
 
+  .jumbotron-two-col-location-dates {
+    height: 1040px;
+  }
+
   .black-arrow {
     position: absolute !important;
     display: inline-block !important;
@@ -84,6 +88,18 @@
     margin-bottom: 0px;
   }
 
+  .blue-ribbon-location {
+    width: 1360px;
+  }
+
+  h2.ribbon-label-location {
+    margin-top: 4px;
+  }
+
+  .location-info {
+    padding-top: 50px;
+  }
+
   .overview-button.hero-button,
   .junior-camp-button.hero-button,
   .intermediate-camp-button.hero-button,
@@ -97,6 +113,10 @@
 
   .jumbotron {
     height: 675px;
+  }
+
+  .jumbotron-two-col-dates {
+    height: 920px;
   }
 
   h1.display-4 {
@@ -130,8 +150,7 @@
     margin-top: 90px;
   }
 
-  .jumbotron-two-col-location,
-  .jumbotron-two-col-dates {
+  .jumbotron-two-col-location {
     height: 750px;
   }
 
@@ -173,7 +192,7 @@
 
   .jumbotron-two-col-dates {
     margin-top: 1px;
-    height: 730px;
+    height: 920px;
   }
 
   .jumbotron-two-col-location {
@@ -204,6 +223,22 @@
     background: green;
   }
 
+  h2.ribbon-label-location {
+    margin-top: 4px;
+  }
+
+  article {
+    padding-top: 16%;
+  }
+
+span.age-group {
+  height: 30px;
+}
+
+.blue-ribbon-location {
+      width: 1360px;
+}
+
   .container.tabs.desktop,
   .container.tabs.tablet,
   img.black-arrow,
@@ -224,6 +259,11 @@
     margin-top: -10px;
   }
 
+  .container.meals,
+  .transportation-info {
+    margin-top: 60px;
+  }
+
   p.tab-1, p.tab-2, p.tab-3, p.tab-4 {
     margin-top: 0px;
     font-size: 16px;
@@ -241,8 +281,12 @@
     padding-top: 185px;
   }
 
+  .location-info {
+    padding-top: 30px;
+  }
+
   .jumbotron {
-    height: 810px;
+    height: 880px;
   }
 
   .jumbotron-two-col-location {
@@ -251,7 +295,7 @@
 
   .jumbotron-two-col-dates {
     margin-top: 1px;
-    height: 850px;
+    height: 1060px;
   }
 
   .jumbotron-two-col-accomodation {
