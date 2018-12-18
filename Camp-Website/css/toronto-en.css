@@ -242,11 +242,11 @@ p.white, a.white, strong.white {
 p.tab-1, p.tab-2, p.tab-3, p.tab-4 {
   margin-bottom: 10px;
 }
-
+/*
 .container.sub-nav {
   max-width: 1140px;
 }
-
+*/
 #myHeader.headerSticky.sticky {
   z-index: 100;
 }
@@ -521,6 +521,7 @@ img.transportation {
 
 .row.cta-preheader {
   background-color: #009de0;
+  margin-right: 0px;
 }
 
 p.lead.cta-preheader,
@@ -668,4 +669,8 @@ footer .foot-right .col-md-4 {
 footer .row {
   margin-left: 0;
   margin-right: 0;
+}
+
+img.facebook {
+  width: 12px;
 }
