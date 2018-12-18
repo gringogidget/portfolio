@@ -25,7 +25,9 @@
   .container.tabs.mobile,
   .container.sub-nav.mobile,
   .jumbotron-two-col-location,
-  .jumbotron-two-col-dates {
+  .jumbotron-two-col-dates,
+  #myHeader.headerSticky.sticky,
+  #myHeader.headerSticky {
     display: none;
   }
 
@@ -161,6 +163,11 @@
   .col.accomodations-video {
     margin-bottom: 60px;
   }
+
+.transportation-info {
+  margin-top: 20px;
+}
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -203,6 +210,14 @@
     height: 890px;
   }
 
+  h2.ribbon-label-location {
+    margin-top: 4px;
+  }
+
+  .location-info {
+    margin-top: 40px;
+  }
+
   p.tab-1,
   p.tab-2,
   p.tab-3,
@@ -214,6 +229,10 @@
 
   .container.toronto-school-mobile {
     max-width: 0px;
+  }
+
+  .transportation-info {
+    margin-top: 20px;
   }
 }
 
@@ -231,13 +250,13 @@
     padding-top: 16%;
   }
 
-span.age-group {
-  height: 30px;
-}
+  span.age-group {
+    height: 30px;
+  }
 
-.blue-ribbon-location {
-      width: 1360px;
-}
+  .blue-ribbon-location {
+    width: 1360px;
+  }
 
   .container.tabs.desktop,
   .container.tabs.tablet,
@@ -305,4 +324,10 @@ span.age-group {
   .col-sm-8.foot-right {
     padding: 0 60px 50px 60px;
   }
+
+  .transportation-info {
+    margin-top: 20px;
+  }
+
+
 }

@@ -88,7 +88,11 @@ article {
   max-width: 100%;
   overflow: hidden;
   margin: 0 auto 0;
-  padding-top: 22%;
+  padding-top: 18%;
+}
+
+span.age-group {
+  height: 30px;
 }
 
 .fancy {
@@ -441,7 +445,7 @@ tr.lightblue {
 
 .blue-ribbon-2-col {
   height: 60px;
-    width: 234px;
+  width: 234px;
   background-color: #009de0;
   margin: 0 0 0 556px;
   padding: 0 0 0 0;
