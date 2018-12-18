@@ -71,7 +71,8 @@
   }
 
   .container.tabs.mobile,
-  .jumbotron-two-col-location-dates {
+  .jumbotron-two-col-location-dates,
+  #myHeader.headerSticky {
     display: none;
   }
 
@@ -95,7 +96,7 @@
   }
 
   .jumbotron {
-    height: 750px;
+    height: 675px;
   }
 
   h1.display-4 {
@@ -121,11 +122,6 @@
 
   .blue-ribbon-2-col {
     margin: 0 0 0 345px;
-  }
-
-  #myHeader.headerSticky {
-    width: 690px;
-    margin: 0 auto;
   }
 
   .embed-responsive.embed-responsive-16by9,
@@ -160,6 +156,10 @@
   #myHeader.headerSticky,
   .jumbotron-two-col-location-dates {
     display: none !important;
+  }
+
+  .jumbotron {
+    height: 950px;
   }
 
   .container.tabs.mobile {
@@ -242,7 +242,7 @@
   }
 
   .jumbotron {
-    height: 900px;
+    height: 810px;
   }
 
   .jumbotron-two-col-location {
