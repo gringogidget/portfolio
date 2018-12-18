@@ -130,7 +130,9 @@ span.age-group {
   color: #009de0;
 }
 
-p.white, a.white, strong.white {
+p.white,
+a.white,
+strong.white {
   color: #ffffff !important;
 }
 
@@ -230,18 +232,25 @@ p.white, a.white, strong.white {
   margin-top: -80px;
 }
 
-.tab-1, .tab-2, .tab-3, .tab-4 {
+.tab-1,
+.tab-2,
+.tab-3,
+.tab-4 {
   margin-top: 14px;
   font-size: 16px;
 }
 
-.tab-2, .tab-3, .tab-4, .col.footer {
+.tab-2,
+.tab-3,
+.tab-4,
+.col.footer {
   color: #fff;
 }
 
 p.tab-1, p.tab-2, p.tab-3, p.tab-4 {
   margin-bottom: 10px;
 }
+
 /*
 .container.sub-nav {
   max-width: 1140px;
@@ -249,6 +258,8 @@ p.tab-1, p.tab-2, p.tab-3, p.tab-4 {
 */
 #myHeader.headerSticky.sticky {
   z-index: 100;
+  width: 946px !important;
+  margin: 0 100px !important;
 }
 
 #myHeader.headerSticky {
