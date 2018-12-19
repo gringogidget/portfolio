@@ -4,10 +4,7 @@
     background: lightblue;
   }
 
-  .container.tabs.mobile,
-  .container.sub-nav.mobile,
-  .jumbotron-two-col-location,
-  .jumbotron-two-col-dates {
+.jumbotron.mobile {
     display: none;
   }
 
@@ -22,10 +19,7 @@
     background: pink;
   }
 
-  .container.tabs.mobile,
-  .container.sub-nav.mobile,
-  .jumbotron-two-col-location,
-  .jumbotron-two-col-dates {
+.jumbotron.mobile {
     display: none;
   }
 
@@ -61,9 +55,7 @@
     background: lightyellow;
   }
 
-  .container.tabs.mobile,
-  .jumbotron-two-col-location-dates,
-  #myHeader.headerSticky {
+.jumbotron.mobile {
     display: none;
   }
 
@@ -165,11 +157,7 @@
     background: orange;
   }
 
-  .container.tabs.desktop,
-  img.black-arrow,
-  img.white-arrow,
-  #myHeader.headerSticky,
-  .jumbotron-two-col-location-dates {
+header {
     display: none !important;
   }
 
@@ -271,20 +259,9 @@
     height: 30px;
   }
 
-  /*
-  .blue-ribbon-location {
-    width: 1360px;
-  }
-*/
-  .container.tabs.desktop,
-  .container.tabs.tablet,
-  img.black-arrow,
-  img.white-arrow,
-  #myHeader.headerSticky,
-  .container.tabs.desktop,
-  .jumbotron-two-col-location-dates {
-    display: none !important;
-  }
+  header {
+      display: none !important;
+    }
 
   .overview-button.hero-button {
     height: 90px;

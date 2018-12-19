@@ -6,6 +6,67 @@ a {
   text-decoration: none !important;
 }
 
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+img.our-camps {
+  border-radius: 50%;
+  width: 75%;
+}
+
+.row.cities {
+  margin-top: 60px;
+}
+
+.my-auto.w-100.text-white {
+  margin-top: 25% !important;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+
 h4.panel-title {
   margin: 20px 0;
 }
@@ -15,6 +76,10 @@ h2 {
   color: white;
   font-size: 25pt;
   font-weight: 500;
+}
+
+h2.white.text-together {
+  margin-right: 20px;
 }
 
 p.overview {
@@ -28,14 +93,18 @@ p.white {
   color: white !important;
 }
 
+.text-together {
+  display: inline-block;
+}
+
 .jumbotron {
   background-size: cover !important;
   text-align: center;
-  margin-top: 70px;
   height: 1010px;
   border-radius: 0px;
   background-position: center;
   padding: 0px;
+  margin-bottom: 0px;
 }
 
 .jumbotron-two-col-accomodation,
@@ -73,6 +142,7 @@ p.white {
 }
 
 .display-4 {
+  margin-top: 60px;
   color: white;
   font-family: King-Basil-Lite;
   font-size: 100px;
@@ -135,6 +205,12 @@ strong.white {
   color: #ffffff !important;
 }
 
+.col-sm.why {
+  background: black;
+  opacity: 0.5;
+  margin: 10px;
+}
+
 .lightblue {
   background-color: #85c1da;
 }
@@ -149,8 +225,12 @@ strong.white {
   line-height: 28px;
 }
 
-.container.toronto-copy {
-  padding-top: 320px;
+.container.home-copy {
+  padding-top: 180px;
+}
+
+img.down-arrow-home {
+  margin-top: 240px;
 }
 
 .hero-button {
