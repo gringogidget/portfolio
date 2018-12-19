@@ -241,32 +241,36 @@
   <div class="container-fluid sub-nav">
     <div class="row">
       <div class="headerSticky" id="myHeader">
-        <p class="overview">Overview</p>
-        <ul class="nav justify-content-end">
+        <div class="stickyInner">
+          <p class="overview">Overview</p>
+          <ul class="nav justify-content-end">
 
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Location</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Dates</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Meals</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Accomodation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Transportation</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Meals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accomodation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Transportation</a>
+            </li>
 
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
 
 
+
+  <!-- Sticky Header Script -->
   <script>
     window.onscroll = function() {myFunction()};
 
@@ -281,6 +285,7 @@ function myFunction() {
   }
 }
 </script>
+
 
 
   <div class="content">
@@ -364,14 +369,14 @@ function myFunction() {
           <p class="ribbon-label-location">Dates</p>
 
           <p class="white" style="text-align: left;">
-              Step 1: SELECT A CAMP:<br><br>
-              Your child’s age is his or her age as of Dec. 31, 2019<br>
-              Junior Camp – 7 to 10 years old<br>
-              Intermediate Camp – 11 to 13 years old<br>
-              Senior Camp – 14 to 17 years old<br><br>
-              Step 2: SELECT A SESSION
-            </p>
-          <div class="table-wrapper">
+            Step 1: SELECT A CAMP:<br><br>
+            Your child’s age is his or her age as of Dec. 31, 2019<br>
+            Junior Camp – 7 to 10 years old<br>
+            Intermediate Camp – 11 to 13 years old<br>
+            Senior Camp – 14 to 17 years old<br><br>
+            Step 2: SELECT A SESSION
+          </p>
+          <div class="row">
             <table class="tg">
               <tbody>
                 <tr>
@@ -1033,14 +1038,15 @@ function myFunction() {
           <img class="transportation" src="images/ttc.jpg">
         </div>
         <div class="col-lg-6">
-  <div class="transportation-info">
+          <div class="transportation-info">
             <h2 class="blue">Transportation</h2>
             <p>Residential students are responsible for making their own travel arrangements to Toronto. Upon arrival at the airport, bus or train station, the MWS Toronto English Camps staff is there to meet and welcome the students.</p>
-            <p>Transfers to the camps are by private bus service (if arriving as part of a group), by UP Express train link and taxi or by limousine cars if arriving as individuals or in small groups. Pearson International Airport in approximately 30
+            <p>Transfers to the camps are by private bus service (if arriving as part of a group), by UP Express train link and taxi or by limousine cars if arriving as individuals or in small groups. Pearson International Airport in approximately
+              30
               minutes away from the city centre and the MWS Toronto English Camps.</p>
             <p></p>
           </div>
-  </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1090,15 +1096,27 @@ function myFunction() {
               <p><a class="white" href="/montreal-french-camps/">Montreal - French</a></p>
             </div>
             <div class="col-sm-4">
-              <p><class="white" a href="/about-us/"><strong>About Us</strong></a></p>
-              <p><class="white" a href="/about-us/#history/">History</a></p>
-              <p><class="white" a href="/about-us/#join/">Join Our Team</a></p>
+              <p>
+                <class="white" a href="/about-us/"><strong>About Us</strong></a>
+              </p>
+              <p>
+                <class="white" a href="/about-us/#history/">History</a>
+              </p>
+              <p>
+                <class="white" a href="/about-us/#join/">Join Our Team</a>
+              </p>
               <p></p>
             </div>
             <div class="col-sm-4">
-              <p><class="white" a href="/contact-us/"><strong>Contact Us</strong></a></p>
-              <p><class="white" a href="/request-info-form/">Request Information</a></p>
-              <p><class="white" a href="/register-now/">Register Now</a></p>
+              <p>
+                <class="white" a href="/contact-us/"><strong>Contact Us</strong></a>
+              </p>
+              <p>
+                <class="white" a href="/request-info-form/">Request Information</a>
+              </p>
+              <p>
+                <class="white" a href="/register-now/">Register Now</a>
+              </p>
               <p></p>
             </div>
           </div>

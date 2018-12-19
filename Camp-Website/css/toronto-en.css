@@ -4,7 +4,6 @@ body {
 
 a {
   text-decoration: none !important;
-  color: black !important;
 }
 
 h4.panel-title {
@@ -251,15 +250,17 @@ p.tab-1, p.tab-2, p.tab-3, p.tab-4 {
   margin-bottom: 10px;
 }
 
-/*
-.container.sub-nav {
-  max-width: 1140px;
+.sticky-background-white {
+  height: 40px;
+  background-color: white;
 }
-*/
+
 #myHeader.headerSticky.sticky {
   z-index: 100;
-  width: 946px !important;
-  margin: 0 100px !important;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  right: 0;
 }
 
 #myHeader.headerSticky {
@@ -274,6 +275,12 @@ p.tab-1, p.tab-2, p.tab-3, p.tab-4 {
 .headerSticky {
   background: #fff;
   color: #f1f1f1;
+}
+
+.sticky .stickyInner {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .sticky {

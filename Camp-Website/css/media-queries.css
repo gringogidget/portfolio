@@ -33,6 +33,7 @@
     height: 1040px;
   }
 
+  /*
   .black-arrow {
     position: absolute !important;
     display: inline-block !important;
@@ -50,7 +51,7 @@
     width: 5% !important;
     text-align: right !important;
   }
-
+  */
   .overview-button.hero-button,
   .junior-camp-button.hero-button,
   .intermediate-camp-button.hero-button,
@@ -63,8 +64,13 @@
   }
 
   #myHeader.headerSticky {
-    width: 930px !important;
-    margin: 0 auto !important;
+    //
+  }
+
+  .sticky .stickyInner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 35px;
   }
 }
 
@@ -132,10 +138,11 @@
     line-height: 24px;
   }
 
+  /*
   img.white-arrow {
     top: 113px !important;
   }
-
+*/
   .container.sub-nav.desktop {
     display: none;
   }
@@ -283,15 +290,17 @@
     height: 30px;
   }
 
+  /*
   .blue-ribbon-location {
     width: 1360px;
   }
-
+*/
   .container.tabs.desktop,
   .container.tabs.tablet,
   img.black-arrow,
   img.white-arrow,
   #myHeader.headerSticky,
+  .container.tabs.desktop,
   .jumbotron-two-col-location-dates {
     display: none !important;
   }
