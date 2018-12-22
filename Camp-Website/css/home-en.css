@@ -6,7 +6,9 @@ a {
   text-decoration: none !important;
 }
 
-header, .jumbotron.our-camps {
+header,
+.jumbotron.our-camps,
+.jumbotron.why-choose {
   position: relative;
   background-color: black;
   height: 100vh;
@@ -35,6 +37,7 @@ header .container {
   z-index: 2;
 }
 
+/*
 @media (pointer: coarse) and (hover: none) {
   header {
     background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
@@ -49,7 +52,7 @@ header .container {
   position: relative;
   z-index: -101;
 }
-
+*/
 img.our-camps {
   border-radius: 50%;
   width: 60%;
@@ -57,26 +60,29 @@ img.our-camps {
   margin-bottom: 30px;
 }
 
-.row.cities {
+.row.cities,
+.row.why-choose {
   margin-top: 60px;
+}
+
+.col.why-choose-tile {
+  background-color: #00000082;
+  padding: 20px;
+}
+
+.container.why-choose-copy,
+.container.why-choose {
+  max-width: 1400px !important;
 }
 
 .container.our-camps-copy {
   padding-top: 100px;
 }
 
-h2 {
-  font-family: "Open Sans", sans-serif;
-  color: white;
-  font-weight: 500;
-}
-
-h2.white.text-together {
-  margin-right: 20px;
-}
-
-p.white {
-  color: white !important;
+h3.white.why-choose {
+  max-width: 1140px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .text-together {
@@ -93,6 +99,7 @@ p.white {
   margin-bottom: 0px;
 }
 
+/*
 .jumbotron-two-col-accomodation,
 .jumbotron-two-col-location,
 .jumbotron-two-col-dates {
@@ -105,6 +112,7 @@ p.white {
   padding: 0px;
 }
 
+*/
 @font-face {
   font-family: "King-Basil-Lite";
   font-style: normal;
@@ -123,131 +131,38 @@ p.white {
   color: #009de0;
 }
 
+h2.white,
 h3.white,
+h4.white,
 p.white,
 a.white,
 strong.white {
   color: #ffffff !important;
 }
 
-.col-sm.why {
-  background: black;
-  opacity: 0.5;
-  margin: 10px;
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+h2.white.text-together {
+  margin-right: 20px;
 }
 
 .container.header-copy,
-.container.our-camps-copy {
+.container.our-camps-copy,
+.container.why-choose-copy {
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-text-align: center;
+  text-align: center;
 }
-
 
 img.down-arrow-home {
-padding-top: 30%;
-}
-
-.container.overview,
-.container.meals,
-.container.menu,
-.container.transportation,
-.row.cta-preheader,
-p.lead.cta-preheader,
-.lead.blue.transportation {
-  margin-top: 90px !important;
-}
-
-.blue-ribbon-accomodations,
-.blue-ribbon-location {
-  height: 60px;
-  width: 1500px;
-  background-color: #009de0;
-  margin: 0 0 0 -1175px;
-  padding: 0 0 0 0;
-  border-radius: 7px;
-  position: absolute;
-}
-
-.ribbon-label-accomodations,
-.ribbon-label-location {
-  color: white;
-  font-size: 30pt;
-  text-decoration: bold;
-  padding: 1px 0 0 0;
-  font-weight: 500;
-  text-align: unset;
-}
-
-h2.ribbon-label-accomodations,
-.ribbon-label-location {
-  text-align: left;
-}
-
-h2.ribbon-label-accomodations {
-  padding-top: 8px;
-}
-
-h2.ribbon-label,
-h2.ribbon-label-dates {
-  margin-top: 4px;
-}
-
-.col.dates,
-.ribbon-label-dates,
-.col.dates-list {
-  margin-left: 12%;
-}
-
-ul.accomodations,
-p.accomodations,
-ul.location,
-p.location {
-  text-align: left;
-  color: white;
-}
-
-p.accomodations {
-  padding-top: 60px;
-}
-
-#accomodation,
-#location,
-#dates {
-  padding-top: 60px;
-}
-
-img.transportation {
-  width: 100%;
-}
-
-.row.cta-preheader {
-  background-color: #009de0;
-  margin-right: 0px;
-}
-
-p.lead.cta-preheader,
-.cta-preheader {
-  text-align: center;
-  color: white;
-  margin-top: 60px;
-}
-
-.cta-preheader-button {
-  text-align: center;
-  margin: 45px 0 90px 0;
-}
-
-button.btn.btn-outline-light {
-  padding: 0.675rem 3.75rem;
-  font-size: 1.25rem;
-  font-weight: 700;
-  border-radius: 15px;
-  border: 3px solid white;
+  padding-top: 30%;
 }
 
 img.facebook, img.youtube {
