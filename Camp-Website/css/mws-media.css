@@ -1,0 +1,46 @@
+@media (max-width: 991px) {
+
+
+
+    #mws-main-nav .nav-items ul li div,
+    #mws-main-nav .nav-items ul li a {
+        margin: 0 0px 0 10px;
+    }
+
+    .lang-class-fr #mws-main-nav .nav-items ul li div,
+    .lang-class-fr #mws-main-nav .nav-items ul li a {
+        margin: 0;
+        font-size: 16px;
+        padding: 25px 20px;
+    }
+
+    .lang-class-fr #mws-main-nav .nav-items ul li div span {
+        top: calc(50% - 9px);
+    }
+
+    #mws-main-nav .nav-items ul.mws-dropdown {
+        left: 12px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+
+    #mws-logo a {
+        width: 149px;
+    }
+
+    #lang-toggle {
+        display: none;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    #mws-main-nav .hamburger {
+        display: block;
+    }
+
+}

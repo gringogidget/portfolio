@@ -1,0 +1,364 @@
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width:4000px) and (min-width:1200px) {
+  body {
+    background: lightblue;
+  }
+
+  .container.tabs.mobile,
+  .container.sub-nav.mobile,
+  .jumbotron-two-col-location,
+  .jumbotron-two-col-dates {
+    display: none;
+  }
+
+  #myHeader.headerSticky {
+    margin: 0 auto;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width:1199px) and (min-width:992px) {
+  body {
+    background: pink;
+  }
+
+  .container.tabs.mobile,
+  .container.sub-nav.mobile,
+  .jumbotron-two-col-location,
+  .jumbotron-two-col-dates {
+    display: none;
+  }
+
+  .jumbotron-two-col-location-dates {
+    height: 1040px;
+  }
+
+  .overview-button.hero-button,
+  .junior-camp-button.hero-button,
+  .intermediate-camp-button.hero-button,
+  .senior-camp-button.hero-button {
+    width: 100%;
+  }
+
+  .blue-ribbon-2-col {
+    margin: 0 0 0 465px;
+  }
+
+  #myHeader.headerSticky {
+    //
+  }
+
+  .sticky .stickyInner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 35px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width:991px) and (min-width:768px) {
+  body {
+    background: lightyellow;
+  }
+
+  .container.tabs.mobile,
+  .jumbotron-two-col-location-dates,
+  #myHeader.headerSticky {
+    display: none;
+  }
+
+  .jumbotron-two-col-dates {
+    margin-top: 1px
+  }
+
+  p.tab-1, p.tab-2, p.tab-3, p.tab-4 {
+    margin-bottom: 0px;
+  }
+
+  .blue-ribbon-location {
+    width: 1360px;
+  }
+
+  h2.ribbon-label-location {
+    margin-top: 4px;
+  }
+
+  .location-info {
+    padding-top: 50px;
+  }
+
+  .overview-button.hero-button,
+  .junior-camp-button.hero-button,
+  .intermediate-camp-button.hero-button,
+  .senior-camp-button.hero-button {
+    width: 100%;
+  }
+
+  .container.toronto-copy {
+    padding-top: 130px;
+  }
+
+  .jumbotron {
+    height: 675px;
+  }
+
+  .jumbotron-two-col-dates {
+    height: 920px;
+  }
+
+  h1.display-4 {
+    font-size: 75px;
+  }
+
+  .lead {
+    font-size: 16pt;
+  }
+
+  .lead-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /*
+  img.white-arrow {
+    top: 113px !important;
+  }
+*/
+  .container.sub-nav.desktop {
+    display: none;
+  }
+
+  .blue-ribbon-2-col {
+    margin: 0 0 0 345px;
+  }
+
+  .embed-responsive.embed-responsive-16by9,
+  .container.overview,
+  .bgimagecampus {
+    margin-top: 90px;
+  }
+
+  .jumbotron-two-col-location {
+    height: 750px;
+  }
+
+  .jumbotron-two-col-accomodation {
+    height: 1025px;
+  }
+
+  .col.accomodations-video {
+    margin-bottom: 60px;
+  }
+
+  .transportation-info {
+    margin-top: 20px;
+  }
+
+  img.facebook {
+    margin: 0px 12px 0 0;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width:767px) and (min-width:576px) {
+  body {
+    background: orange;
+  }
+
+  .container.tabs.desktop,
+  img.black-arrow,
+  img.white-arrow,
+  #myHeader.headerSticky,
+  .jumbotron-two-col-location-dates {
+    display: none !important;
+  }
+
+  .jumbotron {
+    height: 950px;
+  }
+
+  .container.tabs.mobile {
+    margin-top: -10px;
+  }
+
+  .container.overview,
+  .embed-responsive.embed-responsive-16by9 {
+    margin-top: 30px !important;
+  }
+
+  .jumbotron-two-col-dates {
+    margin-top: 1px;
+    height: 920px;
+  }
+
+  .jumbotron-two-col-location {
+    height: 810px;
+  }
+
+  .jumbotron-two-col-accomodation {
+    height: 890px;
+  }
+
+  h2.ribbon-label-location {
+    margin-top: 4px;
+  }
+
+  .location-info {
+    margin-top: 40px;
+  }
+
+  p.tab-1,
+  p.tab-2,
+  p.tab-3,
+  p.tab-4 {
+    margin-top: 0px;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .container.toronto-school-mobile {
+    max-width: 0px;
+  }
+
+  .transportation-info {
+    margin-top: 20px;
+  }
+
+  .col-sm-4.foot-left,
+  .col-sm-4.foot-right {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    flex: 0 0 100% !important;
+    padding: 40px 0;
+  }
+
+  .col-sm-4 {
+    flex: none;
+    max-width: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .col-sm-8.foot-right,
+  .col-sm-8.foot-right-bottom {
+    float: none;
+    flex-basis: 100%;
+    max-width: 100%;
+    padding-top: 0px;
+  }
+
+  img.facebook {
+    margin: 0 20px 0 0;
+  }
+}
+
+/* Teeny Tiny devices (landscape phones, 576px and up) */
+@media (max-width:575px) and (min-width:3px) {
+  body {
+    background: green;
+  }
+
+  h2.ribbon-label-location {
+    margin-top: 4px;
+  }
+
+  article {
+    padding-top: 16%;
+  }
+
+  span.age-group {
+    height: 30px;
+  }
+
+  /*
+  .blue-ribbon-location {
+    width: 1360px;
+  }
+*/
+  .container.tabs.desktop,
+  .container.tabs.tablet,
+  img.black-arrow,
+  img.white-arrow,
+  #myHeader.headerSticky,
+  .container.tabs.desktop,
+  .jumbotron-two-col-location-dates {
+    display: none !important;
+  }
+
+  .overview-button.hero-button {
+    height: 90px;
+    -webkit-text-size-adjust: none;
+    mso-hide: all;
+    padding-left: 20px;
+  }
+
+  .container.tabs.mobile {
+    margin-top: -10px;
+  }
+
+  .container.meals,
+  .transportation-info {
+    margin-top: 60px;
+  }
+
+  p.tab-1, p.tab-2, p.tab-3, p.tab-4 {
+    margin-top: 0px;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .container.tabs.mobile,
+  .container.overview,
+  .embed-responsive.embed-responsive-16by9,
+  .bgimage {
+    margin-top: 30px !important;
+  }
+
+  .container.toronto-copy {
+    padding-top: 185px;
+  }
+
+  .location-info {
+    padding-top: 30px;
+  }
+
+  .jumbotron {
+    height: 880px;
+  }
+
+  .jumbotron-two-col-location {
+    height: 970px;
+  }
+
+  .jumbotron-two-col-dates {
+    margin-top: 1px;
+    height: 1060px;
+  }
+
+  .jumbotron-two-col-accomodation {
+    height: 900px;
+  }
+
+  .col-sm-8.foot-right {
+    padding: 0 60px 50px 60px;
+  }
+
+  .transportation-info {
+    margin-top: 20px;
+  }
+
+  .col-sm-4.foot-left,
+  .col-sm-8.foot-right {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .col-sm-4.foot-left-bottom {
+    text-align: center;
+  }
+
+  img.facebook {
+    margin: 0 20px 0 0;
+  }
+}

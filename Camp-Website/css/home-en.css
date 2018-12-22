@@ -6,10 +6,10 @@ a {
   text-decoration: none !important;
 }
 
-header {
+header, .jumbotron.our-camps {
   position: relative;
   background-color: black;
-  height: 75vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -52,17 +52,22 @@ header .container {
 
 img.our-camps {
   border-radius: 50%;
-  width: 75%;
+  width: 60%;
+  border: 5px white solid;
+  margin-bottom: 30px;
 }
 
 .row.cities {
   margin-top: 60px;
 }
 
+.container.our-camps-copy {
+  padding-top: 100px;
+}
+
 h2 {
   font-family: "Open Sans", sans-serif;
   color: white;
-  font-size: 25pt;
   font-weight: 500;
 }
 
@@ -118,6 +123,7 @@ p.white {
   color: #009de0;
 }
 
+h3.white,
 p.white,
 a.white,
 strong.white {
@@ -130,19 +136,20 @@ strong.white {
   margin: 10px;
 }
 
-.lead-text {
-  color: white;
-  font-size: 17pt;
-  line-height: 28px;
+.container.header-copy,
+.container.our-camps-copy {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+text-align: center;
 }
 
-.container.home-copy {
-  padding-top: 180px;
-  text-align: center;
-}
 
 img.down-arrow-home {
-  margin-top: 240px;
+padding-top: 30%;
 }
 
 .container.overview,
