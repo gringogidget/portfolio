@@ -6,9 +6,48 @@ a {
   text-decoration: none !important;
 }
 
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+
 .jumbotron-video {
   position: relative;
-  z-index:-101;
+  z-index: -101;
 }
 
 img.our-camps {
@@ -18,10 +57,6 @@ img.our-camps {
 
 .row.cities {
   margin-top: 60px;
-}
-
-h4.panel-title {
-  margin: 20px 0;
 }
 
 h2 {
@@ -65,21 +100,6 @@ p.white {
   padding: 0px;
 }
 
-.jumbotron-two-col-location-dates {
-  background-size: cover !important;
-  text-align: center;
-  margin-top: 70px;
-  height: 1000px;
-  border-radius: 0px;
-  background-position: center;
-  padding: 0px;
-}
-
-.col.location-type, .col.dates-list {
-  margin-top: 110px;
-  padding-left: 0px;
-}
-
 @font-face {
   font-family: "King-Basil-Lite";
   font-style: normal;
@@ -118,6 +138,7 @@ strong.white {
 
 .container.home-copy {
   padding-top: 180px;
+  text-align: center;
 }
 
 img.down-arrow-home {
@@ -134,59 +155,6 @@ p.lead.cta-preheader,
   margin-top: 90px !important;
 }
 
-.table-wrapper {
-  text-align: left;
-}
-
-table.tg {
-  display: inline-block;
-  position: absolute;
-  color: white;
-  width: 100%;
-}
-
-.tg {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.tg td {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  padding: 0 25px 0 10px;
-  border-style: unset;
-  border-width: 1px;
-  overflow: hidden;
-  word-break: normal;
-  border-color: black;
-}
-
-td.tg-0lax-space {
-  padding: 5px 0;
-  width: 25%;
-}
-
-.tg .tg-0lax {
-  text-align: left;
-  vertical-align: top
-}
-
-td.tg-0lax {
-  font-family: "Open Sans";
-  font-size: 15px;
-  font-weight: 400;
-}
-
-.blue-ribbon {
-  height: 60px;
-  width: 1500px;
-  background-color: #009de0;
-  margin: 0 0 0 -1274px;
-  padding: 0 0 0 0;
-  border-radius: 7px;
-  position: absolute;
-}
-
 .blue-ribbon-accomodations,
 .blue-ribbon-location {
   height: 60px;
@@ -195,40 +163,6 @@ td.tg-0lax {
   margin: 0 0 0 -1175px;
   padding: 0 0 0 0;
   border-radius: 7px;
-  position: absolute;
-}
-
-.blue-ribbon-dates {
-  height: 60px;
-  width: 1320px;
-  background-color: #009de0;
-  margin: 0 0 0 -1175px;
-  padding: 0 0 0 0;
-  border-radius: 7px;
-  position: absolute;
-}
-
-.blue-ribbon-2-col {
-  height: 60px;
-  width: 234px;
-  background-color: #009de0;
-  margin: 0 0 0 556px;
-  padding: 0 0 0 0;
-  border-radius: 7px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 0;
-  position: absolute;
-}
-
-.ribbon-label,
-.ribbon-label-dates {
-  color: white;
-  font-size: 30pt;
-  text-decoration: bold;
-  padding: 1px 0 0 0;
-  font-weight: 500;
   position: absolute;
 }
 
