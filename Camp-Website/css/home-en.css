@@ -118,7 +118,7 @@ h1 {
 }
 
 h1.text-header.white {
-      margin-top: 60px;
+  margin-top: 60px;
 }
 
 h1.white,
@@ -131,14 +131,18 @@ strong.white {
   color: #ffffff !important;
 }
 
-
 h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
+  font-size: 2rem;
 }
 
 h2.white.text-together {
   margin-right: 20px;
+}
+
+h3 {
+  font-size: 1.45rem;
 }
 
 .container.header-copy,
@@ -159,7 +163,7 @@ button.btn.btn-outline-light.btn-lg {
 }
 
 img.down-arrow-home {
-  padding-top: 30%;
+  padding-top: 20%;
 }
 
 img.facebook, img.youtube {

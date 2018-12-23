@@ -1,40 +1,87 @@
-/* Extra large devices (large desktops, 1200px and up) ************************/
-@media (max-width:4000px) and (min-width:1200px) {
-  .testing-spacer {
-    color: lightblue !important;
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  body {
+    background: red;
   }
 
-/* Large devices (desktops, 992px and up) *************************************/
-@media (max-width:1199px) and (min-width:992px) {
-  .testing-spacer {
-    color: pink !important;
+  header {
+        height: 60vh !important;
+  }
+
+  .container.our-camps-copy {
+padding-top: 0 !important;
+  }
+
+  .jumbotron.why-choose {
+        height: 108vh !important;
+  }
+
+  .jumbotron.interested {
+        height: 46vh !important;
+  }
+
+  img.our-camps {
+    width: 30% !important;
+  }
+
+  h1.text-header.white {
+    font-size: 4rem !important;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p.white.our-camps {
+    display: inline-block !important;
+    padding: 0 10px 30px 0;
+  }
+
+  img.next-icon {
+    display: none;
   }
 }
 
-/* Medium devices (tablets, 768px and up) *************************************/
-@media (max-width:991px) and (min-width:768px) {
-  .testing-spacer {
-    color: lightyellow !important;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    background: green;
+  }
+
+  img.next-icon-mobile {
+    display: none;
   }
 }
 
-/* Small devices (landscape phones, 576px and up) *****************************/
-@media (max-width:767px) and (min-width:576px) {
-  .testing-spacer {
-    color: orange !important;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    background: yellow;
+  }
+
+  img.next-icon-mobile {
+    display: none;
   }
 }
 
-/* Teeny Tiny devices (landscape phones, 576px and up) */
-@media (max-width:575px) and (min-width:3px) {
-  .testing-spacer {
-    color: green !important;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    background: orange;
   }
 
-  h1.display-4 {
-        font-size: 80px;
+  img.next-icon-mobile {
+    display: none;
   }
-
 }
 
-/* is this uploading ? */
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    background: pink;
+  }
+
+  img.next-icon-mobile {
+    display: none;
+  }
+}
