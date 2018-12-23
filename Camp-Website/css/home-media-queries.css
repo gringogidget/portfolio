@@ -1,33 +1,40 @@
 /* Extra large devices (large desktops, 1200px and up) ************************/
 @media (max-width:4000px) and (min-width:1200px) {
-  body {
-    background: lightblue;
+  .testing-spacer {
+    color: lightblue !important;
   }
 
 /* Large devices (desktops, 992px and up) *************************************/
 @media (max-width:1199px) and (min-width:992px) {
-  body {
-    background: pink;
+  .testing-spacer {
+    color: pink !important;
   }
 }
 
 /* Medium devices (tablets, 768px and up) *************************************/
 @media (max-width:991px) and (min-width:768px) {
-  body {
-    background: lightyellow;
+  .testing-spacer {
+    color: lightyellow !important;
   }
 }
 
 /* Small devices (landscape phones, 576px and up) *****************************/
 @media (max-width:767px) and (min-width:576px) {
-  body {
-    background: orange;
+  .testing-spacer {
+    color: orange !important;
   }
 }
 
 /* Teeny Tiny devices (landscape phones, 576px and up) */
 @media (max-width:575px) and (min-width:3px) {
-  body {
-    background: green;
+  .testing-spacer {
+    color: green !important;
   }
+
+  h1.display-4 {
+        font-size: 80px;
+  }
+
 }
+
+/* is this uploading ? */

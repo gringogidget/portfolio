@@ -8,7 +8,8 @@ a {
 
 header,
 .jumbotron.our-camps,
-.jumbotron.why-choose {
+.jumbotron.why-choose,
+.jumbotron.interested {
   position: relative;
   background-color: black;
   height: 100vh;
@@ -65,9 +66,10 @@ img.our-camps {
   margin-top: 60px;
 }
 
-.col.why-choose-tile {
+.col-md.why-choose-tile {
   background-color: #00000082;
   padding: 20px;
+  margin: 10px;
 }
 
 .container.why-choose-copy,
@@ -99,20 +101,6 @@ h3.white.why-choose {
   margin-bottom: 0px;
 }
 
-/*
-.jumbotron-two-col-accomodation,
-.jumbotron-two-col-location,
-.jumbotron-two-col-dates {
-  background-size: cover !important;
-  text-align: center;
-  margin-top: 70px;
-  height: 600px;
-  border-radius: 0px;
-  background-position: center;
-  padding: 0px;
-}
-
-*/
 @font-face {
   font-family: "King-Basil-Lite";
   font-style: normal;
@@ -120,17 +108,20 @@ h3.white.why-choose {
   src: url("../fonts/King-Basil-Lite.woff");
 }
 
-.display-4 {
-  margin-top: 60px;
-  color: white;
-  font-family: King-Basil-Lite;
-  font-size: 100px;
-}
-
 .blue {
   color: #009de0;
 }
 
+h1 {
+  font-size: 6rem !important;
+  font-family: King-Basil-Lite;
+}
+
+h1.text-header.white {
+      margin-top: 60px;
+}
+
+h1.white,
 h2.white,
 h3.white,
 h4.white,
@@ -139,6 +130,7 @@ a.white,
 strong.white {
   color: #ffffff !important;
 }
+
 
 h2 {
   font-family: "Open Sans", sans-serif;
@@ -151,7 +143,8 @@ h2.white.text-together {
 
 .container.header-copy,
 .container.our-camps-copy,
-.container.why-choose-copy {
+.container.why-choose-copy,
+.container.interested-copy {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -159,6 +152,10 @@ h2.white.text-together {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+button.btn.btn-outline-light.btn-lg {
+  margin-top: 60px;
 }
 
 img.down-arrow-home {
