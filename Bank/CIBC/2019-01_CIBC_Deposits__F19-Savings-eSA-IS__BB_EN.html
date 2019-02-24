@@ -80,24 +80,42 @@
     .mobile-show {
       display: none;
     }
+    .mbl-only {
+      display:none;
+      mso-hide: all;
+    }
 
 
     table.container.three-column {
       width: 640px !important;
       max-width: 640px !important;
-    }
-
-
-
-    @media screen and (max-width: 639px) {
-
-
-      /*
-.rating2 {
-width: 90% !important;
-max-width: none !important;
 }
-*/
+
+
+@media screen and (min-width: 639px) {
+table.container.mobile-family {
+
+display: none!important; /* Generic*/
+max-height:0!important; /* Gmail*/
+mso-hide:all!important; /* Outlook clients*/
+overflow:hidden!important; /* Generic */
+visibility: hidden!important; /* Generic */
+
+}
+}
+
+
+@media screen and (max-width: 639px) {
+
+table.container.family {
+
+display: none!important; /* Generic*/
+max-height:0!important; /* Gmail*/
+mso-hide:all!important; /* Outlook clients*/
+overflow:hidden!important; /* Generic */
+visibility: hidden!important; /* Generic */
+}
+
 td.two-column-small-img {
 padding: 0 20% !important;
 }
@@ -116,7 +134,7 @@ img.img-padding-mobile {
       }
 
       td.col.plus {
-        padding-top: 26px !important;
+        padding-top: 18px !important;
       }
 
       table.container.three-column {
@@ -409,6 +427,16 @@ padding-right:20px!important;
 
     }
 
+    /* iPhone 6/7/8 plus */
+        @media screen and (max-width: 414px) {
+          table.container.family {
+            display: none;
+          }
+
+        }
+
+
+
     @media screen and (max-width: 400px) {
       .desktop-extra-padding {
         padding-left: 50px;
@@ -430,6 +458,8 @@ padding-right:20px!important;
         max-width: 92% !important;
       }
 
+
+
       /*
 td.two-column-small-img {
 padding: 0 180px !important;
@@ -444,32 +474,6 @@ padding: 0 180px !important;
     }
 
     /* RATING BLOCK STYLES */
-
-
-    /*
-
-@media screen and (max-width: 425px) {
-.rating2 {
-width: 90% !important;
-max-width: none !important;
-}
-
-td.two-column-small-img {
-padding: 0 180px !important;
-}
-
-.img-padding-mobile {
-padding-bottom: 20px !important;
-}
-
-h1 {
-padding: 0 155px !important;
-}
-
-.center-mobile {
-text-align: center !important;
-}
-*/
 
 
     }
@@ -502,6 +506,32 @@ text-align: center !important;
       }
 
     }
+
+
+
+    /* IMAGE SWAPPING STYLES */
+     .mbl-only {
+         display: none;
+         mso-hide: all;
+     }
+    @media screen and (max-width: 599px) {
+       .mbl-only, div[class=mbl-only]{
+             display: block !important;
+             max-height: none !important;
+         }
+         .mbl-only img {
+             display: block !important;
+             border: 0 !important;
+         }
+         .mbl-hide {
+           display: none !important;
+           font-size: 0;
+           max-height: 0;
+           line-height: 0;
+           padding: 0;
+           mso-hide: all;
+         }
+     }
   </style>
 
   <!--[if gte mso 9]><xml>
@@ -539,7 +569,8 @@ sup {font-size:100%!important;}
                 <table border="0" cellpadding="0" cellspacing="0" align="left" class="force-row mobile-height pre-header-copy" style="width:430px;">
                   <tr>
                     <td class="mbl-center" style="font-family:'Trebuchet MS',arial,sans-serif;color:#787878;text-align:left;font-size:12px;line-height:16px;">
-                      Earn more by contributing to your CIBC eAdvantage<sup>&reg;</sup> Savings Account.
+Earn more by contributing to your CIBC eAdvantage<sup style="line-height:0.7em;font-weight:normal;">&reg;</sup> Savings Account.
+
                     </td>
                   </tr>
                 </table>
@@ -575,50 +606,92 @@ sup {font-size:100%!important;}
           </table>
           <!-- ******* END LOGO ******* -->
 
-          <!-- ******* BEGINNING HEADER TOP COPY + NO CTA | BOTTOM IMG ******* -->
-          <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;background-color: #ececec;">
-            <tr>
-              <td class="container-padding-top" style="padding:0;margin:0;padding-top: 30px;padding-left: 30px; padding-right: 30px;background-color: #ececec;">
-                <img name="Cont_3" src="http://contentz.mkt7543.com/lp/26049/394639/header_family.png" width="580" alt="Happy family cooking together" style="width:100%;max-width:580px;height:auto;display:block;margin:0px;" />
-              </td>
-            </tr>
-          </table>
-          <!-- ******* END HEADER TOP COPY + NO CTA | BOTTOM IMG ******* -->
-
-          <!-- ******* BEGINNING ONE COLUMN BODY COPY ******* -->
-          <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;background-color: #ececec;">
-            <tr>
-              <td class="container-padding one-column" style="padding-top:0;padding-bottom:0;padding-left: 30px;padding-right: 30px;background-color: #ececec;">
-                <table width="100%" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;background-color:#ffffff;">
-                  <tr>
-                    <td class="body-text" style="padding-top:20px;padding-bottom:20px;padding-right:40px;padding-left:40px;width:100%;text-align:left;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #404040; font-size: 16px;">
-                      <p class="h1" style="Margin:0;font-size:28px; line-height: 32px; font-weight:bold; color:#d40139;Margin-bottom:5px;">Grow your savings faster.</p>
-
-                      <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;font-weight: bold;">
-                        Let us help you maximize your savings with bonus interest between now and October 31, 2019.
-                      </p>
 
 
-                      <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;">Hi %%pers_first_name%%,</p>
 
-                      <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;">
-                        Take advantage of an exclusive offer that will help you further secure your financial future. Simply make a new deposit before April 30, 2019 and you’ll also qualify for the second bonus interest offer that runs until October 31, 2019.</p>
 
-                      <p style="font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:0px;">
-                        Add to your <strong>CIBC eAdvantage<sup>&reg;</sup> Savings Account</strong> and get:</p>
 
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <!-- ******* END ONE COLUMN BODY COPY ******* -->
+
+
+
+
+                    <!-- ******* BEGINNING HEADER TOP COPY + NO CTA | BOTTOM IMG ******* -->
+                    <!-- <table border="0" width="640" cellpadding="0" cellspacing="0" class="container family" style="width:640px;max-width:640px;background-color: #ececec;">
+                      <tr>
+                        <td class="container-padding-top" style="padding:0;margin:0;padding-top: 30px;padding-left: 30px; padding-right: 30px;background-color: #ececec;">
+                          <img name="Cont_3" src="http://contentz.mkt7543.com/lp/26049/394639/header_family.png" width="580" alt="Happy family cooking together" style="width:100%;max-width:580px;height:auto;display:block;margin:0px;" />
+                        </td>
+                      </tr>
+                    </table> -->
+                    <!-- ******* END HEADER TOP COPY + NO CTA | BOTTOM IMG ******* -->
+
+
+                    <!-- ******* BEGINNING HEADER TOP COPY + NO CTA | BOTTOM IMG MOBILE******* -->
+                    <!-- <table border="0" width="640" cellpadding="0" cellspacing="0" class="container mobile-family" style="width:640px;max-width:640px;background-color: #ececec;">
+                      <tr>
+                        <td class="container-padding-top" style="padding:0;margin:0;padding-top: 30px;padding-left: 30px; padding-right: 30px;background-color: #ececec;">
+                          <img name="Cont_3" src="http://contentz.mkt7543.com/lp/26049/394639/header_family_mobile.png" width="580" alt="Happy family cooking together" style="width:100%;max-width:580px;height:auto;display:block;margin:0px;" />
+                        </td>
+                      </tr>
+                    </table> -->
+                    <!-- ******* END HEADER TOP COPY + NO CTA | BOTTOM IMG MOBILE******* -->
+
+                    <!-- ******* BEGINNING ONE COLUMN BODY COPY ******* -->
+
+
+
+                   <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;background-color: #ececec;">
+                      <tr>
+                        <td class="container-padding-top" style="padding:0;margin:0;padding-top: 30px;padding-left: 30px; padding-right: 30px;background-color: #ececec;">
+
+                          <!-- MOBILE IMAGE -->
+                          <div class="mbl-only" style="mso-hide:all;display:none;max-height:0px;overflow:hidden;">
+                            <img  name="Cont_0" src="http://contentz.mkt7543.com/lp/26049/394639/header_family_mobile.png" alt="Happy family cooking together" style="width:100%!important;height:auto;display:block;">
+                          </div>
+                          <!-- DESKTOP IMAGE -->
+                          <div class="mbl-hide">
+                             <img  name="Cont_1" src="http://contentz.mkt7543.com/lp/26049/394639/header_family.png" width="580" alt="Happy family cooking together" alt="Happy family cooking together" width="580" style="width:100%!important;height:auto;display:block;">
+                          </div>
+                          <!-- END IMAGE SWAP CODE -->
+
+                        </td>
+                      </tr>
+                    </table>
+                    <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;background-color: #ececec;">
+                      <tr>
+                        <td class="container-padding one-column" style="padding-top:0;padding-bottom:0;padding-left: 30px;padding-right: 30px;background-color: #ececec;">
+                          <table width="100%" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;background-color:#ffffff;">
+                            <tr>
+                              <td class="body-text" style="padding-top:20px;padding-bottom:0px;padding-right:40px;padding-left:40px;width:100%;text-align:left;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #404040; font-size: 16px;">
+                                <p class="h1" style="Margin:0;font-size:28px; line-height: 32px; font-weight:bold; color:#d40139;Margin-bottom:5px;">Grow your savings faster.</p>
+
+                                <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;font-weight: bold;">
+                                  Let us help you maximize your savings with bonus interest between now and October 31, 2019.
+                                </p>
+
+                                <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;">Hi %%pers_first_name%%,</p>
+
+                                <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;">
+                                  Take advantage of an exclusive offer that will help you further secure your financial future. Simply make a new deposit before April 30, 2019 and you’ll also qualify for the second bonus interest offer that runs until October
+                                  31, 2019.</p>
+
+                                <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:0px;">
+                                  Add to your <strong>CIBC eAdvantage<sup style="line-height:0.7em;">&reg;</sup> Savings Account</strong> and get:
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- ******* END ONE COLUMN BODY COPY ******* -->
+
+
+
 
 
 
           <!-- ******* BEGINNING THREE COLUMN BODY COPY ******* -->
-          <table border="0" width="640" cellpadding="0" cellspacing="0" class="container three-column" style="background-color: #ececec;">
+          <table border="0" width="640" cellpadding="0" cellspacing="0" class="container three-column" style="background-color: white;">
             <tbody>
               <tr>
                 <td class="container-padding one-column" style="padding-top:0;padding-bottom:0;padding-left: 30px;padding-right: 30px;background-color: #ececec;">
@@ -627,8 +700,8 @@ sup {font-size:100%!important;}
                       <tr>
                         <td class="three-column body-text" style="padding-right:40px;padding-left:40px;text-align:center;font-size:0;padding-top:20px;padding-bottom:20px;">
                           <!--[if mso]>
-<table border="0" width="480" cellpadding="0" cellspacing="0" style="width:480px;">
-<tr><td width="160" style="width:160px;" valign="top"><![endif]-->
+                          <table border="0" width="480" cellpadding="0" cellspacing="0" style="width:480px;">
+                          <tr><td width="160" style="width:160px;" valign="top"><![endif]-->
                           <table width="160" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width:225px; background-color: #f5f5f5;">
                             <tbody>
                               <tr>
@@ -636,16 +709,13 @@ sup {font-size:100%!important;}
                                   <table align="center" class="contents" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:center;">
                                     <tbody>
                                       <tr>
-                                      </tr>
-                                      <tr>
                                         <td class="three-column-caption" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:0px;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:left;">
-                                          <h2 class="center-mobile" style="margin-top:0px;font-size: 20px;">3.00%<sup>*</sup> interest</h2>
-                                          <p class="center-mobile" style="font-size: 13px;"><strong>Until April 30, 2019</strong><br><br>
-                                            <em>On new deposits, when your account balance is $5,000 or more.<br><br></em>
-                                          </p>
+                                          <p class="center-mobile" style="Margin:0;margin-top:0px;font-size: 20px;line-height:20px;Margin-bottom:10px">3.00%* interest</p>
+                                          <p class="center-mobile" style="Margin:0;font-size: 12px;line-height:14px;Margin-bottom:10px"><strong>Until April 30, 2019</strong></p>
+                                           <p class="center-mobile" style="Margin:0;font-size: 12px;line-height:14px;Margin-bottom:10px">
+                                            <em><span style="font-size: 12px;">On new deposits, when your account balance is $5,000 or more.</span></em></p>
 
                                         </td>
-
                                       </tr>
                                     </tbody>
                                   </table>
@@ -653,7 +723,7 @@ sup {font-size:100%!important;}
                               </tr>
                             </tbody>
                           </table>
-                          <!--[if mso]></td><td width="192" style="width: 192px;" valign="top"><![endif]-->
+                          <!--[if mso]></td><td width="160" style="width: 160px;" valign="top"><![endif]-->
                           <table width="160" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width:50px;">
                             <tbody>
                               <tr>
@@ -665,16 +735,13 @@ sup {font-size:100%!important;}
                                           <img name="Cont_5" src="http://contentz.mkt7543.com/lp/26049/394639/plus-icon_0.png" width="30" alt="Plus sign" style="border-width:0;width:100%;max-width:30px !important;height:auto;display:block;margin-left:auto;margin-right:auto;">
                                         </td>
                                       </tr>
-                                      <tr>
-
-                                      </tr>
                                     </tbody>
                                   </table>
                                 </td>
                               </tr>
                             </tbody>
                           </table>
-                          <!--[if mso]></td><td width="192" style="width: 192px;" valign="top"><![endif]-->
+                          <!--[if mso]></td><td width="160" style="width: 160px;" valign="top"><![endif]-->
                           <table width="160" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width:225px; background-color: #f5f5f5;">
                             <tbody>
                               <tr>
@@ -682,17 +749,13 @@ sup {font-size:100%!important;}
                                   <table align="center" class="contents" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:center;">
                                     <tbody>
                                       <tr>
-                                      </tr>
-                                      <tr>
                                         <td class="three-column-caption" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:0px;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:left;">
-                                          <h2 class="center-mobile" style="margin-top:0px;font-size:20px;">2.40%<sup>*</sup> interest</h2>
-                                          <p class="center-mobile" style="font-size: 13px;"><strong>From May 1 to October 31, 2019</strong><br><br>
-                                            <em>On new deposits, when your account balance is $5,000 or more.<br><br></em>
-                                          </p>
+                                          <p class="center-mobile" style="Margin:0;margin-top:0px;font-size:20px;line-height:20px;Margin-bottom:10px">2.40%* interest</p>
+                                          <p class="center-mobile" style="Margin:0;font-size: 12px;line-height:14px;Margin-bottom:10px"><strong>From May 1 to October 31, 2019</strong></p>
+                                            <p class="center-mobile" style="Margin:0;font-size: 12px;line-height:14px;Margin-bottom:10px"><em><span style="font-size: 12px;">On new deposits, when your account balance is $5,000 or more.</span></em></p>
+
                                         </td>
                                       </tr>
-
-
                                     </tbody>
                                   </table>
                                 </td>
@@ -702,65 +765,28 @@ sup {font-size:100%!important;}
                           <!--[if mso]></td></tr></table><![endif]-->
                         </td>
                       </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- ******* END THREE COLUMN BODY COPY ******* -->
-
-
-
-
-
-
-          <!-- ******* BEGIN ONE COLUMN BODY COPY ******* -->
-          <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;background-color: #ececec; ">
-            <tbody>
-              <tr>
-                <td class="container-padding one-column" style="padding-top:0;padding-bottom:0;padding-left: 30px;padding-right: 30px;background-color: #ececec;">
-                  <table width="100%" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;background-color:#ffffff;">
-                    <tbody>
                       <tr>
-                        <td class="body-text" style="padding-top:20px;padding-bottom:20px;padding-right:40px;padding-left:40px;width:100%;text-align:left;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #404040; font-size: 16px;">
-
+                        <td class="body-text" style="padding-top:10px;padding-bottom:20px;padding-right:40px;padding-left:40px;width:100%;text-align:left;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #404040; font-size: 16px;">
                           <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;">
                             No matter what it is you’re saving for, this special bonus interest offer will help you achieve your goals sooner.</p>
-
-
                           <p align="center" class="body-cta" style="Margin:0;Margin-bottom:35px;">
-                            <a style="text-decoration: none;" href="https://www.cibc.com/en/personal-banking/bank-accounts/savings-accounts/eadvantage-high-interest-savings-account.html?utrc=E289:1&utm_medium=Email&utm_campaign=F19-eSA-Bonus-+-Retention-Offer---IS-Version&"
+                            <a style="text-decoration: none;" href="https://www.cibc.com/en/personal-banking/bank-accounts/savings-accounts/eadvantage-high-interest-savings-account.html?utrc=E289:3&utm_medium=Email&utm_campaign=F19-eSA-Bonus-+-Retention-Offer---IS-Version&"
                               target="_blank" xt="SPCLICK" name="Get started">
                               <img name="Cont_2" src="http://contentz.mkt7543.com/lp/26049/394639/contribute-now.png" width="171" height="41" alt="Contribute now" style="outline:none;border:none;">
                             </a>
                           </p>
                         </td>
                       </tr>
-                      <td height="30" style="font-size: 30px; line-height: 30px; background:#ececec;">&nbsp;</td>
                     </tbody>
                   </table>
                 </td>
-
-
               </tr>
             </tbody>
+            <tr>
+              <td height="30" style="font-size: 30px; line-height: 1em;background: #ececec;">&nbsp;</td>
+            </tr>
           </table>
-
-          <!-- ******* END ONE COLUMN BODY COPY ******* -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <!-- ******* END THREE COLUMN BODY COPY ******* -->
 
 
 
@@ -770,7 +796,7 @@ sup {font-size:100%!important;}
 
 
           <!-- BEGINNING LOGO-->
-          <table class="container" style="width:480px;max-width:480px;background-color:#ffffff;" width="640" cellspacing="0" cellpadding="0" border="0">
+          <table class="container" style="width:640px;max-width:640px;background-color:#ffffff;" width="640" cellspacing="0" cellpadding="0" border="0">
             <tr>
               <td class="content" style="padding-top:30px;background-color:#ffffff;" align="right">
                 <img name="Cont_0" src="http://contentz.mkt7543.com/lp/26049/340039/is-onboarding-welcome-cibc-logo-en.png" alt="CIBC logo" style="outline:none;border:none;display:block;height: auto;" width="108">
@@ -779,8 +805,9 @@ sup {font-size:100%!important;}
             <!-- Beginning Fix for Nexus -->
             <!--[if !mso 9]><!-->
             <tr>
+              <!-- kristina changed border 0 to white -->
               <td class="hide" style="width:100%;mso-hide: all;background-color:#ffffff;">
-                <img class="hide" name="Cont_7" src="http://contentz.mkt7543.com/lp/26049/340039/spacer-640.png" style="width:100%; max-width:640px;height:1px;display:block;mso-hide: all;background-color:#000;border: 0px solid #000000;" alt="" width="640"
+                <img class="hide" name="Cont_7" src="http://contentz.mkt7543.com/lp/26049/340039/spacer-640.png" style="width:100%; max-width:640px;height:1px;display:block;mso-hide: all;background-color: white;border: 0px solid white;" alt="" width="640"
                   height="1">
               </td>
             </tr>
@@ -844,15 +871,7 @@ sup {font-size:100%!important;}
                               <br><strong>Very<br>helpful</strong></a>
                           </td>
                         </tr>
-                        <!-- Beginning Fix for Nexus -->
-                        <!--[if !mso 9]><!-->
-                        <tr>
-                          <td class="hide" colspan="5" style="width:100%;mso-hide: all;">
-                            <img class="hide" width="640" height="1" style="width:100%; max-width:640px;height:1px;display:block;mso-hide: all;" name="Cont_7" src="http://contentz.mkt7543.com/lp/26049/340039/spacer-640.png" alt="">
-                          </td>
-                        </tr>
-                        <!--<![endif]-->
-                        <!-- End Fix for Nexus -->
+
                       </table>
                     </td>
                   </tr>
@@ -902,28 +921,19 @@ sup {font-size:100%!important;}
               <td class="container-padding legal" style="padding-right:40px;padding-bottom:30px;padding-left:40px;">
                 <table style="width:100%;">
                   <tr>
-                    <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;">
-                      <sup style="line-height:0.9em; font-size:16px;">&#42;</sup>
+                    <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:right;color:#000000;font-weight:normal;">
+                      *
                     </td>
                     <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;padding-bottom:13px;">
-                      Combined bonus and regular annual interest rate paid on net new deposits into
-                      a CIBC eAdvantage&reg; Savings Account (“Account”). Bonus and/or regular rates may
-                      change at any time without notice. Interest rates are calculated daily and paid
-                      monthly; bonus interest is earned only on the first &#36;5,000,000 of new balances.
-                      Regular interest is earned when the account’s closing balance is $5,000 or more.
-                      If you open an Account between February 8, 2019 and April 30, 2019, your
-                      deposits will continue to earn a combined bonus and regular interest rate of
-                      2.40&#37; (the “Extended Bonus Rate Offer”) from May 1, 2019 until October 31, 2019.
-                      Regular interest and bonus interest will continue to be calculated in the manner
-                      set out above. If you did not open an Account between February 8, 2019 and April
-                      30, 2019 you will not be eligible for the Extended Bonus Rate Offer. <a href="http://contentz.mkt7543.com/lp/26049/393782/imgs/eAdvantage%C2%AE%20Savings%20Account%20Targeted%20+%20Extension%20Bonus%20Interest%20(Balance%20Build)%20-%20Terms%20and%20Conditions_EN.pdf">Other
-                        conditions apply</a>.
-                      <link to full terms>
+
+
+Combined bonus and regular annual interest rate paid on net new deposits made to a CIBC eAdvantage<sup style="line-height:0.7em;font-weight:normal;">&reg;</sup> Savings Account. Bonus and/or regular rates may change at any time without notice. Interest rates are calculated daily and paid monthly; bonus interest is earned only on the first $5,000,000 of new balances and only on days when net new deposits exceed the closing balance as of October 15, 2018. Regular interest is earned when the account’s closing balance is $5,000 or more. Any new deposits that you make that exceed the October 15, 2018 closing balance will earn a combined bonus and regular interest rate of 3.00% between February 8, 2019 and April 30, 2019. You will continue to earn a combined bonus and regular interest rate of 2.40% from May 1 to October 31, 2019. Regular interest and bonus interest will continue to be calculated in the manner set out above
+<a href="http://contentz.mkt7543.com/lp/26049/393782/imgs/eAdvantage%C2%AE%20Savings%20Account%20Targeted%20+%20Extension%20Bonus%20Interest%20(Balance%20Build)%20-%20Terms%20and%20Conditions_EN.pdf" target="_blank" style="color:#d40139;text-decoration:underline;">Other conditions apply</a>.
                     </td>
                   </tr>
                   <tr>
                     <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;">
-                      <sup style="line-height:0.9em;">&reg;</sup>
+                      <sup style="line-height:0.7em;">&reg;</sup>
                     </td>
                     <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;padding-bottom:13px;">
                       Registered trademark of CIBC. CIBC Cube Design is a trademark of CIBC.
@@ -932,7 +942,6 @@ sup {font-size:100%!important;}
 
                   <tr>
                     <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;">
-                      <sup style="line-height:0.9em;"></sup>
                     </td>
 
                     <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;padding-bottom:13px;">
@@ -958,8 +967,8 @@ sup {font-size:100%!important;}
 
 
           <!--[if (gte mso 9)|(IE)]>
-</td></tr></table>
-<![endif]-->
+          </td></tr></table>
+          <![endif]-->
           <!--/600px container -->
         </div>
       </td>
