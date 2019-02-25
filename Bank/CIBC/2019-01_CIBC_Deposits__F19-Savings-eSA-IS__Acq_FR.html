@@ -11,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- enable media queries for windows phone 8 -->
   <meta name="x-apple-disable-message-reformatting" /> <!-- fixes email not full width ios gmail -->
 
-  <title>Constituez votre patrimoine grâce à un taux d’intérêt de 3,00 %</title>
+  <title>Constituez votre patrimoine grâce à un taux d’intérêt de 3,00 %</title>
 
   <style type="text/css">
     body {
@@ -80,24 +80,42 @@
     .mobile-show {
       display: none;
     }
+    .mbl-only {
+      display:none;
+      mso-hide: all;
+    }
 
 
     table.container.three-column {
       width: 640px !important;
       max-width: 640px !important;
-    }
-
-
-
-    @media screen and (max-width: 639px) {
-
-
-      /*
-.rating2 {
-width: 90% !important;
-max-width: none !important;
 }
-*/
+
+
+@media screen and (min-width: 639px) {
+table.container.mobile-family {
+
+display: none!important; /* Generic*/
+max-height:0!important; /* Gmail*/
+mso-hide:all!important; /* Outlook clients*/
+overflow:hidden!important; /* Generic */
+visibility: hidden!important; /* Generic */
+
+}
+}
+
+
+@media screen and (max-width: 639px) {
+
+table.container.family {
+
+display: none!important; /* Generic*/
+max-height:0!important; /* Gmail*/
+mso-hide:all!important; /* Outlook clients*/
+overflow:hidden!important; /* Generic */
+visibility: hidden!important; /* Generic */
+}
+
 td.two-column-small-img {
 padding: 0 20% !important;
 }
@@ -116,7 +134,7 @@ img.img-padding-mobile {
       }
 
       td.col.plus {
-        padding-top: 26px !important;
+        padding-top: 18px !important;
       }
 
       table.container.three-column {
@@ -409,6 +427,16 @@ padding-right:20px!important;
 
     }
 
+    /* iPhone 6/7/8 plus */
+        @media screen and (max-width: 414px) {
+          table.container.family {
+            display: none;
+          }
+
+        }
+
+
+
     @media screen and (max-width: 400px) {
       .desktop-extra-padding {
         padding-left: 50px;
@@ -430,6 +458,8 @@ padding-right:20px!important;
         max-width: 92% !important;
       }
 
+
+
       /*
 td.two-column-small-img {
 padding: 0 180px !important;
@@ -444,32 +474,6 @@ padding: 0 180px !important;
     }
 
     /* RATING BLOCK STYLES */
-
-
-    /*
-
-@media screen and (max-width: 425px) {
-.rating2 {
-width: 90% !important;
-max-width: none !important;
-}
-
-td.two-column-small-img {
-padding: 0 180px !important;
-}
-
-.img-padding-mobile {
-padding-bottom: 20px !important;
-}
-
-h1 {
-padding: 0 155px !important;
-}
-
-.center-mobile {
-text-align: center !important;
-}
-*/
 
 
     }
@@ -502,6 +506,32 @@ text-align: center !important;
       }
 
     }
+
+
+
+    /* IMAGE SWAPPING STYLES */
+     .mbl-only {
+         display: none;
+         mso-hide: all;
+     }
+    @media screen and (max-width: 599px) {
+       .mbl-only, div[class=mbl-only]{
+             display: block !important;
+             max-height: none !important;
+         }
+         .mbl-only img {
+             display: block !important;
+             border: 0 !important;
+         }
+         .mbl-hide {
+           display: none !important;
+           font-size: 0;
+           max-height: 0;
+           line-height: 0;
+           padding: 0;
+           mso-hide: all;
+         }
+     }
   </style>
 
   <!--[if gte mso 9]><xml>
@@ -539,7 +569,7 @@ sup {font-size:100%!important;}
                 <table border="0" cellpadding="0" cellspacing="0" align="left" class="force-row mobile-height pre-header-copy" style="width:430px;">
                   <tr>
                     <td class="mbl-center" style="font-family:'Trebuchet MS',arial,sans-serif;color:#787878;text-align:left;font-size:12px;line-height:16px;">
-                      Obtenez-en plus en ouvrant un Compte d’épargne cyberAvantage CIBC<sup style="line-height:0.9em;">MD</sup>
+                      Obtenez-en plus en ouvrant un Compte d’épargne cyberAvantage CIBC<sup style="line-height:0.7em;font-weight:normal;">MD</sup>.
                     </td>
                   </tr>
                 </table>
@@ -575,179 +605,132 @@ sup {font-size:100%!important;}
           </table>
           <!-- ******* END LOGO ******* -->
 
-          <!-- ******* BEGINNING HEADER TOP COPY + NO CTA | BOTTOM IMG ******* -->
-          <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;background-color: #ececec;">
-            <tr>
-              <td class="container-padding-top" style="padding:0;margin:0;padding-top: 30px;padding-left: 30px; padding-right: 30px;background-color: #ececec;">
-                <img name="Cont_3" src="http://contentz.mkt7543.com/lp/26049/394639/header_family.png" width="580" alt="Famille heureuse cuisine ensemble" style="width:100%;max-width:580px;height:auto;display:block;margin:0px;" />
-              </td>
-            </tr>
-          </table>
-          <!-- ******* END HEADER TOP COPY + NO CTA | BOTTOM IMG ******* -->
-
-          <!-- ******* BEGINNING ONE COLUMN BODY COPY ******* -->
-          <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;background-color: #ececec;">
-            <tr>
-              <td class="container-padding one-column" style="padding-top:0;padding-bottom:0;padding-left: 30px;padding-right: 30px;background-color: #ececec;">
-                <table width="100%" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;background-color:#ffffff;">
-                  <tr>
-                    <td class="body-text" style="padding-top:20px;padding-bottom:20px;padding-right:40px;padding-left:40px;width:100%;text-align:left;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #404040; font-size: 16px;">
-                      <p class="h1" style="Margin:0;font-size:28px; line-height: 32px; font-weight:bold; color:#d40139;Margin-bottom:5px;">Faites fructifier votre épargne plus rapidement.</p>
-
-                      <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;font-weight: bold;">
-                        Jusqu’au 31 octobre 2019, laissez-nous vous aider à maximiser votre épargne grâce à un boni d’intérêt.
-                      </p>
-
-                      <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;">Bonjour %%pers_first_name%%,</p>
-
-                      <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;">
-                        Profitez d’une offre exclusive qui vous aidera à assurer davantage votre avenir financier. Il vous suffit d’effectuer un nouveau dépôt avant le 30 avril 2019 pour être également admissible à la deuxième offre de boni d’intérêt, qui est en vigueur jusqu’au 31 octobre 2019.</p>
-
-                      <p style="font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:0px;">
-                        <strong>Ouvrez un Compte d’épargne cyberAvantage CIBC<sup style="line-height:0.9em;">MD </sup>et obtenez ce qui suit</strong> :
-
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <!-- ******* END ONE COLUMN BODY COPY ******* -->
 
 
-
-          <!-- ******* BEGINNING THREE COLUMN BODY COPY ******* -->
-          <table border="0" width="640" cellpadding="0" cellspacing="0" class="container three-column" style="background-color: #ececec;">
-            <tbody>
-              <tr>
-                <td class="container-padding one-column" style="padding-top:0;padding-bottom:0;padding-left: 30px;padding-right: 30px;background-color: #ececec;">
-                  <table width="100%" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;background-color:#ffffff;">
-                    <tbody>
+                   <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;background-color: #ececec;">
                       <tr>
-                        <td class="three-column body-text" style="padding-right:40px;padding-left:40px;text-align:center;font-size:0;padding-top:20px;padding-bottom:20px;">
-                          <!--[if mso]>
-<table border="0" width="480" cellpadding="0" cellspacing="0" style="width:480px;">
-<tr><td width="160" style="width:160px;" valign="top"><![endif]-->
-                          <table width="160" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width:225px; background-color: #f5f5f5;">
-                            <tbody>
-                              <tr>
-                                <td class="col" valign="top" style="padding-left:10px;padding-right:10px;padding-top:20px;padding-bottom:0px">
-                                  <table align="center" class="contents" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:center;">
-                                    <tbody>
-                                      <tr>
-                                      </tr>
-                                      <tr>
-                                        <td class="three-column-caption" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:0px;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:left;">
-                                          <h2 class="center-mobile" style="margin-top:0px;font-size: 18px;">Taux d’intérêt de 3,00 %<sup>*</sup></h2>
-                                          <p class="center-mobile" style="font-size: 13px;"><strong>Jusqu'au 30 avril 2019</strong><br><br>
-                                            <em>sur les nouveaux dépôts lorsque le solde de votre compte est de 5 000 $ ou plus.<br><br></em>
-                                          </p>
+                        <td class="container-padding-top" style="padding:0;margin:0;padding-top: 30px;padding-left: 30px; padding-right: 30px;background-color: #ececec;">
 
-                                        </td>
+                          <!-- MOBILE IMAGE -->
+                          <div class="mbl-only" style="mso-hide:all;display:none;max-height:0px;overflow:hidden;">
+                            <img  name="Cont_0" src="http://contentz.mkt7543.com/lp/26049/394639/header_family_mobile.png" alt="Famille heureuse cuisine ensemble" style="width:100%!important;height:auto;display:block;">
+                          </div>
+                          <!-- DESKTOP IMAGE -->
+                          <div class="mbl-hide">
+                             <img  name="Cont_1" src="http://contentz.mkt7543.com/lp/26049/394639/header_family.png" width="580" alt="Happy family cooking together" alt="Famille heureuse cuisine ensemble" width="580" style="width:100%!important;height:auto;display:block;">
+                          </div>
+                          <!-- END IMAGE SWAP CODE -->
 
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <!--[if mso]></td><td width="192" style="width: 192px;" valign="top"><![endif]-->
-                          <table width="160" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width:50px;">
-                            <tbody>
-                              <tr>
-                                <td class="col plus" valign="top" style="padding-left:10px;padding-right:10px;padding-top:56px;padding-bottom:0px">
-                                  <table align="center" class="contents" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:center;">
-                                    <tbody>
-                                      <tr>
-                                        <td style="padding-top:0;padding-bottom:15px;padding-right:0;padding-left:0;">
-                                          <img name="Cont_5" src="http://contentz.mkt7543.com/lp/26049/394639/plus-icon_0.png" width="30" alt="signe ajouter" style="border-width:0;width:100%;max-width:30px !important;height:auto;display:block;margin-left:auto;margin-right:auto;">
-                                        </td>
-                                      </tr>
-                                      <tr>
-
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <!--[if mso]></td><td width="192" style="width: 192px;" valign="top"><![endif]-->
-                          <table width="160" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width:225px; background-color: #f5f5f5;">
-                            <tbody>
-                              <tr>
-                                <td class="col" valign="top" style="padding-left:10px;padding-right:10px;padding-top:20px;padding-bottom:0px">
-                                  <table align="center" class="contents" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:center;">
-                                    <tbody>
-                                      <tr>
-                                      </tr>
-                                      <tr>
-                                        <td class="three-column-caption" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:0px;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:left;">
-                                            <h2 class="center-mobile" style="margin-top:0px;font-size: 18px;">Taux d’intérêt de 2,40 %<sup>*</sup></h2>
-                                          <p class="center-mobile" style="font-size: 13px;"><strong>Du 1<sup>er</sup> mai au 31 octobre 2019 </strong><br><br>
-                                            <em>sur les nouveaux dépôts lorsque le solde de votre compte est de 5 000 $ ou plus<br><br></em>
-                                          </p>
-                                        </td>
-                                      </tr>
-
-
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <!--[if mso]></td></tr></table><![endif]-->
                         </td>
                       </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- ******* END THREE COLUMN BODY COPY ******* -->
-
-
-
-
-
-
-          <!-- ******* BEGIN ONE COLUMN BODY COPY ******* -->
-          <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;background-color: #ececec; ">
-            <tbody>
-              <tr>
-                <td class="container-padding one-column" style="padding-top:0;padding-bottom:0;padding-left: 30px;padding-right: 30px;background-color: #ececec;">
-                  <table width="100%" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;background-color:#ffffff;">
-                    <tbody>
+                    </table>
+                    <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;background-color: #ececec;">
                       <tr>
-                        <td class="body-text" style="padding-top:20px;padding-bottom:20px;padding-right:40px;padding-left:40px;width:100%;text-align:left;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #404040; font-size: 16px;">
+                        <td class="container-padding one-column" style="padding-top:0;padding-bottom:30px;padding-left: 30px;padding-right: 30px;background-color: #ececec;">
+                          <table width="100%" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;background-color:#ffffff;">
+                            <tr>
+                              <td class="body-text" style="padding-top:20px;padding-bottom:0px;padding-right:40px;padding-left:40px;width:100%;text-align:left;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #404040; font-size: 16px;">
+                                <p class="h1" style="Margin:0;font-size:28px; line-height: 32px; font-weight:bold; color:#d40139;Margin-bottom:5px;">Faites fructifier votre épargne plus rapidement.</p>
 
-                          <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;">
-                          Quelle que soit votre raison d’épargner, cette offre spéciale de boni d’intérêt vous aidera à atteindre vos objectifs plus rapidement.</p>
+                                <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;font-weight: bold;">
+                                  Jusqu’au 31 octobre 2019, laissez-nous vous aider à maximiser votre épargne grâce à un boni d’intérêt.
+                                </p>
 
+                                <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;">Bonjour %%pers_first_name%%,</p>
 
-                          <p align="center" class="body-cta" style="Margin:0;Margin-bottom:35px;">
-                            <a style="text-decoration: none;" href="https://www.cibc.com/fr/personal-banking/bank-accounts/savings-accounts/eadvantage-high-interest-savings-account.html?utrc=E289:2&utm_medium=Email&utm_campaign=F19-eSA-Bonus-+-Retention-Offer---IS-Version&"
-                              target="_blank" xt="SPCLICK" name="Get started">
-                              <img name="Cont_2" src="http://contentz.mkt7543.com/lp/26049/394639/ouvrez-un-compte-maintenant.png" width="220" height="41" alt="Ouvrez un compte" style="outline:none;border:none;">
-                            </a>
-                          </p>
+                                <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;">
+                                  Profitez d’une offre exclusive qui vous aidera à assurer davantage votre avenir financier. Il vous suffit d’effectuer un nouveau dépôt avant le 30 avril 2019 pour être également admissible à la deuxième offre de boni d’intérêt, qui est en vigueur jusqu’au 31&nbsp;octobre 2019.</p>
+
+                                <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:0px;">
+                                  <strong>Ouvrez un Compte d’épargne cyberAvantage CIBC<sup style="line-height:0.7em;font-weight:normal;">MD</sup></strong> et obtenez ce qui&nbsp;suit&nbsp;:</p>
+
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="three-column body-text" style="padding-right:40px;padding-left:40px;text-align:center;font-size:0;padding-top:20px;padding-bottom:20px;">
+                                <!--[if mso]>
+                                <table border="0" width="480" cellpadding="0" cellspacing="0" style="width:480px;">
+                                <tr><td width="160" style="width:160px;" valign="top"><![endif]-->
+                                <table width="160" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width:225px; background-color: #f5f5f5;">
+                                  <tbody>
+                                    <tr>
+                                      <td class="col" valign="top" style="padding-left:10px;padding-right:10px;padding-top:20px;padding-bottom:0px">
+                                        <table align="center" class="contents" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:center;">
+                                          <tbody>
+                                            <tr>
+                                              <td class="three-column-caption" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:0px;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:left;">
+                                                <p class="center-mobile" style="Margin:0;margin-top:0px;font-size: 16px;line-height:16px;Margin-bottom:10px">Taux d’intérêt de 3,00&nbsp;%*</p>
+                                                <p class="center-mobile" style="Margin:0;font-size: 12px;line-height:14px;Margin-bottom:10px"><strong>Jusqu’au 30 avril 2019</strong></p>
+                                                 <p class="center-mobile" style="Margin:0;font-size: 12px;line-height:14px;Margin-bottom:10px">
+                                                  <em><span style="font-size: 12px;">sur les nouveaux dépôts lorsque le solde de votre compte est de 5&nbsp;000&nbsp;$ ou&nbsp;plus.</span></em></p>
+                                               
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <!--[if mso]></td><td width="160" style="width: 160px;" valign="top"><![endif]-->
+                                <table width="160" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width:50px;">
+                                  <tbody>
+                                    <tr>
+                                      <td class="col plus" valign="top" style="padding-left:10px;padding-right:10px;padding-top:56px;padding-bottom:0px">
+                                        <table align="center" class="contents" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:center;">
+                                          <tbody>
+                                            <tr>
+                                              <td style="padding-top:0;padding-bottom:15px;padding-right:0;padding-left:0;">
+                                                <img name="Cont_5" src="http://contentz.mkt7543.com/lp/26049/394639/plus-icon_0.png" width="30" alt="signe ajouter" style="border-width:0;width:100%;max-width:30px !important;height:auto;display:block;margin-left:auto;margin-right:auto;">
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <!--[if mso]></td><td width="160" style="width: 160px;" valign="top"><![endif]-->
+                                <table width="160" border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width:225px; background-color: #f5f5f5;">
+                                  <tbody>
+                                    <tr>
+                                      <td class="col" valign="top" style="padding-left:10px;padding-right:10px;padding-top:20px;padding-bottom:0px">
+                                        <table align="center" class="contents" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:center;">
+                                          <tbody>
+                                            <tr>
+                                              <td class="three-column-caption" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:0px;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;font-size:14px;line-height:14px;text-align:left;">
+                                                <p class="center-mobile" style="Margin:0;margin-top:0px;font-size:16px;line-height:16px;Margin-bottom:10px">Taux d’intérêt de 2,40&nbsp;%*</p>
+                                                <p class="center-mobile" style="Margin:0;font-size: 12px;line-height:14px;Margin-bottom:10px"><strong>Du 1<sup style="line-height:0.7em;">er</sup> mai au 31 octobre 2019 </strong></p>
+                                                  <p class="center-mobile" style="Margin:0;font-size: 12px;line-height:14px;Margin-bottom:10px"><em><span style="font-size: 12px;">sur les nouveaux dépôts lorsque le solde de votre compte est de 5&nbsp;000&nbsp;$ ou&nbsp;plus.</span></em></p>
+                                               
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <!--[if mso]></td></tr></table><![endif]-->
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="body-text" style="padding-top:10px;padding-bottom:20px;padding-right:40px;padding-left:40px;width:100%;text-align:left;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #404040; font-size: 16px;">
+                                <p style="Margin:0;font-size:16px;color: #404040; font-size:16px;line-height:22px;Margin-bottom:20px;">
+                                  Quelle que soit votre raison d’épargner, cette offre spéciale de boni d’intérêt vous aidera à atteindre vos objectifs plus rapidement.</p>
+                                <p align="center" class="body-cta" style="Margin:0;Margin-bottom:35px;">
+                                  <a style="text-decoration: none;" href="https://www.cibc.com/fr/personal-banking/bank-accounts/savings-accounts/eadvantage-high-interest-savings-account.html?utrc=E289:2&utm_medium=Email&utm_campaign=F19-eSA-Bonus-+-Retention-Offer---IS-Version&"
+                                    target="_blank" xt="SPCLICK" name="Get started">
+                                    <img name="Cont_2" src="http://contentz.mkt7543.com/lp/26049/386281/esa-fr-button.png" width="230" height="41" alt="Ouvrez un compte" style="outline:none;border:none;width:100%;max-width:230px;height:auto;">
+                                  </a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
-                      <td height="30" style="font-size: 30px; line-height: 30px; background:#ececec;">&nbsp;</td>
-                    </tbody>
-                  </table>
-                </td>
-
-
-              </tr>
-            </tbody>
-          </table>
-
-          <!-- ******* END ONE COLUMN BODY COPY ******* -->
-
+                    </table>
+                    <!-- ******* END ONE COLUMN BODY COPY ******* -->
 
 
 
@@ -763,16 +746,8 @@ sup {font-size:100%!important;}
               <td class="one-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;background-color:#000000;">
                 <table width="100%" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;">
                   <tr>
-                    <td class="body-text" style="padding-top:20px;padding-bottom:20px;padding-right:80px;padding-left:80px;width:100%;text-align:left;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #404040; font-size: 16px;">
-                      <h1 style="text-align: center; color: #ffffff;font-size:24px;">Compte d'épargne cyberAvantage CIBC<sup style="line-height:0.9em;">MD</sup></h1>
-
-
-
-
-
-
-
-
+                    <td class="body-text" style="padding-top:20px;padding-bottom:20px;padding-right:60px;padding-left:60px;width:100%;text-align:left;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #404040; font-size: 16px;">
+                      <h1 style="text-align: center; color: #ffffff;font-size:26px;">Compte d’épargne cyberAvantage CIBC<sup style="line-height:0.7em;font-weight:normal;">MD</sup></h1>
 
                       <!-- ***** BEGINNING COPY RIGHT 3/4  ****** -->
                       <table border="0" width="480" cellpadding="0" cellspacing="0" class="container" style="width:480px;max-width:480px;background-color:#ffffff;">
@@ -782,7 +757,7 @@ sup {font-size:100%!important;}
                         <tr>
                           <td class="two-column-small-img" style="padding-top:0px;padding-bottom:0px;padding-right:0;padding-left:0;text-align:center;font-size:0;background-color:#000000;">
                             <!--[if mso]>
-<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td width="25%" valign="top"><![endif]-->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td width="25%" valign="top"><![endif]-->
                             <table border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width:160px;">
 
                               <tr>
@@ -790,7 +765,7 @@ sup {font-size:100%!important;}
                                   <table class="contents" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;width:100%;">
                                     <tr>
                                       <td class="center-img-on-mobile" style="padding-bottom:0px;padding-right:0px;padding-left:0px;padding-top:0px;text-align:right;">
-                                        <img class="img-padding-mobile" name="Cont_6" src="http://contentz.mkt7543.com/lp/26049/394639/investment.png" alt="Un sac rempli d'argent" width="70" style="width:100%; max-width:70px; height:auto;display:block;margin-left:auto;margin-right:auto;" />
+                                        <img class="img-padding-mobile" name="Cont_6" src="http://contentz.mkt7543.com/lp/26049/394639/investment.png" alt="un sac rempli d'argent" width="70" style="width:100%; max-width:70px; height:auto;display:block;margin-left:auto;margin-right:auto;" />
                                       </td>
                                       <td class="hide-spacer-mobile" width="40" style="font-size: 40px; line-height: 40px;">&nbsp;</td>
                                     </tr>
@@ -807,14 +782,11 @@ sup {font-size:100%!important;}
                                     <tr>
                                       <td class="mbl-center" style="padding-bottom:10px;padding-right:0px;padding-left:0px;padding-top:0px;font-size:15px;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #404040; text-align: left; line-height: 20px;">
                                         <p style="color: white; margin-top: 0px;" class="black-box-mobile">
-                                          <strong> Donnez de l’élan à votre épargne</strong><br>
-                                          Obtenez notre meilleur taux de compte d’épargne non enregistré lorsque le solde de votre compte est de 5 000 $ ou plus.</p>
+                                          <strong>Donnez de l’élan à votre épargne</strong><br>
+                                          Obtenez notre meilleur taux de compte d’épargne non enregistré lorsque le solde de votre compte est de 5&nbsp;000&nbsp;$ ou&nbsp;plus.</p>
                                       </td>
 
                                     </tr>
-
-                                    <tr>
-
                                   </table>
                                 </td>
                               </tr>
@@ -839,15 +811,17 @@ sup {font-size:100%!important;}
                         <tr>
                           <td class="two-column-small-img" style="padding-top:0px;padding-bottom:0px;padding-right:0;padding-left:0;text-align:center;font-size:0;background-color:#000000;">
                             <!--[if mso]>
-<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td width="25%" valign="top"><![endif]-->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td width="25%" valign="top"><![endif]-->
                             <table border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width:160px;">
                               <tr>
                                 <td class="col" valign="top" style="width:100%">
                                   <table class="contents" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;width:100%;">
                                     <tr>
                                       <td class="center-img-on-mobile" style="padding-bottom:0px;padding-right:0px;padding-left:0px;padding-top:0px;text-align:right;">
-                                        <img class="img-padding-mobile" name="Cont_6" src="http://contentz.mkt7543.com/lp/26049/394639/arrows.png" alt="Icône de virements gratuits" width="60" style="width:100%; max-width:60px; height:auto;display:block;margin-left:auto;margin-right:auto;" />
+                                        <img class="img-padding-mobile" name="Cont_6" src="http://contentz.mkt7543.com/lp/26049/394639/arrows.png" alt="icône de virements gratuits" width="60" style="width:100%; max-width:60px; height:auto;display:block;margin-left:auto;margin-right:auto;" />
                                       </td>
+
+                                      <!-- kristina 40 -->
                                       <td class="hide-spacer-mobile" width="40" style="font-size: 40px; line-height: 40px; background:black;">&nbsp;</td>
                                     </tr>
                                     <!-- Beginning Fix for Nexus -->
@@ -872,8 +846,8 @@ sup {font-size:100%!important;}
                                     <tr>
                                       <td class="mbl-center" style="padding-bottom:10px;padding-right:0px;padding-left:0px;padding-top:0px;font-size:15px;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #404040; text-align: left; line-height: 20px;">
                                         <p style="color: white; margin-top: 0px;">
-                                          <strong> Profitez de virements gratuits</strong><br>
-                                          Virez des fonds sans frais entre vos comptes bancaires personnels CIBC</p>
+                                          <strong>Profitez de virements gratuits</strong><br>
+                                          Virez des fonds sans frais entre vos comptes bancaires personnels CIBC</p>
                                       </td>
                                     </tr>
                                     <tr>
@@ -895,7 +869,7 @@ sup {font-size:100%!important;}
                       <!-- ***** BEGINNING COPY RIGHT 3/4  ****** -->
                       <table border="0" width="480" cellpadding="0" cellspacing="0" class="container black-mobile" style="width:480px;max-width:480px;background-color:#ffffff;">
                         <tr>
-                          <td height="20" style="font-size: 1px; line-height: 20px;background: #000;">&nbsp;</td>
+
                         </tr>
                         <tr>
                           <td class="two-column-small-img" style="padding-top:0px;padding-bottom:0px;padding-right:0;padding-left:0;text-align:center;font-size:0;background-color:#000000;">
@@ -907,7 +881,7 @@ sup {font-size:100%!important;}
                                   <table class="contents" style="border-spacing:0;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#404040;width:100%;">
                                     <tr>
                                       <td class="center-img-on-mobile" style="padding-bottom:0px;padding-right:0px;padding-left:0px;padding-top:0px; text-align: right;">
-                                        <img class="img-padding-mobile" name="Cont_6" src="http://contentz.mkt7543.com/lp/26049/394639/smartphone.png" alt="Icône de l’application mobile" width="70" style="width:100%; max-width:70px; height:auto;display:block;margin-left:auto;margin-right:auto;" />
+                                        <img class="img-padding-mobile" name="Cont_6" src="http://contentz.mkt7543.com/lp/26049/394639/smartphone.png" alt="icône de l’application mobile" width="70" style="width:100%; max-width:70px; height:auto;display:block;margin-left:auto;margin-right:auto;" />
                                       </td>
                                       <td class="hide-spacer-mobile" width="40" style="font-size: 40px; line-height: 40px;">&nbsp;</td>
                                     </tr>
@@ -925,8 +899,8 @@ sup {font-size:100%!important;}
                                       <td class="mbl-center" style="padding-bottom:10px;padding-right:0px;padding-left:0px;padding-top:0px;font-size:15px;font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #404040; text-align: left; line-height: 20px;">
                                         <p style="color: white; margin-top: 0px;">
 
-                                          <strong> Vos opérations bancaires, à votre façon</strong><br>
-                                          accédez à votre compte en ligne ou par l’intermédiaire de notre application bancaire mobile, partout et en tout temps</p>
+                                          <strong>Vos opérations bancaires, à votre façon</strong><br>
+                                          Accédez à votre compte en ligne ou par l’intermédiaire de notre application bancaire mobile, partout et en tout&nbsp;temps </p>
                                       </td>
                                     </tr>
                                   </table>
@@ -957,231 +931,193 @@ sup {font-size:100%!important;}
           <!-- ******* END BLACK TWO-COLUMN BOX ******* -->
 
 
-
-
-
-
-
-
-
-
           <!-- BEGINNING LOGO-->
-                   <table class="container" style="width:640px;max-width:640px;background-color:#ffffff;" width="640" cellspacing="0" cellpadding="0" border="0">
-                     <tr>
-                       <td class="content" style="padding-top:30px;background-color:#ffffff;" align="right">
-                         <img name="Cont_0" src="http://contentz.mkt7543.com/lp/26049/340039/is-onboarding-welcome-cibc-logo-en.png" alt="Logo CIBC" style="outline:none;border:none;display:block;height: auto;" width="108">
-                       </td>
-                     </tr>
-                     <!-- Beginning Fix for Nexus -->
-                     <!--[if !mso 9]><!-->
-                     <tr>
-                       <td class="hide" style="width:100%;mso-hide: all;background-color:#ffffff;">
-                         <img class="hide" name="Cont_7" src="http://contentz.mkt7543.com/lp/26049/340039/spacer-640.png" style="width:100%; max-width:640px;height:1px;display:block;mso-hide: all;background-color:#eeebeb;border: 0px solid #000000;" alt=""
-                           width="640" height="1">
-                       </td>
-                     </tr>
-                     <!--<![endif]-->
-                     <!-- End Fix for Nexus -->
-                   </table>
-                   <!-- ******* END LOGO ******* -->
+          <table class="container" style="width:640px;max-width:640px;background-color:#ffffff;" width="640" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td class="content" style="padding-top:30px;background-color:#ffffff;" align="right">
+                <img name="Cont_0" src="http://contentz.mkt7543.com/lp/26049/340039/is-onboarding-welcome-cibc-logo-en.png" alt="Logo CIBC" style="outline:none;border:none;display:block;height: auto;" width="108">
+              </td>
+            </tr>
+            <!-- Beginning Fix for Nexus -->
+            <!--[if !mso 9]><!-->
+            <tr>
+              <!-- kristina changed border 0 to white -->
+              <td class="hide" style="width:100%;mso-hide: all;background-color:#ffffff;">
+                <img class="hide" name="Cont_7" src="http://contentz.mkt7543.com/lp/26049/340039/spacer-640.png" style="width:100%; max-width:640px;height:1px;display:block;mso-hide: all;background-color: white;border: 0px solid white;" alt="" width="640"
+                  height="1">
+              </td>
+            </tr>
+            <!--<![endif]-->
+            <!-- End Fix for Nexus -->
+          </table>
+          <!-- ******* END LOGO ******* -->
 
-                   <!-- ******* BEGINNING HEADER TOP COPY + NO CTA | BOTTOM IMG ******* -->
-                   <table border="0" width="640" cellpadding="0" cellspacing="0" class="container-padding container" style="width:640px;max-width:640px;padding-left: 30px;padding-right: 30px;background-color:#ffffff;">
-                     <tr>
-                       <td style="padding:0;margin:0;text-align: center;">
-                         <img name="Cont_3" src="http://contentz.mkt7543.com/lp/26049/340039/is-onboarding-welcome-divi.png" width="562" alt="" style="width:100%;max-width:562px;height:auto;display:block;margin:0px auto;" />
-                       </td>
-                     </tr>
-                   </table>
-                   <!-- ******* END HEADER TOP COPY + NO CTA | BOTTOM IMG ******* -->
+          <!-- ******* BEGINNING HEADER TOP COPY + NO CTA | BOTTOM IMG ******* -->
+          <table border="0" width="640" cellpadding="0" cellspacing="0" class="container-padding container" style="width:640px;max-width:640px;padding-left: 30px;padding-right: 30px;background-color:#ffffff;">
+            <tr>
+              <td style="padding:0;margin:0;text-align: center;">
+                <img name="Cont_3" src="http://contentz.mkt7543.com/lp/26049/340039/is-onboarding-welcome-divi.png" width="562" alt="" style="width:100%;max-width:562px;height:auto;display:block;margin:0px auto;" />
+              </td>
+            </tr>
+          </table>
+          <!-- ******* END HEADER TOP COPY + NO CTA | BOTTOM IMG ******* -->
 
 
-                   <!-- ***** BEGINNING FRENCH RATING BLOCK | BODY MODULE ****** -->
-                   <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;">
-                     <tr>
-                       <td class="container-padding content one-column-rating" align="left" style="padding-top:30px;padding-bottom:30px;padding-right:30px;padding-left:30px;background-color:#ffffff">
-                         <!--[if mso]>
-         <table border="0" cellpadding="0" cellspacing="0" width="100%">
-         <tr><td width="50%" valign="top"><![endif]-->
-                         <table border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width:320px;">
-                           <tr>
-                             <td class="col rating1 center-text-on-mobile" valign="top" align="center" style="font-family:'Trebuchet MS'; color:#5a5a5a; font-size:14px; font-weight: normal; line-height:18px; padding-bottom: 15px;text-align:left;">
-                               Comment évalueriez-vous l’utilité de ce&nbsp;courriel&nbsp;:
-                             </td>
-                           </tr>
-                         </table>
-                         <!--[if mso]></td><td width="50%" valign="top"><![endif]-->
-                         <table border="0" cellpadding="0" cellspacing="0" align="right" class="force-row" style="width:220px;">
-                           <tr>
-                             <td style="font-size:1px;line-height:1px;">&nbsp;</td>
-                           </tr>
-                           <tr>
-                             <td class="col" valign="top" style="width:100%;text-align:center;font-weight:normal; font-family:'Trebuchet MS','Lucida Grande','Lucida Sans Unicode','Lucida Sans',Tahoma,sans-serif;font-size:9px;">
-                               <table style="width:100%;" cellpadding="0" cellspacing="0" align="center" class="rating2">
-                                 <tr>
-                                   <td valign="top" style="width:40px; text-align: center; font-weight: normal; font-family: 'Trebuchet MS','Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma,sans-serif;font-size:9px;line-height:11px;">
-                                     <a href="https://www.cibc.com/fr/contact-us/thank-you.html?Rate=1" target="_blank" xt="SPCLICK" style="text-decoration: none; color:#5a5a5a;" name="Rated_1">
-                                       <img border="0" name="Cont_8" src="http://contentz.mkt7543.com/lp/26049/310160/trigger_rating_image-HR.png" width="28" height="28" style="display:inline-block; width:28px;" alt="1" />
-                                       <br><strong><span style="white-space:nowrap!important;">Pas&nbsp;du<br />tout&nbsp;utile</span></strong></a>
-                                   </td>
-                                   <td valign="top" style="width: 40px; text-align: center; font-weight: normal; font-size:9px;line-height:11px;">
-                                     <a href="https://www.cibc.com/fr/contact-us/thank-you.html?Rate=2" target="_blank" xt="SPCLICK" name="Rated_2"><img border="0" name="Cont_9" src="http://contentz.mkt7543.com/lp/26049/310160/trigger_rating_image-HR.png"
-                                         width="28" height="28" style="display:inline-block; width:28px;" alt="2" />
-                                     </a>
-                                   </td>
-                                   <td valign="top" style="width: 40px; text-align: center; font-weight: normal; font-size:9px;line-height:11px;">
-                                     <a href="https://www.cibc.com/fr/contact-us/thank-you.html?Rate=3" target="_blank" xt="SPCLICK" name="Rated_3"><img border="0" name="Cont_10" src="http://contentz.mkt7543.com/lp/26049/310160/trigger_rating_image-HR.png"
-                                         width="28" height="28" style="display:inline-block; width:28px;" alt="3" /></a>
-                                   </td>
-                                   <td valign="top" style="width: 40px; text-align: center; font-weight: normal; font-size:9px;line-height:11px;">
-                                     <a href="https://www.cibc.com/fr/contact-us/thank-you.html?Rate=4" target="_blank" xt="SPCLICK" name="Rated_4"><img border="0" name="Cont_10" src="http://contentz.mkt7543.com/lp/26049/310160/trigger_rating_image-HR.png"
-                                         width="28" height="28" style="display:inline-block; width:28px;" alt="4" /></a>
-                                   </td>
-                                   <td valign="top" style="width: 40px; text-align: center; font-weight: normal; font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:9px;line-height:11px;">
-                                     <a href="https://www.cibc.com/fr/contact-us/thank-you.html?Rate=5" target="_blank" xt="SPCLICK" style="text-decoration: none; color:#5a5a5a;" name="Rated_5"><img border="0" name="Cont_10" src="http://contentz.mkt7543.com/lp/26049/310160/trigger_rating_image-HR.png"
-                                         width="28" height="28" style="display:inline-block; width:28px;" alt="5" />
-                                       <br><strong>Très<br />utile</strong></a>
-                                   </td>
-                                 </tr>
-                                 <!-- Beginning Fix for Nexus -->
-                                 <!--[if !mso 9]><!-->
-                                 <tr>
-                                   <td class="hide" colspan="5" style="width:100%;mso-hide: all;">
-                                     <img class="hide" width="640" height="1" style="width:100%; max-width:640px;height:1px;display:block;mso-hide: all;" name="Cont_11" src="http://contentz.mkt7543.com/lp/26049/340039/spacer-640.png" alt="">
-                                   </td>
-                                 </tr>
-                                 <!--<![endif]-->
-                                 <!-- End Fix for Nexus -->
-                               </table>
-                             </td>
-                           </tr>
-                         </table>
-                         <!--[if mso]></td></tr></table><![endif]-->
-                       </td>
-                     </tr>
-                   </table>
-                   <!-- ***** END FRENCH RATING BLOCK | BODY MODULE ****** -->
-
-                   <!-- ***** BEGINNING SOCIAL SECTION | BODY MODULE ****** -->
-                   <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px">
-                     <tr>
-                       <td bgcolor="#ffffff" class="container-padding social-icons" style="padding-top:20px;padding-right:40px;padding-bottom:20px;padding-left:20px;background-color:#ffffff;">
-                         <table style="width:100%;">
-                           <tr>
-                             <td style="text-align:right; font-size: 8px; line-height: 0px;" class="social_belt">
-                               <a style="display:inline-block;text-decoration:none;padding-left:2px;padding-right:2px;" href="https://twitter.com/banquecibc" target="_blank" xt="SPCLICK" name="twitter_social_icon">
-                                 <img border="0" name="Cont_8" src="http://contentz.mkt7543.com/lp/26049/340039/is-onboarding-welcome-twitter.png" alt="Twitter" style="display:inline-block; width:100%;max-width:30px;height:30px;" width="30" height="30" />
-                               </a>
-                               &nbsp;
-                               <a style="display:inline-block;text-decoration:none;padding-left:2px;padding-right:2px;" href="https://www.facebook.com/CIBC/" target="_blank" xt="SPCLICK" name="facebook_social_icon"><img border="0" name="Cont_8" src="http://contentz.mkt7543.com/lp/26049/340039/is-onboarding-welcome-facebook.png"
-                                   alt="Facebook" style="display:inline-block;width:100%;max-width:30px;height:30px;" width="30" height="30" /></a>
-                               &nbsp;
-                               <a style="display:inline-block;text-decoration:none;padding-left:2px;padding-right:2px;" href="https://www.youtube.com/user/CIBCVideos" target="_blank" xt="SPCLICK" name="youtube_social_icon"><img border="0" name="Cont_9" src="http://contentz.mkt7543.com/lp/26049/340039/is-onboarding-welcome-youtube.png"
-                                   alt="YouTube" style="display:inline-block;width:100%;max-width:30px;height:30px;" width="30" height="30" /></a>
-                             </td>
-                           </tr>
-                           <!-- Beginning Fix for Nexus -->
-                           <!--[if !mso 9]><!-->
-                           <tr>
-                             <td class="hide" colspan="5" style="width:100%;mso-hide: all;">
-                               <img class="hide" width="640" height="1" style="width:100%; max-width:640px;height:1px;display:block;mso-hide: all;" name="Cont_7" src="http://contentz.mkt7543.com/lp/26049/340039/spacer-640.png" alt="">
-                             </td>
-                           </tr>
-                           <!--<![endif]-->
-                           <!-- End Fix for Nexus -->
-                         </table>
-                       </td>
-                     </tr>
-                   </table>
-                   <!-- ***** END OF SOCIAL SECTION | BODY MODULE ****** -->
-
-                   <!-- ******* BEGINNING LEGAL FOOTER ********** -->
-                   <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;background-color: #ffffff;">
-                     <tr>
-                       <td class="container-padding legal" style="padding-right:40px;padding-bottom:30px;padding-left:40px;">
-                         <table style="width:100%;">
-                           <tr>
-                             <td width="15" valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:right;color:#000000;font-weight:normal;">
-                             </td>
-
-                             <tr>
-                               <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:right;color:#000000;font-weight:normal;">
-                      <sup style="line-height:0.9em; font-size:14px;">*</sup>
+          <!-- ***** BEGINNING FRENCH RATING BLOCK | BODY MODULE ****** -->
+          <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;">
+            <tbody><tr>
+              <td class="container-padding content one-column-rating" align="left" style="padding-top:30px;padding-bottom:30px;padding-right:40px;padding-left:40px;background-color:#ffffff">
+                <!--[if mso]>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr><td width="50%" valign="top"><![endif]-->
+                <table border="0" cellpadding="0" cellspacing="0" align="left" class="force-row" style="width:320px;">
+                  <tbody><tr>
+                    <td class="col rating1" valign="top" align="center" style="font-family:'Trebuchet MS'; color:#5a5a5a; font-size:14px; font-weight: normal; line-height:18px; padding-bottom: 15px;text-align:center;">
+                       Comment évalueriez-vous l’utilité de ce&nbsp;courriel&nbsp;:
                     </td>
-                               <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;padding-bottom:13px;">
-                               Taux d’intérêt annuel ordinaire et boni d’intérêt combinés
-                               payés sur les nouveaux dépôts nets effectués dans un
-                               Compte d’épargne cyberAvantage CIBC<sup style="line-height:0.9em;">MD</sup>
-                               (le « Compte »). Le boni d’intérêt et le taux ordinaire
-                               peuvent changer en tout temps, sans préavis. Les taux
-                               d’intérêt sont calculés quotidiennement et versés
-                               mensuellement; l’intérêt bonifié est accordé uniquement
-                               sur la première tranche de 5 000 000 $ de nouveaux soldes.
-                               L’intérêt ordinaire est versé quand le solde de clôture du
-                               compte est de 5 000 $ ou plus. Si vous ouvrez un Compte
-                               entre le 8 février 2019 et le 30 avril 2019, vous
-                               continuerez d’obtenir sur vos dépôts un taux d’intérêt
-                               ordinaire et un boni d’intérêt combinés de &nbsp;2,40 %
-                               (l’« Offre prolongée de taux d’intérêt bonifié »)
-                               du 1<sup style="line-height:0.9em;">er</sup> mai 2019 au 31 octobre 2019. L’intérêt
-                               ordinaire et le boni d’intérêt continueront d’être
-                               calculés de la manière décrite ci-dessus. Si vous n’avez
-                               pas ouvert un Compte entre le 8 février 2019 et le 30
-                               avril 2019, vous ne serez pas admissible à l’Offre
-                               prolongée de taux d’intérêt bonifié. <a href="http://contentz.mkt7543.com/lp/26049/393782/imgs/eAdvantage%C2%AE%20Savings%20Account%20Targeted%20+%20Extension%20Bonus%20Interest%20(Acquisition)%20-%20Terms%20and%20Conditions_FR.pdf">D’autres conditions
-                               s’appliquent.</a>
-                               </td>
-                             </tr>
+                  </tr>
+                </tbody></table>
+                <!--[if mso]></td><td width="50%" valign="top"><![endif]-->
+                <table border="0" cellpadding="0" cellspacing="0" align="right" class="force-row" style="width:240px;">
+                  <tbody><tr>
+                    <td class="col" valign="top" style="width:100%;text-align:center;font-weight:normal; font-family:'Trebuchet MS','Lucida Grande','Lucida Sans Unicode','Lucida Sans',Tahoma,sans-serif;font-size:10px;">
+                      <table style="width:100%;" cellpadding="0" cellspacing="0" align="center" class="rating2">
+                         <tbody><tr>
+                            <td valign="top" style="width:40px; text-align: center; font-weight: normal; font-family: 'Trebuchet MS','Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma,sans-serif;font-size:10px;line-height:12px;">
+                               <a href="https://www.cibc.com/fr/contact-us/thank-you.html?Rate=1" target="_blank" xt="SPCLICK" style="text-decoration: none; color:#5a5a5a;" name="Rated_1">
+                               <img border="0" name="Cont_8" src="http://contentz.mkt7543.com/lp/26049/310160/trigger_rating_image-HR.png" width="30" height="30" style="display:inline-block; width:30px;" alt="1">
+                               <br><strong><span style="white-space:nowrap!important;">Pas&nbsp;du<br>tout&nbsp;utile</span></strong></a>
+                            </td>
+                            <td valign="top" style="width: 40px; text-align: center; font-weight: normal; font-size:10px;line-height:11px;">
+                               <a href="https://www.cibc.com/fr/contact-us/thank-you.html?Rate=2" target="_blank" xt="SPCLICK" name="Rated_2"><img border="0" name="Cont_9" src="http://contentz.mkt7543.com/lp/26049/310160/trigger_rating_image-HR.png" width="30" height="30" style="display:inline-block; width:30px;" alt="2">
+                               </a>
+                            </td>
+                            <td valign="top" style="width: 40px; text-align: center; font-weight: normal; font-size:10px;line-height:11px;">
+                               <a href="https://www.cibc.com/fr/contact-us/thank-you.html?Rate=3" target="_blank" xt="SPCLICK" name="Rated_3"><img border="0" name="Cont_10" src="http://contentz.mkt7543.com/lp/26049/310160/trigger_rating_image-HR.png" width="30" height="30" style="display:inline-block; width:30px;" alt="3"></a>
+                            </td>
+                            <td valign="top" style="width: 40px; text-align: center; font-weight: normal; font-size:10px;line-height:11px;">
+                               <a href="https://www.cibc.com/fr/contact-us/thank-you.html?Rate=4" target="_blank" xt="SPCLICK" name="Rated_4"><img border="0" name="Cont_10" src="http://contentz.mkt7543.com/lp/26049/310160/trigger_rating_image-HR.png" width="30" height="30" style="display:inline-block; width:30px;" alt="4"></a>
+                            </td>
+                            <td valign="top" style="width: 40px; text-align: center; font-weight: normal; font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:10px;line-height:12px;">
+                               <a href="https://www.cibc.com/fr/contact-us/thank-you.html?Rate=5" target="_blank" xt="SPCLICK" style="text-decoration: none; color:#5a5a5a;" name="Rated_5"><img border="0" name="Cont_10" src="http://contentz.mkt7543.com/lp/26049/310160/trigger_rating_image-HR.png" width="30" height="30" style="display:inline-block; width:30px;" alt="5">
+                               <br><strong>Très<br>utile</strong></a>
+                            </td>
+                         </tr>
+                         <!-- Beginning Fix for Nexus -->
+                         <!--[if !mso 9]><!-->
+                         <tr>
+                           <td class="hide" colspan="5" style="width:100%;mso-hide: all;">
+                             <img class="hide" width="640" height="1" style="width:100%; max-width:640px;height:1px;display:block;mso-hide: all;" name="Cont_11" src="http://contentz.mkt7543.com/lp/26049/340039/spacer-640.png" alt="">
+                           </td>
+                         </tr>
+                         <!--<![endif]-->
+                        <!-- End Fix for Nexus -->
+                      </tbody></table>
+                    </td>
+                  </tr>
+                </tbody></table>
+              <!--[if mso]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+          </table>
+
+          <!-- ***** BEGINNING SOCIAL SECTION | BODY MODULE ****** -->
+          <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px">
+            <tr>
+              <td bgcolor="#ffffff" class="container-padding social-icons" style="padding-top:20px;padding-right:40px;padding-bottom:20px;padding-left:20px;background-color:#ffffff;">
+                <table style="width:100%;">
+                  <tr>
+                    <td style="text-align:right; font-size: 8px; line-height: 0px;" class="social_belt">
+                      <a style="display:inline-block;text-decoration:none;padding-left:2px;padding-right:2px;" href="https://twitter.com/cibc" target="_blank" xt="SPCLICK" name="twitter_social_icon">
+                        <img border="0" name="Cont_8" src="http://contentz.mkt7543.com/lp/26049/340039/is-onboarding-welcome-twitter.png" alt="Twitter" style="display:inline-block; width:100%;max-width:30px;height:30px;" width="30" height="30" />
+                      </a>
+                      &nbsp;
+                      <a style="display:inline-block;text-decoration:none;padding-left:2px;padding-right:2px;" href="https://www.facebook.com/CIBC/" target="_blank" xt="SPCLICK" name="facebook_social_icon"><img border="0" name="Cont_8" src="http://contentz.mkt7543.com/lp/26049/340039/is-onboarding-welcome-facebook.png"
+                          alt="Facebook" style="display:inline-block;width:100%;max-width:30px;height:30px;" width="30" height="30" /></a>
+                      &nbsp;
+                      <a style="display:inline-block;text-decoration:none;padding-left:2px;padding-right:2px;" href="https://www.youtube.com/user/CIBCVideos" target="_blank" xt="SPCLICK" name="youtube_social_icon"><img border="0" name="Cont_9" src="http://contentz.mkt7543.com/lp/26049/340039/is-onboarding-welcome-youtube.png"
+                          alt="YouTube" style="display:inline-block;width:100%;max-width:30px;height:30px;" width="30" height="30" /></a>
+                    </td>
+                  </tr>
+                  <!-- Beginning Fix for Nexus -->
+                  <!--[if !mso 9]><!-->
+                  <tr>
+                    <td class="hide" colspan="5" style="width:100%;mso-hide: all;">
+                      <img class="hide" width="640" height="1" style="width:100%; max-width:640px;height:1px;display:block;mso-hide: all;" name="Cont_7" src="http://contentz.mkt7543.com/lp/26049/340039/spacer-640.png" alt="">
+                    </td>
+                  </tr>
+                  <!--<![endif]-->
+                  <!-- End Fix for Nexus -->
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- ***** END OF SOCIAL SECTION | BODY MODULE ****** -->
+
+          <!-- ******* BEGINNING LEGAL FOOTER ********** -->
+          <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="width:640px;max-width:640px;background-color: #ffffff;">
+            <tr>
+              <td class="container-padding legal" style="padding-right:40px;padding-bottom:30px;padding-left:40px;">
+                <table style="width:100%;">
+                  <tr>
+                    <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:right;color:#000000;font-weight:normal;">
+                      *
+                    </td>
+                    <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;padding-bottom:13px;">
+                      Taux d’intérêt annuel ordinaire et boni d’intérêt combinés payés sur les nouveaux dépôts nets effectués dans un Compte d’épargne cyberAvantage CIBCMD (le «&nbsp;Compte&nbsp;»). Le boni d’intérêt et le taux ordinaire peuvent changer en tout temps, sans préavis. Les taux d’intérêt sont calculés quotidiennement et versés mensuellement; l’intérêt bonifié est accordé uniquement sur la première tranche de 5&nbsp;000&nbsp;000&nbsp;$ de nouveaux soldes. L’intérêt ordinaire est versé quand le solde de clôture du compte est de 5&nbsp;000&nbsp;$ ou plus. Si vous ouvrez un Compte entre le 8 février 2019 et le 30 avril 2019, vous continuerez d’obtenir sur vos dépôts un taux d’intérêt ordinaire et un boni d’intérêt combinés de 2,40&nbsp;% (l’«&nbsp;Offre prolongée de taux d’intérêt bonifié&nbsp;») du 1er mai 2019 au 31 octobre 2019. L’intérêt ordinaire et le boni d’intérêt continueront d’être calculés de la manière décrite ci-dessus. Si vous n’avez pas ouvert un Compte entre le 8 février 2019 et le 30 avril 2019, vous ne serez pas admissible à l’Offre prolongée de taux d’intérêt bonifié. <a href="http://contentz.mkt7543.com/lp/26049/393782/imgs/eAdvantage%C2%AE%20Savings%20Account%20Targeted%20+%20Extension%20Bonus%20Interest%20(Acquisition)%20-%20Terms%20and%20Conditions_FR.pdf" target="_blank" style="color:#d40139;text-decoration:underline;">D’autres conditions s’appliquent</a>.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;">
+                      <sup style="line-height:0.7em;">MD</sup>
+                    </td>
+                    <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;padding-bottom:13px;">
+                      Marque déposée de la Banque CIBC. La conception graphique du cube CIBC est une marque de commerce de la Banque&nbsp;CIBC.
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;">
+                    </td>
+
+                    <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;padding-bottom:13px;">
+                      Ce message provient de la Banque CIBC. Pour annuler l’envoi de tout autre courriel promotionnel de la part de la Banque CIBC, cliquez simplement sur <a href="http://pages.cibcinfo.ca/CIBCUnsubscribe/Unsubscribe_FR/?CampaignID=5988&EmailVersion=1"
+                        target="_blank" style="color:#d40139;text-decoration:underline;" xt="SPCLICK" name="Unsubscribe">désabonner</a>.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;">
+                      La protection de vos renseignements personnels est notre priorité. Consultez la <a href="https://www.cibc.com/ca/legal/privacy-policy-fr.html" target="_blank" style="color:#d40139;text-decoration:underline;" xt="SPCLICK" name="Privacy Policy">Politique de la Banque CIBC sur la protection des renseignements personnels</a>.<br><br>
+                      Veuillez ne pas répondre à ce courriel. Il s’agit d’un message sortant seulement. <br><br>
+                      Siège social CIBC, Commerce Court, Toronto (Ontario)&nbsp;&nbsp;M5L&nbsp;1A2,&nbsp;Canada<br><br>
+                      Visitez notre site Web au <a href="https://www.cibc.com/ca/personal-fr.html" target="_blank" style="color:#d40139;text-decoration:underline;" xt="SPCLICK" name="cibc.com">cibc.com/francais</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- ******* END LEGAL FOOTER ********** -->
 
 
-                           <tr>
-                             <td width="15" valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:10px;line-height:13px;text-align:right;color:#000000;font-weight:normal;">
-<sup style="line-height:0.9em;">MD</sup>
-                             </td>
+          <!--[if (gte mso 9)|(IE)]>
+          </td></tr></table>
+          <![endif]-->
+          <!--/600px container -->
+        </div>
+      </td>
+    </tr>
+  </table>
+  <!--/100% background wrapper-->
+  <table cellpadding="0" cellspacing="0" border="0" class="mobile-hide" style="border-spacing:0;font-family:'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#666666;">
+    <tr>
+      <td height="1" class="mobile-hide" style="min-width:640px;font-size:0px;line-height:0px;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+        <img height="1" name="Cont_5" src="http://contentz.mkt7543.com/lp/26049/244779/android-fix-spacer.png" style="min-width:640px;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;border-width:0;" />
+      </td>
+    </tr>
+  </table>
+</body>
 
-
-
-                             <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;padding-bottom:13px;">
-                               Marque déposée de la Banque&nbsp;CIBC. La conception graphique du cube CIBC est une marque de commerce de la Banque&nbsp;CIBC.
-                               <br /><br />
-                               Ce message provient de la Banque CIBC. Pour annuler l’envoi de tout autre courriel promotionnel de la part de la Banque CIBC, cliquez simplement sur&nbsp;<a href="http://pages.cibcinfo.ca/CIBCUnsubscribe/Unsubscribe_FR/?CampaignID=5988&EmailVersion=1"
-                                 target="_blank" style="color:#d40139;text-decoration:underline;" xt="SPCLICK" name="pages_cibcinfo_ca_CIBCUnsubscribe_U">désabonner</a>.
-                             </td>
-                           </tr>
-                           <tr>
-                             <td width="15" valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:9px;line-height:13px;text-align:left;color:#000000;font-weight:normal;">
-                               &nbsp;&nbsp;
-                             </td>
-                             <td valign="top" style="font-family:'Trebuchet MS',arial,sans-serif;font-size:11px;line-height:13px;text-align:left;color:#000000;font-weight:normal;">
-                               La protection de vos renseignements personnels est notre priorité. Consultez la <a href="https://www.cibc.com/ca/legal/privacy-policy-fr.html" target="_blank" style="color:#d40139;text-decoration:underline;" xt="SPCLICK" name="www_cibc_com_ca_legal_privacy_polic">Politique
-                                 de la Banque CIBC sur la protection des renseignements personnels</a>. Veuillez ne pas répondre à ce courriel. Il s’agit d’un message sortant seulement.<br><br>
-                               Siège social CIBC, Commerce Court, Toronto (Ontario)&nbsp;&nbsp;M5L&nbsp;1A2,&nbsp;Canada<br><br>
-                               Visitez notre site Web au <a href="https://www.cibc.com/ca/personal-fr.html" target="_blank" style="color:#d40139;text-decoration:underline;" xt="SPCLICK" name="www_cibc_com_ca_personal_html">cibc.com/francais</a>
-                             </td>
-                           </tr>
-                         </table>
-                       </td>
-                     </tr>
-                   </table>
-                   <!-- ******* END LEGAL FOOTER ********** -->
-
-
-                   <!--[if (gte mso 9)|(IE)]>
-         </td></tr></table>
-         <![endif]-->
-                   <!--/600px container -->
-                 </div>
-               </td>
-             </tr>
-           </table>
-           <!--/100% background wrapper-->
-           <table cellpadding="0" cellspacing="0" border="0" class="mobile-hide" style="border-spacing:0;font-family:'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;color:#666666;">
-             <tr>
-               <td height="1" class="mobile-hide" style="min-width:640px;font-size:0px;line-height:0px;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-                 <img height="1" name="Cont_5" src="http://contentz.mkt7543.com/lp/26049/244779/android-fix-spacer.png" style="min-width:640px;text-decoration:none;border-style:none;-ms-interpolation-mode:bicubic;border-width:0;" />
-               </td>
-             </tr>
-           </table>
-         </body>
-
-         </html>
+</html>
