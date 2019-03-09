@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Futura';
+  src: url('fonts/FuturaStd-Medium.otf');
+  /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('fonts/FuturaStd-Medium.otf') format('otf'),
+    /* Super Modern Browsers */
+    url('fonts/FuturaStd-Medium.otf') format('woff'),
+    /* Pretty Modern Browsers */
+    url('fonts/FuturaStd-Medium.otf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('fonts/FuturaStd-Medium.otf') format('svg');
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Futura-bold';
+  src: url('fonts/FuturaStd/FuturaStd-Bold.otf');
+  /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('fonts/FuturaStd-Bold.otf') format('otf'),
+    /* Super Modern Browsers */
+    url('fonts/FuturaStd-Bold.otf') format('woff'),
+    /* Pretty Modern Browsers */
+    url('fonts/FuturaStd-Bold.otf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('fonts/FuturaStd-Bold.otf') format('svg');
+  /* Legacy iOS */
+}
+
+p {
+  font-family: 'Futura';
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  font-size: 12px;
+}
+
+p.bold {
+  font-family: 'Futura-bold';
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+}
+
+p.white {
+  color: white;
+  text-align: right;
+}
+
+img {
+  image-rendering: pixelated;
+}
+
+.container.logo {
+  margin-top: 70px;
+}
+
+img.logo {
+  max-width: 191px;
+  text-align: center;
+}
+
+img.mx-auto.d-block.header {
+  max-width: 729px;
+}
+
+.container.header {
+  margin-top: 52px;
+}
+
+.jumbotron.mx-auto.d-block {
+  height: 302.5px;
+  border-radius: 50px;
+  max-width: 729px;
+  text-align: center;
+  margin-top: 52px;
+}
+
+.white-border {
+  border-bottom: 2px solid white;
+  width: 236px;
+  margin: 4% auto;
+}
+
+.grey-border {
+  border-bottom: 2px solid lightgrey;
+  width: 350px;
+  margin: 4% auto;
+}
+
+.col.problem {
+  margin-top: 14px;
+}
+
+.container.solution {
+  margin-top: 52px;
+  text-align: center;
+}
+
+.jumbotron.black-cards {
+  background-color: black;
+  margin-top: 36px;
+  border-radius: 0px;
+}
+
+img.ring-card {
+  max-width: 276px;
+}
+
+.col.right {
+  text-align: right;
+}
+
+.row.ring.top {
+  margin-top: 92px;
+}
+
+.row.ring {
+  margin-top: 86px;
+}
+
+.container.uppercut {
+  margin-top: 65px;
+}
+
+.col.uppercut {
+  text-align: center;
+}
+
+img.uppercut {
+  max-width: 325px;
+}
+
+.jumbotron.stand {
+  height: 840px;
+  border-radius: 0px;
+  margin-top: -80px;
+}
