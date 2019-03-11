@@ -70,7 +70,7 @@ img.mx-auto.d-block.header {
   margin-top: 52px;
 }
 
-.jumbotron.mx-auto.d-block {
+.jumbotron.mx-auto.d-block.desktop {
   height: 302.5px;
   border-radius: 50px;
   max-width: 729px;
@@ -86,7 +86,7 @@ img.mx-auto.d-block.header {
 
 .grey-border {
   border-bottom: 2px solid lightgrey;
-  width: 350px;
+  width: 100%;
   margin: 4% auto;
 }
 
@@ -96,6 +96,7 @@ img.mx-auto.d-block.header {
 
 .container.solution {
   margin-top: 52px;
+  margin-bottom: 52px;
   text-align: center;
 }
 
@@ -123,6 +124,7 @@ img.ring-card {
 
 .container.uppercut {
   margin-top: 65px;
+  margin-bottom: -7%;
 }
 
 .col.uppercut {
@@ -130,11 +132,50 @@ img.ring-card {
 }
 
 img.uppercut {
-  max-width: 325px;
+  width: 325px;
+  max-width: 50%;
 }
 
-.jumbotron.stand {
-  height: 840px;
-  border-radius: 0px;
-  margin-top: -80px;
+
+@media only screen and (max-width: 767px) {
+
+  .col.mobile-hide,
+  .jumbotron.black-cards {
+    display: none !important;
+  }
+
+.jumbotron.mx-auto.d-block {
+  margin-left: 50px !important;
+  margin-right: 50px !important;
+  border-radius: 50px;
+  background-image: none !important;
+  background-color: #e4e4e4;
+}
+
+.container.solution,
+img.black-cards-mobile {
+  max-width: 50%;
+}
+
+.container.black-cards-mobile {
+  background-color: black;
+    margin: 0px !important;
+    max-width: 100%;
+}
+
+.col.top {
+  padding-top: 60px;
+}
+
+.col.top,
+.col.bcm {
+  text-align: center;
+}
+}
+
+/* don't show black cards on mobile */
+@media screen and (max-width: 4000px) and (min-width: 766px) {
+.container.black-cards-mobile {
+  display: none;
+}
 }
