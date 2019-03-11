@@ -1,44 +1,44 @@
 @font-face {
   font-family: 'Futura';
-  src: url('fonts/FuturaStd-Medium.otf');
+  src: url('fonts/FuturaStd-Medium.woff');
   /* IE9 Compat Modes */
   src: url('webfont.eot?#iefix') format('embedded-opentype'),
     /* IE6-IE8 */
-    url('fonts/FuturaStd-Medium.otf') format('otf'),
+    url('fonts/FuturaStd-Medium.woff') format('woff'),
     /* Super Modern Browsers */
-    url('fonts/FuturaStd-Medium.otf') format('woff'),
+    url('fonts/FuturaStd-Medium.woff') format('woff'),
     /* Pretty Modern Browsers */
-    url('fonts/FuturaStd-Medium.otf') format('truetype'),
+    url('fonts/FuturaStd-Medium.woff') format('woff'),
     /* Safari, Android, iOS */
-    url('fonts/FuturaStd-Medium.otf') format('svg');
+    url('fonts/FuturaStd-Medium.woff') format('woff');
   /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'Futura-bold';
-  src: url('fonts/FuturaStd/FuturaStd-Bold.otf');
+  src: url('fonts/FuturaStd/FuturaStd-Bold.woff');
   /* IE9 Compat Modes */
   src: url('webfont.eot?#iefix') format('embedded-opentype'),
     /* IE6-IE8 */
-    url('fonts/FuturaStd-Bold.otf') format('otf'),
+    url('fonts/FuturaStd-Bold.woff') format('woff'),
     /* Super Modern Browsers */
-    url('fonts/FuturaStd-Bold.otf') format('woff'),
+    url('fonts/FuturaStd-Bold.woff') format('woff'),
     /* Pretty Modern Browsers */
-    url('fonts/FuturaStd-Bold.otf') format('truetype'),
+    url('fonts/FuturaStd-Bold.woff') format('truetype'),
     /* Safari, Android, iOS */
-    url('fonts/FuturaStd-Bold.otf') format('svg');
+    url('fonts/FuturaStd-Bold.woff') format('woff');
   /* Legacy iOS */
 }
 
 p {
-  font-family: 'Futura';
+  font-family: 'Futura' !important;
   letter-spacing: 0.5px;
   margin-bottom: 0.5rem;
   font-size: 12px;
 }
 
 p.bold {
-  font-family: 'Futura-bold';
+  font-family: 'Futura-bold' !important;
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.5px;
@@ -104,6 +104,7 @@ img.mx-auto.d-block.header {
   background-color: black;
   margin-top: 36px;
   border-radius: 0px;
+  padding-bottom: 20px;
 }
 
 img.ring-card {
@@ -115,16 +116,20 @@ img.ring-card {
 }
 
 .row.ring.top {
-  margin-top: 92px;
+  margin-top: 40px;
 }
 
 .row.ring {
-  margin-top: 86px;
+  margin-top: 0px;
+}
+
+.row.ring.text {
+  margin-top: 20px;
 }
 
 .container.uppercut {
   margin-top: 65px;
-  margin-bottom: -7%;
+  margin-bottom: -5%;
 }
 
 .col.uppercut {
@@ -135,6 +140,10 @@ img.uppercut {
   width: 325px;
   max-width: 50%;
 }
+
+
+
+
 
 
 @media only screen and (max-width: 767px) {
@@ -171,6 +180,19 @@ img.black-cards-mobile {
 .col.bcm {
   text-align: center;
 }
+
+.ring-card-mobile {
+  text-align: center;
+  max-width: 100%;
+}
+
+img.ring-card-mobile {
+  max-width: 100%;
+  padding-top: 10px;
+}
+
+
+
 }
 
 /* don't show black cards on mobile */
