@@ -21381,7 +21381,9 @@ html, body {
 }
 
 #index .vorteile .card p, #index-2 .vorteile .card p {
+  /*
   font-family: "Open Sans", sans-serif;
+  */
   font-weight: 300;
   font-size: 16px;
 }
@@ -21885,10 +21887,17 @@ main.page img.title, main.article img.title {
 }
 
 /*# sourceMappingURL=gm.css.map */
+
+
 /* kristina start */
 
 .jumbotron.header {
   height: 90%;
+}
+
+.hover:hover {
+  background-color:rgba(55, 94, 151, 0.77);
+color: white;
 }
 
 .container.header {
@@ -21903,29 +21912,54 @@ main.page img.title, main.article img.title {
   padding: 4rem 0 2rem 0;
 }
 
+.card-body.vorteile {
+  border: 1px solid;
+  border-radius: 0.25rem;
+  padding: 20px 20px 30px 20px !important;
+}
+
+.row.vorteile {
+  padding-top: 10px !important;
+}
+
+.container.Maklerempfehlung {
+  padding: 20px 0;
+}
+
 /* mobile */
+
+@media (max-width: 575px) {
+
+
+.row.vorteile {
+  margin:0px;
+}
+}
+
 @media (max-width: 768px) {
 
   .jumbotron.header {
     height: 100%;
   }
 
-  .col.mobile-hide {
+  .col.mobile-hide,
+  .card-deck-wrapper {
     display: none;
   }
 
   .container.ctas {
     padding: 1rem 0 2rem 0 !important;
-  }
 }
+}
+
 
 /* desktop */
 @media (min-width: 768px) {
-  .container.ctas.mobile {
+  .container.ctas.mobile,
+  .row.vorteile
+ {
     display: none;
-  }
-
-
+}
 }
 
 /* kristina end */
