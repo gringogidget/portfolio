@@ -400,7 +400,7 @@ BUTTONS OPTION 01 END -->
       <div class="container ctas">
         <div class="row">
           <div class="col">
-            <div class="card" style="width: 14rem;">
+            <div class="card hover" style="width: 14rem;">
               <a href="#vermieten" data-toggle="modal" data-target="#vermieten" class="card-img-top" alt="...">
                 <img class="header-cards" src="./static/img/form/for-rent.svg"></a>
               <div class="card-body">
@@ -409,7 +409,7 @@ BUTTONS OPTION 01 END -->
             </div>
           </div>
           <div class="col">
-            <div class="card" style="width: 14rem;">
+            <div class="card hover" style="width: 14rem;">
               <a href="/maklerempfehlung/" class="card-img-top" alt="...">
                 <img class="header-cards" src="./static/img/form/for-sale.svg" style="height:80px;"></a>
               <div class="card-body">
@@ -418,7 +418,7 @@ BUTTONS OPTION 01 END -->
             </div>
           </div>
           <div class="col">
-            <div class="card" style="width: 14rem;">
+            <div class="card hover" style="width: 14rem;">
               <a href="#suchen" data-toggle="modal" data-target="#suchen" class="card-img-top" alt="...">
                 <img class="header-cards" src="./static/img/form/searching.svg" style="height:80px;">
                 <div class="card-body">
@@ -432,10 +432,25 @@ BUTTONS OPTION 01 END -->
 
 
     <div class="container">
-      <div class="row">
+      <div class="row mobile-header-button">
         <div class="col">
-          <a href="/maklerempfehlung/" class="card-img-top" alt="...">
-            <img class="header-cards" src="./static/img/form/for-sale.svg" style="height:80px;"></a>
+          <a href="#vermieten" data-toggle="modal" data-target="#vermieten">
+            <button type="button" class="btn btn-light"><img class="header-cards" src="./static/img/form/for-rent.svg" style="height:80px;">&nbsp;&nbsp;Immobilie vermieten</button>
+          </a>
+        </div>
+      </div>
+      <div class="row mobile-header-button">
+        <div class="col">
+          <a href="/maklerempfehlung/" alt="...">
+            <button type="button" class="btn btn-light"><img class="header-cards" src="./static/img/form/for-sale.svg" style="height:80px;">&nbsp;&nbsp;Immobilie verkaufen&nbsp;</button>
+          </a>
+        </div>
+      </div>
+      <div class="row mobile-header-button">
+        <div class="col">
+          <a href="#suchen" data-toggle="modal" data-target="#suchen" alt="...">
+            <button type="button" class="btn btn-light"><img class="header-cards" src="./static/img/form/searching.svg" style="height:80px;">&nbsp;&nbsp;Immobilie suchen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+          </a>
         </div>
       </div>
     </div>
@@ -451,64 +466,8 @@ BUTTONS OPTION 01 END -->
 
 
   <style>
-    a.card-img-top {
-  padding-top: 20px;
-}
 
-.container.ctas {
-    padding: 1rem 0 2rem 0;
-}
-
-.card {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (max-width: 1198px) {
-
-  .jumbotron.header {
-    height: 100%;
-  }
-}
-
-@media (max-width: 991px) {
-
-  .col.mobile-hide {
-    display:none;
-  }
-
-img.header-cards {
-  height: 50px !important;
-}
-
-.card {
-  width: 10rem !important;
-}
-}
-
-@media (max-width: 767px) {
-.container.ctas {
-  display: none;
-}
-}
-
-  </style>
-
-  <!-- BUTTONS OPTION 02 END -->
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  <style>
-    .jumbotron {
+.jumbotron {
 background-size: cover !important;
 text-align: center;
 height: 100%;
@@ -517,14 +476,74 @@ background-position: center;
 padding: 0px;
 margin-bottom: 0px;
 }
+
+a.card-img-top {
+padding-top: 20px;
+}
+
+.container.ctas {
+padding: 1rem 0 2rem 0;
+}
+
+.card {
+margin-right: auto;
+margin-left: auto;
+}
+
+@media (max-width: 1198px) {
+
+.jumbotron.header {
+height: 100%;
+}
+}
+
+@media (max-width: 991px) {
+
+.col.mobile-hide {
+display:none;
+}
+
+img.header-cards {
+height: 50px !important;
+}
+
+.card {
+width: 10rem !important;
+}
+}
+
+@media (max-width: 767px) {
+.container.ctas {
+display: none;
+}
+
+.row.mobile-header-button {
+padding: 0 0 20px 0;
+}
+
+}
+
+/* desktop */
+@media (min-width: 768px) {
+.row.mobile-header-button {
+display: none;
+}
+
+
+}
+
 </style>
+
+  <!-- BUTTONS OPTION 02 END -->
+
+
+
   <div id="index-2">
 
 
     <div class="steps">
       <div class="container">
         <h1>So funktioniert die Maklerempfehlung von gute-makler.de</h1>
-
         <div class="row">
           <div class="col-sm-4" style="text-align:center;">
             <img src="./static/img/index/1.png" style="max-width:300px;">
@@ -534,7 +553,6 @@ margin-bottom: 0px;
               Der genaue Immobilienstandort (Straße und Hausnummer) wird den Maklern nicht bekannt gegeben.
             </p>
           </div>
-
           <div class="col-sm-4" style="text-align:center;">
             <img src="./static/img/index/2.png" style="max-width:300px;">
             <h2>Maklerempfehlung erhalten</h2>
@@ -543,7 +561,6 @@ margin-bottom: 0px;
               Wir empfehlen Ihnen nur geprüft gute Makler, die unseren strengen Qualitätskriterien entsprechen.
             </p>
           </div>
-
           <div class="col-sm-4" style="text-align:center;">
             <img src="./static/img/index/3.png" style="max-width:300px;">
             <h2>Makler auswählen</h2>
@@ -553,7 +570,6 @@ margin-bottom: 0px;
             </p>
           </div>
         </div>
-
         <div style="text-align:center;font-size:16px;color:#375E97;padding:40px 0 20px 0;">
           <h2>
             Unsere Maklerempfehlung ist selbstverständlich kostenlos und unverbindlich!
@@ -622,11 +638,69 @@ Entscheiden Sie sich für einen der Makler, empfehlen wir dringend, dem favorisi
 
     <div class="vorteile">
       <div class="container">
-
         <h1><i class="fa fa-trophy yellow" aria-hidden="true"></i> Ihre Vorteile bei gute-makler.de</h1>
+        <div class="row vorteile">
+          <div class="card-body vorteile">
+            <h4 class="card-title"><i class="fa fa-phone" aria-hidden="true"></i> Kompetente Beratung</h4>
+            <p class="card-text">
+              Wir sind bei Fragen sowohl per Telefon als auch per E-Mail für Sie erreichbar.
+              Telefonisch erreichen Sie uns Montag bis Freitag von 9:00 Uhr bis 17:00 Uhr.
+            </p>
+          </div>
+        </div>
+
+        <div class="row vorteile">
+          <div class="card-body vorteile">
+            <h4 class="card-title"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Zufriedenheit und Erfahrung</h4>
+            <p class="card-text">
+              Mit <a href="https://www.ohne-makler.net/" alt="Haus ohne Makler selbst verkaufen" target="_blank">www.ohne-makler.net</a>
+              haben wir zehntausende Kunden gewonnen, die Ihre Zufriedenheit mit sehr guten Bewertungen bestätigen. Den gleichen hohen Anspruch haben wir auch für www.gute-makler.de
+            </p>
+          </div>
+        </div>
+
+        <div class="row vorteile">
+          <div class="card-body vorteile">
+            <h4 class="card-title"><i class="fa fa-check-square-o" aria-hidden="true"></i> Geprüfte Makler</h4>
+            <p class="card-text">
+              Alle von uns empfohlenen Makler wurden von uns nach strengsten Qualitätskriterien geprüft. Wer als Makler in das Verzeichnis von www.gute-makler.de aufgenommen wurde, steht für Qualität in allen Bereichen.
+            </p>
+          </div>
+        </div>
+
+        <div class="row vorteile">
+          <div class="card-body vorteile">
+            <h4 class="card-title"><i class="fa fa-money" aria-hidden="true"></i> öhere Verkaufspreise</h4>
+            <p class="card-text">
+              Die von uns gelisteten Makler sind Experten und kennen den Markt in ihrer Region genau. Durch die regionale Marktkenntnis erzielen sie den bestmöglichen Preis für Ihre Immobilie.
+            </p>
+          </div>
+        </div>
+
+        <div class="row vorteile">
+          <div class="card-body vorteile">
+            <h4 class="card-title"><i class="fa fa-handshake-o" aria-hidden="true"></i> Schnellerer Verkaufserfolg</h4>
+            <p class="card-text">
+              Die von uns empfohlenen Makler haben Sachkompetenz, ermitteln den optimalen Immobilienpreis und betreiben effektives Immobilienmarketing. Das Ergebnis: ein schnellstmöglicher Verkauf.
+            </p>
+          </div>
+        </div>
+
+        <div class="row vorteile">
+          <div class="card-body vorteile">
+            <h4 class="card-title"><i class="fa fa-id-card-o" aria-hidden="true"></i> Makler zur Auswahlg</h4>
+            <p class="card-text">
+              Wir empfehlen Ihnen kostenlos und unverbindlich nur ausgewählt gute Makler. Welchen Makler Sie beauftragen, entscheiden allein Sie!
+            </p>
+          </div>
+        </div>
+
+
+
+
+
 
         <div class="card-deck-wrapper">
-
           <div class="card-deck">
             <div class="card card-block">
               <h4 class="card-title"><i class="fa fa-phone" aria-hidden="true"></i> Kompetente Beratung</h4>
@@ -718,13 +792,32 @@ Entscheiden Sie sich für einen der Makler, empfehlen wir dringend, dem favorisi
       </div>
     </div>
 
-    <div style="margin:40px;">
-      <img src="./static/img/index/bottom-left.png" align="left" style="margin-left:100px;width:260px;margin-top:30px;">
-      <img src="./static/img/index/1.png" align="right" style="width:260px;margin-right:100px;margin-top:30px;">
-      <div style="text-align:center;padding:60px 0px;background-color:rgba(255, 255, 255, 0.7);margin-top:0px;">
-        <h2>Klicken Sie hier für Ihre persönliche Maklerempfehlung:</h2>
-        <br>
-        <a href="/maklerempfehlung/" class="btn btn-primary btn-lg">Jetzt kostenlos & unverbindlich gute Maklerempfehlungen erhalten</a>
+<!--
+<div style="margin:40px;">
+<img src="./static/img/index/bottom-left.png" align="left" style="margin-left:100px;width:260px;margin-top:30px;">
+<img src="./static/img/index/1.png" align="right" style="width:260px;margin-right:100px;margin-top:30px;">
+<div style="text-align:center;padding:60px 0px;background-color:rgba(255, 255, 255, 0.7);margin-top:0px;">
+<h2>Klicken Sie hier für Ihre persönliche Maklerempfehlung:</h2>
+<br>
+<a href="/maklerempfehlung/" class="btn btn-primary btn-lg">Jetzt kostenlos & unverbindlich gute Maklerempfehlungen erhalten</a>
+</div>
+</div>
+-->
+    <div class="container Maklerempfehlung">
+      <div class="row">
+        <div class="col" style="text-align:center;">
+          <img src="./static/img/index/bottom-left.png" style="width:260px;margin-top:30px;">
+          <img src="./static/img/index/1.png" style="width:260px; margin-top:30px;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="text-align:center;padding:20px 0;">
+          <h2>Klicken Sie hier für Ihre
+<br>
+            persönlich Maklerempfehlung:</h2>
+          <br>
+          <a href="/maklerempfehlung/" class="btn btn-primary btn-lg">Jetzt kostenlos & unverbindlich gute Maklerempfehlungen erhalten</a>
+        </div>
       </div>
     </div>
 
